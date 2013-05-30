@@ -102,45 +102,64 @@ a:active {
   color: #ff9900;
 }
 
-/* line 29, content/stylesheets/screen.scss */
+/* line 28, content/stylesheets/screen.scss */
 #main {
   position: absolute;
   top: 40px;
   left: 280px;
   width: 500px;
 }
-/* line 35, content/stylesheets/screen.scss */
+/* line 34, content/stylesheets/screen.scss */
 #main h1 {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: normal;
   line-height: 40px;
   letter-spacing: -1px;
 }
-/* line 43, content/stylesheets/screen.scss */
+/* line 42, content/stylesheets/screen.scss */
 #main p {
   margin: 20px 0;
   font-size: 15px;
   line-height: 20px;
 }
-/* line 50, content/stylesheets/screen.scss */
+/* line 49, content/stylesheets/screen.scss */
 #main ul, #main ol {
   margin: 20px;
 }
-/* line 53, content/stylesheets/screen.scss */
+/* line 52, content/stylesheets/screen.scss */
 #main li {
   font-size: 15px;
   line-height: 20px;
 }
-/* line 59, content/stylesheets/screen.scss */
+/* line 58, content/stylesheets/screen.scss */
 #main ul li {
   list-style-type: square;
 }
-/* line 62, content/stylesheets/screen.scss */
+/* line 61, content/stylesheets/screen.scss */
 #main strong {
   font-weight: bold;
 }
+/* line 67, content/stylesheets/screen.scss */
+#main .content {
+  width: 800px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-top: none;
+  margin: 0 auto;
+  padding: 60px 20px 0 60px;
+}
+/* line 77, content/stylesheets/screen.scss */
+#main .post aside {
+  color: #888;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #aaa;
+}
+/* line 82, content/stylesheets/screen.scss */
+#main .post article {
+  margin: 10px 0 60px 0;
+}
 
-/* line 69, content/stylesheets/screen.scss */
+/* line 88, content/stylesheets/screen.scss */
 #sidebar {
   position: absolute;
   top: 40px;
@@ -150,7 +169,7 @@ a:active {
   border-right: 1px solid #ccc;
   text-align: right;
 }
-/* line 78, content/stylesheets/screen.scss */
+/* line 97, content/stylesheets/screen.scss */
 #sidebar h2 {
   text-transform: uppercase;
   text-size: 13px;
@@ -158,46 +177,46 @@ a:active {
   letter-spacing: 1px;
   line-height: 20px;
 }
-/* line 87, content/stylesheets/screen.scss */
+/* line 106, content/stylesheets/screen.scss */
 #sidebar ul {
   list-style-type: square;
   margin: 20px 0;
 }
-/* line 91, content/stylesheets/screen.scss */
+/* line 110, content/stylesheets/screen.scss */
 #sidebar ol {
   list-style-type: none;
 }
-/* line 94, content/stylesheets/screen.scss */
+/* line 113, content/stylesheets/screen.scss */
 #sidebar li {
   font-size: 14px;
   line-height: 20px;
 }
 
-/* line 102, content/stylesheets/screen.scss */
+/* line 121, content/stylesheets/screen.scss */
 ol {
   list-style-type: decimal;
 }
-/* line 104, content/stylesheets/screen.scss */
+/* line 123, content/stylesheets/screen.scss */
 ol ol {
   list-style: upper-alpha;
 }
-/* line 106, content/stylesheets/screen.scss */
+/* line 125, content/stylesheets/screen.scss */
 ol ol ol {
   list-style: lower-roman;
 }
-/* line 108, content/stylesheets/screen.scss */
+/* line 127, content/stylesheets/screen.scss */
 ol ol ol ol {
   list-style: lower-alpha;
 }
 
-/* line 115, content/stylesheets/screen.scss */
+/* line 134, content/stylesheets/screen.scss */
 blockquote {
   font-family: Georgia, "Bitstream Charter", serif;
   font-style: italic;
   font-weight: normal;
   margin: 0 3em;
 }
-/* line 120, content/stylesheets/screen.scss */
+/* line 139, content/stylesheets/screen.scss */
 blockquote cite {
   color: #666;
   font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -205,12 +224,12 @@ blockquote cite {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-/* line 127, content/stylesheets/screen.scss */
+/* line 146, content/stylesheets/screen.scss */
 blockquote em, blockquote blockquote i, blockquote blockquote cite {
   font-style: normal;
 }
 
-/* line 133, content/stylesheets/screen.scss */
+/* line 152, content/stylesheets/screen.scss */
 sup,
 sub {
   font-size: 10px;
@@ -220,17 +239,17 @@ sub {
   vertical-align: baseline;
 }
 
-/* line 142, content/stylesheets/screen.scss */
+/* line 161, content/stylesheets/screen.scss */
 sup {
   bottom: 1ex;
 }
 
-/* line 145, content/stylesheets/screen.scss */
+/* line 164, content/stylesheets/screen.scss */
 sub {
   top: .5ex;
 }
 
-/* line 148, content/stylesheets/screen.scss */
+/* line 167, content/stylesheets/screen.scss */
 small {
   font-size: smaller;
 }
