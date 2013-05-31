@@ -91,6 +91,24 @@
             <p>This is less than ideal. If we wanted to check if an input even contained a valid numeric string (which we usually would) we’d have to work harder. The strtod alternative provides a means to do that, but we’d still have to do an explicit check after calling the function.  Other C-style functions use a return code to indicate success or failure.  It is also extremely easy to forget to check return codes, in which case the problem may only manifest itself in a crash later on, or worse, not at all, but instead just produce bad output.  These types of problems are very hard to track down and debug.  Using exceptions the program crashes precisely where the problem occurred unless the programmer handles that particular exception. So to summarize: Each of your functions should have a well-defined job.  They should do only one job and do it well.  If they can’t do their job because of improper input, then they should raise an appropriate exception.  I think following that idiom results in cleaner, easier to debug code.  You could certainly still return complex data types where appropriate, but trying to incorporate success/failure information in a return type will often lead to difficult to debug errors when the programmer forgets to check the return status!</p>
           </article>
         </div>
+        <div id='disqus_thread'></div>
+        <script type='text/javascript'>
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'hazybluedot'; // required: replace example with your forum shortname
+          
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>
+          Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </noscript>
+        <a class='dsq-brlink' href='http://disqus.com'>
+          comments powered by <span class="logo-disqus">Disqus</span>
+        </a>
         <!-- START: Livefyre Embed -->
         <div id='livefyre-comments'></div>
         <script src='http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js' type='text/javascript'></script>
