@@ -3,293 +3,355 @@
   <head>
     <meta charset='utf-8'>
     <title>A Brand New nano Site - Making Space</title>
-    <link href='/stylesheets/screen.css' media='screen' rel='stylesheet' type='text/css'>
+    <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 8]>
+      <link href='/output/stylesheets/ie.css' media='screen, projection' rel='stylesheet' type='text/css'>
+    <![endif]-->
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body>
-    <div id='main'>
-      <div class='post'>
-        <h1>Making Space</h1>
-        <aside>Posted at: May 15, 2013</aside>
-        <article>
-          <blockquote>
-            <p>How to go about creating a space that facilitates learning? As we
-          learned from Morningstar and Farmer, there is a danger of
-          over-designing the space and often the users don’t end up using the
-          space in the way the designer intended. So we shouldn’t
-          over-design. But there should probably be some kind of structure,
-          right? Or why create the space at all? <cite>- my brain</cite></p>
-          </blockquote>
-          
-          <p>These are some of the thoughts that were going through my head as I
-          set out to plan my final project. Throughout the semester a common
-          focus of mine has been the lack of a space in my own field (Electrical
-          &amp; Computer Engineering) to facilitate making connections between the
-          work that goes on in the department, both teaching and research, and
-          the outside world.</p>
-          
-          <!-- more -->
-          
-          <p>I also became interested in many of the ideas Ivan Illich presented in
-          <a href="http://deschoolingsociety.digress.it/learning-webs/">chapter 6</a> of
-          “<a href="http://deschoolingsociety.digress.it/">Descooling
-          Society</a>”. Specifically, how
-          would we go about creating a network to facilitate skill exchange and
-          peer matching? Once we have a peer-to-peer network of learners, what
-          role does an “elder” have, and how does one become an elder?</p>
-          
-          <p>I began by looking at some exiting peer networks and online
-          communities that I have had either direct or indirect involvement in
-          to see how they addressed the questions of structure, but in the space
-          itself, and any imposed structure between peers that imposes some sort
-          of hierarchy, or the notion of an “elder”.</p>
-          
-          <h3 id="the-linux-kernel">The Linux Kernel</h3>
-          
-          <p>It has been several decades since Linus Torvalds’ <a href="https://groups.google.com/forum/?fromgroups=#!msg/comp.os.minix/dlNtH7RRrGA/SwRavCzVE7gJ">original announcement</a> of his new operating system:</p>
-          
-          <pre class="text"><code> From: torvalds@klaava.Helsinki.FI (Linus Benedict Torvalds) &#x000A;Newsgroups: comp.os.minix &#x000A;Subject: What would you like to see most in minix? &#x000A;Summary: small poll for my new operating system &#x000A;Date: 25 Aug 91 20:57:08 GMT &#x000A;Organization: University of Helsinki &#x000A;&#x000A;Hello everybody out there using minix - &#x000A;&#x000A;I'm doing a (free) operating system (just a hobby, won't be big and&#x000A;professional like gnu) for 386(486) AT clones. This has been brewing&#x000A;since april, and is starting to get ready. I'd like any feedback on&#x000A;things people like/dislike in minix, as my OS resembles it somewhat&#x000A;(same physical layout of the file-system (due to practical reasons)&#x000A;among other things).&#x000A;&#x000A;</code></pre>
-          
-          <p>since that time the <a href="https://www.kernel.org/">Linux kernel</a> project
-          has grown to be the largest collaborative endeavor in the history of
-          computing. According to one measure, there were 1,316 developers
-          involved with the version 3.2 release, each contributing an average of
-          10,935 lines of code to the project. The clip found on the
-          linxfoundation’s website summarizes how this tremendous feat is
-          possible:</p>
-          
-          <p>http://youtu.be/yVpbFMhOAwE?t=1m43s </p>
-          
-          <p>There is a fairly simple and effective hierarchy in place: individual
-          developers submit patches to senior kernel developer who in turn
-          review and sign off on patches before sending onward to Linus Torvalds
-          for final approval. This is the most dictatorship-like model of any of
-          the networks I looked at, but I think it makes a lot of sense. The
-          stability and usefulness of the Linux kernel depends on all 15 million
-          lines of code working well with one another, a more ad-hoc “allow
-          everyone to contribute, fix errors later” method such as the one
-          embodied by <a href="http://www.wikipedia.org">wikipedia</a> probably wouldn’t be
-          effective for this project. It’s worth noting that the rather strict
-          structure doesn’t prevent people from maintaining and contributing to
-          forks of the kernel other than the one maintained by Torvalds. In
-          fact, <a href="http://www.zdnet.com/blog/open-source/android-and-linux-re-merge-into-one-operating-system/10625">up until
-          recently</a>,
-          <a href="http://www.zdnet.com/blog/open-source/linus-torvalds-on-android-the-linux-fork/9426">Google maintained its own
-          fork</a>
-          of the kernel for it’s Android operating system.</p>
-          
-          <h3 id="githubcom">github.com</h3>
-          
-          <p>The versioning control tool git was created by the Linux development
-          community in response to changes in the relationship between the open
-          source community and the company responsible for BitKeeper, the
-          versioning control system used up until 2005, much like they would on
-          other social networking sites, but rather than posts about current
-          gastronomic adventures, GitHub generates feeds of updates and changes
-          made to various software projects.</p>
-          
-          <p>There isn’t really a notion of a uniform social hierarchy, as everyone
-          is the maintainer of their own project, and may act as contributor to
-          any other project. Individual projects may be <a href="https://github.com/explore">“trending” or
-          “featured”</a> depending on activity.</p>
-          
-          <h3 id="stackoverflowcom">stackoverflow.com</h3>
-          
-          <p>Still on the geek theme, stackoverflow is an invaluable resource to
-          many software developers, novice or advanced. Organized into a
-          question and answer format, anyone can post a question or an answer
-          and the site <a href="http://stackoverflow.com/about">provides tools</a> to
-          improve the quality of questions and up-vote helpful answers. There is
-          a notion of currency, called “reputation”, that members earn through
-          participating on the site. Gaining reputation can unlock certain
-          <a href="http://stackoverflow.com/privileges">privileges</a> that are not
-          available to all users. With enough reputation, individuals can be
-          elevated to <a href="http://stackoverflow.com/users?tab=moderators">moderator</a>
-          status, a role I would associate with Illich’s notion of an “elder”.</p>
-          
-          <h3 id="couchsurfingorg">couchsurfing.org</h3>
-          
-          <p>http://www.youtube.com/watch?feature=player_embedded&amp;v=Lr_VNUTvOeQ </p>
-          
-          <p>Up until this point the sites I’ve surveyed have been what we would
-          generally refer to “virtual” spaces. The communities and interactions
-          exist primarily in
-          cyberspace. <a href="https://www.couchsurfing.org">Couchsurfing</a> is a bit
-          different. At its core it is a network of travelers who open their
-          homes to other travelers to provide a uniquely personal and rewarding
-          experience not available from hotels or other travel industry
-          offerings. It is focused on helping people explore the world by
-          connecting with other people in a particular geographic area, remote
-          or local, so many of the interactions take place in the “real”
-          world. However, a thriving virtual community is also an integral part
-          of the couchsurfing experience in the form of discussion forums
-          organized into groups of free formed topics ranging from <a href="https://www.couchsurfing.org/n/places/blacksburg-virginia-united-states">geographic
-          areas</a>,
-          to helping each other <a href="https://www.couchsurfing.org/group.html?gid=21491">learn new
-          languages</a>, to
-          <a href="https://www.couchsurfing.org/group.html?gid=592">everything</a><a href="https://www.couchsurfing.org/group.html?gid=2080">in</a><a href="https://www.couchsurfing.org/group.html?gid=1302">between</a>.</p>
-          
-          <p>One of the first questions asked by couch surfing skeptics is “is it
-          safe”? There seems to be a common fear among those who do not
-          couchsurf that most strangers are creeps who would sooner steal your
-          wallet than let you stay for free on their couch. While most of those
-          who join couchsurfing do so because they naturally have a more
-          optimistic view of humanity, safety is <a href="https://www.couchsurfing.org/n/help">a high
-          priority</a> and a clear set of
-          <a href="https://www.couchsurfing.org/n/guidelines">community guidelines</a> are
-          published to help ensure everyone has a safe, enjoyable experience.</p>
-          
-          <p>Most importantly though, is the system of references in place that
-          enable members to rate the experience they had with other
-          members. References themselves do not directly lead to any increased
-          privileges in the community: members are free to use the information
-          as they see fit. Some opt to only host or otherwise connect with
-          people who have received a lot of positive references while others
-          will accept hosts or guests with few or no references. I have never
-          come across a profile with negative references. I suspect that this is
-          not because there are no negative experiences (in fact I have heard of
-          a couple from witnesses), but that people with negative references
-          don’t last long in the community. While there are many people who
-          would help those new members who do not have any references yet, I
-          think few would choose to welcome someone who has violated the spirit
-          of couchsurfing in some way.</p>
-          
-          <p>Separate but related to the reference system is the
-          <a href="https://www.couchsurfing.org/vouch.html">vouching</a> system. This is a
-          more formalized approach to building trust networks and is a more
-          integral part of the structure of the site in that being vouched for
-          can grant certain privileges, namely, the ability to vouch for
-          others. Unlike references, vouching is intended to ONLY apply to
-          people who have met face-to-face, though the enforcement of that rule
-          is left to the community itself.</p>
-          
-          <h3 id="illichvillichnet">5 illichvillich.net</h3>
-          
-          <p>The greatest challenge I have faced in the creation of a space for
-          learning has been to identify which aspects of the previously
-          mentioned successful virtual communities should be integrated, and
-          how. At its core, the inspiration came from my understanding of the
-          role <a href="http://www.umich.edu/~ece/student_projects/coffee/">english coffee
-          houses</a> played in
-          the 17th and 18th century. While the idea of gathering around a
-          particular beverage was not unknown at the time, the precursor to
-          coffee was ale and along with the switch from a depressant to a
-          stimulant also came a marked change in the intellectual culture
-          surrounding these popular gather spots. People from all walks of life
-          were able to mingle and share ideas and the space became an
-          intellectual breeding ground separate, but connected with the
-          universities of the time. I can only imagine that without any set
-          curriculum the topics of discussion varied greatly with the interest
-          of the participants and the local events of the time.</p>
-          
-          <p>It goes without saying then (and yet, here I am, saying it), that
-          topics must be defined and controlled by the members. But I don’t want
-          to create yet another forum site.</p>
-          
-          <p>Of the <a href="http://deschoolingsociety.digress.it/learning-webs/#24">four
-          networks</a>
-          defined by Illich to enable his vision of a deschooled society:</p>
-          
-          <ul>
-            <li>Reference Services to Educational Objects</li>
-            <li>Skill Exchanges</li>
-            <li>Peer-Matching</li>
-            <li>Reference Services to Educators-at-Large</li>
-          </ul>
-          
-          <p>I was most interested in building a Skill Exchange and Peer-Matching
-          network. I feel that if I can create a space that is successful in
-          that goal, the two “Reference Services” networks should follow
-          organically, as it seems the primary challenge there is collecting the
-          information, there are already well defined implementations of
-          “reference services”.</p>
-          
-          <p>On the face of it, implementing a skill exchange and peer-matching
-          network is just a matter of defining a data structure that can
-          associate a set of skills with a particular individual and then an
-          algorithm that will match people who have mutual skill-learning
-          interests. That’s the easy part. The challenge, which was brought up
-          during the final presentation day, is that most people are probably
-          not going to want to spend any amount of time entering individual
-          skills and interests they have and those they want to learn. Ideally
-          all a user would need to provide are links to existing blogging and
-          micro-blogging feeds, in which case we would need an algorithm that
-          would parse content that is already being created by each user to
-          determine skill sets and interests. This is the challenge, and a
-          complete lexicographic analysis is well beyond my current knowledge of
-          algorithm design. What would be relatively straight forward is
-          grabbing tags from existing structured feeds that provide that
-          information. It would still depend on self-reporting, but ideally
-          self-reporting that is already being done anyway.</p>
-          
-          <p>The real challenge has been to figure out what more to do. What I have
-          mentioned so far would be useful, but not particularly unique. In
-          fact, couchsurfing already has a notion of “Learn, Teach, Share” built
-          into the profiles, though the system doesn’t really facilitate
-          searching for people based on that information. The more I have talked
-          with Illich enthusiasts, the more it becomes clear that the real
-          potential lies in creating more of a platform for exploring ideas,
-          rather than just a repository of information. The last brainstorming
-          session I had quickly turned from the details of setting up a skill
-          exchange network to the much more difficult questions of</p>
-          
-          <ul>
-            <li>how is a unit of information stored?</li>
-            <li>who decides what a unit of information is?</li>
-            <li>how are individual units of information connected with one another?</li>
-            <li>how does a user effectively navigate a space of interconnected units of information?</li>
-            <li>how does a user track their personal path through a network of information nodes?</li>
-            <li>how does a user share their path through a network of information nodes?</li>
-            <li>who writes the information nodes?</li>
-            <li>should nodes have structural support for quizzes/practice exercises to help learners decide if they have mastered a particular topic well enough to move on to another?</li>
-          </ul>
-          
-          <p>And then implementation details involved with all of those are of
-          course somewhat overwhelming at this point.</p>
-          
-          <p>I plan to have another brainstorming session tonight, with a different
-          group of hackers and see were these ideas lead. In the mean time, I
-          will continue to get a working implementation of a basic
-          skill-matching network up at
-          <a href="http://www.illichvillich.net/">illichvillich.net</a>, just as soon as
-          I’m finished posting final grades.</p>
-        </article>
+  <body class='bp two-col light'>
+    <div id='container'>
+      <div id='header'>
+        #!/dkm
       </div>
-      <!-- START: Livefyre Embed -->
-      <div id='livefyre-comments'></div>
-      <script src='http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js' type='text/javascript'></script>
-      <script type='text/javascript'>
-        (function () {
-        var articleId = fyre.conv.load.makeArticleId(null);
-        fyre.conv.load({}, [{
-        el: 'livefyre-comments',
-        network: "livefyre.com",
-        siteId: "334118",
-        articleId: articleId,
-        signed: false,
-        collectionMeta: {
-        articleId: articleId,
-        url: fyre.conv.load.makeCollectionUrl(),
-        }
-        }], function() {});
-        }());
-      </script>
-      <!-- END: Livefyre Embed -->
-    </div>
-    <div id='sidebar'>
-      <h2>About</h2>
-      <a href="/teaching/">Teaching Philosophy</a>
-      <!--= link_to('Philosophy', teach.rep(:pdf))-->
-      <h2>Recent Posts</h2>
-      <ul><a href="/2013/05/making-space/">Making Space</a></ul>
-      <ul><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></ul>
-      <ul><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></ul>
-      <h2>Recent Tweets</h2>
-      <h2>Follow</h2>
-      <a href='/feed.xml'>
-        <img src='/assets/Feed-icon.svg.png'>
-      </a>
+      <div id='sidebar'>
+        <h2>About</h2>
+        <a href="/teaching/">Teaching Philosophy</a>
+        <!--= link_to('Philosophy', teach.rep(:pdf))-->
+        <h2>Recent Posts</h2>
+        <ul><a href="/2013/05/making-space/">Making Space</a></ul>
+        <ul><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></ul>
+        <ul><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></ul>
+        <h2>imported posts</h2>
+        <ul><a href="/2013/05/new-site/">New Site, New Framework</a></ul>
+        <ul><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></ul>
+        <ul><a href="/2013/05/something-funny-about-school-part-1/">Something Funny about School (Part 1)</a></ul>
+        <ul><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></ul>
+        <ul><a href="/2013/04/nyquist-frequency-of-a-concept/">Nyquist frequency of a concept?</a></ul>
+        <ul><a href="/2013/04/both-sides-of-auto-grading-argument-miss-the-point/">Both sides of auto-grading argument miss the point</a></ul>
+        <ul><a href="/2013/04/cheating-by-the-rules/">Cheating by the Rules</a></ul>
+        <ul><a href="/2013/04/how-will-we-build-a-third-system-of-education/">How will we build a Third System of education?</a></ul>
+        <ul><a href="/2013/03/digital-amplifier-the-tweet-heard-round-the-world/">Digital amplifier: the tweet heard 'round the world</a></ul>
+        <ul><a href="/2013/03/we-are-the-medium-directors-cut/">We are the medium? (director's cut)</a></ul>
+        <ul><a href="/2013/03/about-time-idioms-about-time/">About Time: Idioms About Time</a></ul>
+        <ul><a href="/2013/03/about-time/">About Time</a></ul>
+        <ul><a href="/2013/03/humans-in-the-loop/">Humans in the loop</a></ul>
+        <ul><a href="/2013/03/are-we-all-ice-skaters/">Are we all ice skaters?</a></ul>
+        <ul><a href="/2013/03/are-we-sacrificing-creativity-for-content/">Are we sacrificing creativity for content?</a></ul>
+        <ul><a href="/2013/03/ibreakit-ifixit/">iBreakit, iFixit</a></ul>
+        <ul><a href="/2013/02/creative-writing-technically/">Creative writing, technically</a></ul>
+        <ul><a href="/2013/02/i-am-a-selfish-git-a-bit-on-my-teaching-philosophy/">I am a Selfish Git: A bit on my teaching philosophy</a></ul>
+        <ul><a href="/2013/02/a-comment-on-a-comment-on-commenting/">A Comment on "A comment on commenting"</a></ul>
+        <ul><a href="/2013/02/blasphemy-drmed-games-on-linux/">Blasphemy?: DRMed Games on Linux</a></ul>
+        <ul><a href="/2013/02/git-games-and-meta-moments/">Git Games and Meta Moments</a></ul>
+        <ul><a href="/2013/02/does-awareness-of-our-limitations-aid-in-overcoming-them/">Does awareness of our limitations aid in overcoming them?</a></ul>
+        <ul><a href="/2013/02/on-farming-the-internet-and-funny-hats/">On Farming, the Internet and Funny Hats</a></ul>
+        <ul><a href="/2013/01/stranger-in-a-commonplace-land/">Stranger in a Commonplace Land</a></ul>
+        <ul><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></ul>
+        <ul><a href="/2012/12/semester-in-review/">Semester in Review</a></ul>
+        <ul><a href="/2012/12/211/">Re: the little things of ubuntu</a></ul>
+        <ul><a href="/2012/12/structure-language-and-art/">Structure, Language and Art</a></ul>
+        <ul><a href="/2012/12/the-tides-of-change/">The Tides of Change?</a></ul>
+        <ul><a href="/2012/11/re-large-scale-makefiles/">Re: large scale makefiles</a></ul>
+        <ul><a href="/2012/10/response-to-class-material-reposted/">Response to "Class Material – reposted"</a></ul>
+        <ul><a href="/2012/10/list-of-projects-past/">List of Projects Past</a></ul>
+        <ul><a href="/2012/10/response-to-advanced-python-exercises/">Response to "Advanced Python exercises"</a></ul>
+        <ul><a href="/2012/09/but-what-does-it-all-mean/">But What Does It All Mean?</a></ul>
+        <ul><a href="/2012/09/mary-poppins/">Mary Poppins</a></ul>
+        <ul><a href="/2012/09/rule-of-diversity-distrust-all-claims-for-one-true-way/">Rule of Diversity: Distrust all claims for “one true way”.</a></ul>
+        <ul><a href="/2012/08/what-makes-good-software-good/">What Makes Good Software Good?</a></ul>
+        <ul><a href="/2012/05/it-may-be-satire/">It may be satire...</a></ul>
+        <ul><a href="/2012/05/a-matter-of-standards/">A Matter of Standards</a></ul>
+        <ul><a href="/2012/04/industrialized-learning-knowledge-information/">Industrialized Learning: Knowledge != Information</a></ul>
+        <ul><a href="/2012/04/the-freedom-to-be-technologically-elite/">The Freedom to be "Technologically Elite"</a></ul>
+        <ul><a href="/2012/03/strengthen-your-strength-know-your-weaknesses/">Strengthen your Strengths, know your Weaknesses</a></ul>
+        <ul><a href="/2012/02/academic-privileged-experiences-as-a-white-cisgendered-gay-male-atheist-engineer/">Academic Privilege: Experiences as a white cisgendered gay male atheist Engineer</a></ul>
+        <ul><a href="/2012/02/when-politics-attack/">When Politics Attack</a></ul>
+        <ul><a href="/2012/02/blogging-is-hard/">Blogging is hard</a></ul>
+        <h2>Recent Tweets</h2>
+        <h2>Follow</h2>
+        <a href='/feed.xml'>
+          <img src='/assets/Feed-icon.svg.png'>
+        </a>
+      </div>
+      <div id='content'>
+        <div class='post'>
+          <h1>Making Space</h1>
+          <aside>Posted at: May 15, 2013</aside>
+          <article>
+            <div class='notice'>
+              This post was imported from the old WordPress site. It is possible that some content is missing, or formatting is screwy. If you see something that doesn't look quite right, please <a href="mailto:darmacz@gmail.com">let me know</a>.
+            </div>
+            <blockquote>
+              <p>How to go about creating a space that facilitates learning? As we
+            learned from Morningstar and Farmer, there is a danger of
+            over-designing the space and often the users don’t end up using the
+            space in the way the designer intended. So we shouldn’t
+            over-design. But there should probably be some kind of structure,
+            right? Or why create the space at all? <cite>- my brain</cite></p>
+            </blockquote>
+            
+            <p>These are some of the thoughts that were going through my head as I
+            set out to plan my final project. Throughout the semester a common
+            focus of mine has been the lack of a space in my own field (Electrical
+            &amp; Computer Engineering) to facilitate making connections between the
+            work that goes on in the department, both teaching and research, and
+            the outside world.</p>
+            
+            <!-- more -->
+            
+            <p>I also became interested in many of the ideas Ivan Illich presented in
+            <a href="http://deschoolingsociety.digress.it/learning-webs/">chapter 6</a> of
+            “<a href="http://deschoolingsociety.digress.it/">Descooling
+            Society</a>”. Specifically, how
+            would we go about creating a network to facilitate skill exchange and
+            peer matching? Once we have a peer-to-peer network of learners, what
+            role does an “elder” have, and how does one become an elder?</p>
+            
+            <p>I began by looking at some exiting peer networks and online
+            communities that I have had either direct or indirect involvement in
+            to see how they addressed the questions of structure, but in the space
+            itself, and any imposed structure between peers that imposes some sort
+            of hierarchy, or the notion of an “elder”.</p>
+            
+            <h3 id="the-linux-kernel">The Linux Kernel</h3>
+            
+            <p>It has been several decades since Linus Torvalds’ <a href="https://groups.google.com/forum/?fromgroups=#!msg/comp.os.minix/dlNtH7RRrGA/SwRavCzVE7gJ">original announcement</a> of his new operating system:</p>
+            
+            <pre class="text"><code> From: torvalds@klaava.Helsinki.FI (Linus Benedict Torvalds) &#x000A;Newsgroups: comp.os.minix &#x000A;Subject: What would you like to see most in minix? &#x000A;Summary: small poll for my new operating system &#x000A;Date: 25 Aug 91 20:57:08 GMT &#x000A;Organization: University of Helsinki &#x000A;&#x000A;Hello everybody out there using minix - &#x000A;&#x000A;I'm doing a (free) operating system (just a hobby, won't be big and&#x000A;professional like gnu) for 386(486) AT clones. This has been brewing&#x000A;since april, and is starting to get ready. I'd like any feedback on&#x000A;things people like/dislike in minix, as my OS resembles it somewhat&#x000A;(same physical layout of the file-system (due to practical reasons)&#x000A;among other things).&#x000A;&#x000A;</code></pre>
+            
+            <p>since that time the <a href="https://www.kernel.org/">Linux kernel</a> project
+            has grown to be the largest collaborative endeavor in the history of
+            computing. According to one measure, there were 1,316 developers
+            involved with the version 3.2 release, each contributing an average of
+            10,935 lines of code to the project. The clip found on the
+            linxfoundation’s website summarizes how this tremendous feat is
+            possible:</p>
+            
+            <p>http://youtu.be/yVpbFMhOAwE?t=1m43s </p>
+            
+            <p>There is a fairly simple and effective hierarchy in place: individual
+            developers submit patches to senior kernel developer who in turn
+            review and sign off on patches before sending onward to Linus Torvalds
+            for final approval. This is the most dictatorship-like model of any of
+            the networks I looked at, but I think it makes a lot of sense. The
+            stability and usefulness of the Linux kernel depends on all 15 million
+            lines of code working well with one another, a more ad-hoc “allow
+            everyone to contribute, fix errors later” method such as the one
+            embodied by <a href="http://www.wikipedia.org">wikipedia</a> probably wouldn’t be
+            effective for this project. It’s worth noting that the rather strict
+            structure doesn’t prevent people from maintaining and contributing to
+            forks of the kernel other than the one maintained by Torvalds. In
+            fact, <a href="http://www.zdnet.com/blog/open-source/android-and-linux-re-merge-into-one-operating-system/10625">up until
+            recently</a>,
+            <a href="http://www.zdnet.com/blog/open-source/linus-torvalds-on-android-the-linux-fork/9426">Google maintained its own
+            fork</a>
+            of the kernel for it’s Android operating system.</p>
+            
+            <h3 id="githubcom">github.com</h3>
+            
+            <p>The versioning control tool git was created by the Linux development
+            community in response to changes in the relationship between the open
+            source community and the company responsible for BitKeeper, the
+            versioning control system used up until 2005, much like they would on
+            other social networking sites, but rather than posts about current
+            gastronomic adventures, GitHub generates feeds of updates and changes
+            made to various software projects.</p>
+            
+            <p>There isn’t really a notion of a uniform social hierarchy, as everyone
+            is the maintainer of their own project, and may act as contributor to
+            any other project. Individual projects may be <a href="https://github.com/explore">“trending” or
+            “featured”</a> depending on activity.</p>
+            
+            <h3 id="stackoverflowcom">stackoverflow.com</h3>
+            
+            <p>Still on the geek theme, stackoverflow is an invaluable resource to
+            many software developers, novice or advanced. Organized into a
+            question and answer format, anyone can post a question or an answer
+            and the site <a href="http://stackoverflow.com/about">provides tools</a> to
+            improve the quality of questions and up-vote helpful answers. There is
+            a notion of currency, called “reputation”, that members earn through
+            participating on the site. Gaining reputation can unlock certain
+            <a href="http://stackoverflow.com/privileges">privileges</a> that are not
+            available to all users. With enough reputation, individuals can be
+            elevated to <a href="http://stackoverflow.com/users?tab=moderators">moderator</a>
+            status, a role I would associate with Illich’s notion of an “elder”.</p>
+            
+            <h3 id="couchsurfingorg">couchsurfing.org</h3>
+            
+            <p>http://www.youtube.com/watch?feature=player_embedded&amp;v=Lr_VNUTvOeQ </p>
+            
+            <p>Up until this point the sites I’ve surveyed have been what we would
+            generally refer to “virtual” spaces. The communities and interactions
+            exist primarily in
+            cyberspace. <a href="https://www.couchsurfing.org">Couchsurfing</a> is a bit
+            different. At its core it is a network of travelers who open their
+            homes to other travelers to provide a uniquely personal and rewarding
+            experience not available from hotels or other travel industry
+            offerings. It is focused on helping people explore the world by
+            connecting with other people in a particular geographic area, remote
+            or local, so many of the interactions take place in the “real”
+            world. However, a thriving virtual community is also an integral part
+            of the couchsurfing experience in the form of discussion forums
+            organized into groups of free formed topics ranging from <a href="https://www.couchsurfing.org/n/places/blacksburg-virginia-united-states">geographic
+            areas</a>,
+            to helping each other <a href="https://www.couchsurfing.org/group.html?gid=21491">learn new
+            languages</a>, to
+            <a href="https://www.couchsurfing.org/group.html?gid=592">everything</a><a href="https://www.couchsurfing.org/group.html?gid=2080">in</a><a href="https://www.couchsurfing.org/group.html?gid=1302">between</a>.</p>
+            
+            <p>One of the first questions asked by couch surfing skeptics is “is it
+            safe”? There seems to be a common fear among those who do not
+            couchsurf that most strangers are creeps who would sooner steal your
+            wallet than let you stay for free on their couch. While most of those
+            who join couchsurfing do so because they naturally have a more
+            optimistic view of humanity, safety is <a href="https://www.couchsurfing.org/n/help">a high
+            priority</a> and a clear set of
+            <a href="https://www.couchsurfing.org/n/guidelines">community guidelines</a> are
+            published to help ensure everyone has a safe, enjoyable experience.</p>
+            
+            <p>Most importantly though, is the system of references in place that
+            enable members to rate the experience they had with other
+            members. References themselves do not directly lead to any increased
+            privileges in the community: members are free to use the information
+            as they see fit. Some opt to only host or otherwise connect with
+            people who have received a lot of positive references while others
+            will accept hosts or guests with few or no references. I have never
+            come across a profile with negative references. I suspect that this is
+            not because there are no negative experiences (in fact I have heard of
+            a couple from witnesses), but that people with negative references
+            don’t last long in the community. While there are many people who
+            would help those new members who do not have any references yet, I
+            think few would choose to welcome someone who has violated the spirit
+            of couchsurfing in some way.</p>
+            
+            <p>Separate but related to the reference system is the
+            <a href="https://www.couchsurfing.org/vouch.html">vouching</a> system. This is a
+            more formalized approach to building trust networks and is a more
+            integral part of the structure of the site in that being vouched for
+            can grant certain privileges, namely, the ability to vouch for
+            others. Unlike references, vouching is intended to ONLY apply to
+            people who have met face-to-face, though the enforcement of that rule
+            is left to the community itself.</p>
+            
+            <h3 id="illichvillichnet">5 illichvillich.net</h3>
+            
+            <p>The greatest challenge I have faced in the creation of a space for
+            learning has been to identify which aspects of the previously
+            mentioned successful virtual communities should be integrated, and
+            how. At its core, the inspiration came from my understanding of the
+            role <a href="http://www.umich.edu/~ece/student_projects/coffee/">english coffee
+            houses</a> played in
+            the 17th and 18th century. While the idea of gathering around a
+            particular beverage was not unknown at the time, the precursor to
+            coffee was ale and along with the switch from a depressant to a
+            stimulant also came a marked change in the intellectual culture
+            surrounding these popular gather spots. People from all walks of life
+            were able to mingle and share ideas and the space became an
+            intellectual breeding ground separate, but connected with the
+            universities of the time. I can only imagine that without any set
+            curriculum the topics of discussion varied greatly with the interest
+            of the participants and the local events of the time.</p>
+            
+            <p>It goes without saying then (and yet, here I am, saying it), that
+            topics must be defined and controlled by the members. But I don’t want
+            to create yet another forum site.</p>
+            
+            <p>Of the <a href="http://deschoolingsociety.digress.it/learning-webs/#24">four
+            networks</a>
+            defined by Illich to enable his vision of a deschooled society:</p>
+            
+            <ul>
+              <li>Reference Services to Educational Objects</li>
+              <li>Skill Exchanges</li>
+              <li>Peer-Matching</li>
+              <li>Reference Services to Educators-at-Large</li>
+            </ul>
+            
+            <p>I was most interested in building a Skill Exchange and Peer-Matching
+            network. I feel that if I can create a space that is successful in
+            that goal, the two “Reference Services” networks should follow
+            organically, as it seems the primary challenge there is collecting the
+            information, there are already well defined implementations of
+            “reference services”.</p>
+            
+            <p>On the face of it, implementing a skill exchange and peer-matching
+            network is just a matter of defining a data structure that can
+            associate a set of skills with a particular individual and then an
+            algorithm that will match people who have mutual skill-learning
+            interests. That’s the easy part. The challenge, which was brought up
+            during the final presentation day, is that most people are probably
+            not going to want to spend any amount of time entering individual
+            skills and interests they have and those they want to learn. Ideally
+            all a user would need to provide are links to existing blogging and
+            micro-blogging feeds, in which case we would need an algorithm that
+            would parse content that is already being created by each user to
+            determine skill sets and interests. This is the challenge, and a
+            complete lexicographic analysis is well beyond my current knowledge of
+            algorithm design. What would be relatively straight forward is
+            grabbing tags from existing structured feeds that provide that
+            information. It would still depend on self-reporting, but ideally
+            self-reporting that is already being done anyway.</p>
+            
+            <p>The real challenge has been to figure out what more to do. What I have
+            mentioned so far would be useful, but not particularly unique. In
+            fact, couchsurfing already has a notion of “Learn, Teach, Share” built
+            into the profiles, though the system doesn’t really facilitate
+            searching for people based on that information. The more I have talked
+            with Illich enthusiasts, the more it becomes clear that the real
+            potential lies in creating more of a platform for exploring ideas,
+            rather than just a repository of information. The last brainstorming
+            session I had quickly turned from the details of setting up a skill
+            exchange network to the much more difficult questions of</p>
+            
+            <ul>
+              <li>how is a unit of information stored?</li>
+              <li>who decides what a unit of information is?</li>
+              <li>how are individual units of information connected with one another?</li>
+              <li>how does a user effectively navigate a space of interconnected units of information?</li>
+              <li>how does a user track their personal path through a network of information nodes?</li>
+              <li>how does a user share their path through a network of information nodes?</li>
+              <li>who writes the information nodes?</li>
+              <li>should nodes have structural support for quizzes/practice exercises to help learners decide if they have mastered a particular topic well enough to move on to another?</li>
+            </ul>
+            
+            <p>And then implementation details involved with all of those are of
+            course somewhat overwhelming at this point.</p>
+            
+            <p>I plan to have another brainstorming session tonight, with a different
+            group of hackers and see were these ideas lead. In the mean time, I
+            will continue to get a working implementation of a basic
+            skill-matching network up at
+            <a href="http://www.illichvillich.net/">illichvillich.net</a>, just as soon as
+            I’m finished posting final grades.</p>
+          </article>
+        </div>
+        <!-- START: Livefyre Embed -->
+        <div id='livefyre-comments'></div>
+        <script src='http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js' type='text/javascript'></script>
+        <script type='text/javascript'>
+          (function () {
+          var articleId = fyre.conv.load.makeArticleId(null);
+          fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "334118",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
+          articleId: articleId,
+          url: fyre.conv.load.makeCollectionUrl(),
+          }
+          }], function() {});
+          }());
+        </script>
+        <!-- END: Livefyre Embed -->
+      </div>
+      <div id='footer'>
+        a dkm production
+      </div>
     </div>
   </body>
 </html>

@@ -1,0 +1,255 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, content/stylesheets/oldscreen.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif;
+}
+
+/* line 16, content/stylesheets/oldscreen.scss */
+body {
+  background: #fff;
+}
+
+/* line 20, content/stylesheets/oldscreen.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 24, content/stylesheets/oldscreen.scss */
+a {
+  color: #ff3300;
+}
+/* line 18, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: #ff3300;
+}
+/* line 24, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #ff9900;
+}
+/* line 27, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #ff9900;
+}
+
+/* line 28, content/stylesheets/oldscreen.scss */
+#main {
+  position: absolute;
+  top: 40px;
+  left: 280px;
+  width: 500px;
+}
+/* line 34, content/stylesheets/oldscreen.scss */
+#main h1 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+/* line 42, content/stylesheets/oldscreen.scss */
+#main p {
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+/* line 49, content/stylesheets/oldscreen.scss */
+#main ul, #main ol {
+  margin: 20px;
+}
+/* line 52, content/stylesheets/oldscreen.scss */
+#main li {
+  font-size: 15px;
+  line-height: 20px;
+}
+/* line 58, content/stylesheets/oldscreen.scss */
+#main ul li {
+  list-style-type: square;
+}
+/* line 61, content/stylesheets/oldscreen.scss */
+#main strong {
+  font-weight: bold;
+}
+/* line 67, content/stylesheets/oldscreen.scss */
+#main .content {
+  width: 800px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-top: none;
+  margin: 0 auto;
+  padding: 60px 20px 0 60px;
+}
+/* line 77, content/stylesheets/oldscreen.scss */
+#main .post aside {
+  color: #888;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #aaa;
+}
+/* line 82, content/stylesheets/oldscreen.scss */
+#main .post article {
+  margin: 10px 0 60px 0;
+}
+
+/* line 88, content/stylesheets/oldscreen.scss */
+#sidebar {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 200px;
+  padding: 20px 20px 0 0;
+  border-right: 1px solid #ccc;
+  text-align: right;
+}
+/* line 97, content/stylesheets/oldscreen.scss */
+#sidebar h2 {
+  text-transform: uppercase;
+  text-size: 13px;
+  color: #333;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+/* line 106, content/stylesheets/oldscreen.scss */
+#sidebar ul {
+  list-style-type: square;
+  margin: 20px 0;
+}
+/* line 110, content/stylesheets/oldscreen.scss */
+#sidebar ol {
+  list-style-type: none;
+}
+/* line 113, content/stylesheets/oldscreen.scss */
+#sidebar li {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 121, content/stylesheets/oldscreen.scss */
+ol {
+  list-style-type: decimal;
+}
+/* line 123, content/stylesheets/oldscreen.scss */
+ol ol {
+  list-style: upper-alpha;
+}
+/* line 125, content/stylesheets/oldscreen.scss */
+ol ol ol {
+  list-style: lower-roman;
+}
+/* line 127, content/stylesheets/oldscreen.scss */
+ol ol ol ol {
+  list-style: lower-alpha;
+}
+
+/* line 134, content/stylesheets/oldscreen.scss */
+blockquote {
+  font-family: Georgia, "Bitstream Charter", serif;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0 3em;
+}
+/* line 139, content/stylesheets/oldscreen.scss */
+blockquote cite {
+  color: #666;
+  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+/* line 146, content/stylesheets/oldscreen.scss */
+blockquote em, blockquote blockquote i, blockquote blockquote cite {
+  font-style: normal;
+}
+
+/* line 152, content/stylesheets/oldscreen.scss */
+sup,
+sub {
+  font-size: 10px;
+  height: 0;
+  line-height: 1;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 161, content/stylesheets/oldscreen.scss */
+sup {
+  bottom: 1ex;
+}
+
+/* line 164, content/stylesheets/oldscreen.scss */
+sub {
+  top: .5ex;
+}
+
+/* line 167, content/stylesheets/oldscreen.scss */
+small {
+  font-size: smaller;
+}
