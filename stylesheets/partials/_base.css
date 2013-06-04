@@ -1,5 +1,5 @@
 /* light is default mode, so pair with general html definition */
-/* line 53, content/stylesheets/partials/_base.scss */
+/* line 56, content/stylesheets/partials/_base.scss */
 html, .light {
   backgorund-color: #eee8d5;
   color: #657b83;
@@ -11,22 +11,23 @@ html #container, .light #container {
 /* line 40, content/stylesheets/partials/_base.scss */
 html #header, .light #header {
   background-color: #93a1a1;
+  color: #6c71c4;
 }
-/* line 42, content/stylesheets/partials/_base.scss */
+/* line 45, content/stylesheets/partials/_base.scss */
 html *, .light * {
   color: #657b83;
 }
-/* line 43, content/stylesheets/partials/_base.scss */
+/* line 46, content/stylesheets/partials/_base.scss */
 html h1, html h2, html h3, html h4, html h5, html h6, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
   color: #586e75;
   border-color: #657b83;
 }
-/* line 44, content/stylesheets/partials/_base.scss */
+/* line 47, content/stylesheets/partials/_base.scss */
 html a, html a:active, html a:visited, .light a, .light a:active, .light a:visited {
   color: #586e75;
 }
 
-/* line 54, content/stylesheets/partials/_base.scss */
+/* line 57, content/stylesheets/partials/_base.scss */
 .dark {
   backgorund-color: #073642;
   color: #839496;
@@ -38,22 +39,23 @@ html a, html a:active, html a:visited, .light a, .light a:active, .light a:visit
 /* line 40, content/stylesheets/partials/_base.scss */
 .dark #header {
   background-color: #586e75;
+  color: #6c71c4;
 }
-/* line 42, content/stylesheets/partials/_base.scss */
+/* line 45, content/stylesheets/partials/_base.scss */
 .dark * {
   color: #839496;
 }
-/* line 43, content/stylesheets/partials/_base.scss */
+/* line 46, content/stylesheets/partials/_base.scss */
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
   color: #93a1a1;
   border-color: #839496;
 }
-/* line 44, content/stylesheets/partials/_base.scss */
+/* line 47, content/stylesheets/partials/_base.scss */
 .dark a, .dark a:active, .dark a:visited {
   color: #93a1a1;
 }
 
-/* line 56, content/stylesheets/partials/_base.scss */
+/* line 59, content/stylesheets/partials/_base.scss */
 html * {
   color-profile: sRGB;
   rendering-intent: auto;

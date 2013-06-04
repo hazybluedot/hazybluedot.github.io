@@ -2,7 +2,7 @@
 <html lang='en'>
   <head>
     <meta charset='utf-8'>
-    <title>A Brand New nano Site -</title>
+    <title>#!/dkm -</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
@@ -10,12 +10,18 @@
     <!--[if lt IE 8]>
       <link href='/output/stylesheets/ie.css' media='screen, projection' rel='stylesheet' type='text/css'>
     <![endif]-->
+    <meta content='summary' name='twitter:card'>
+    <meta content='' name='twitter:creator:id'>
+    <meta content='' name='twitter:title'>
+    <meta content='' name='twitter:description'>
+    <meta content='http://www.hazyblue.me/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
   <body class='bp two-col light'>
     <div id='container'>
       <div id='header'>
-        #!/dkm
+        <span id='title'>#!/dkm</span>
+        <span id='subtitle'>open to interpretation</span>
       </div>
       <div id='sidebar'>
         <h2>About</h2>
@@ -23,11 +29,12 @@
         <!--= link_to('Philosophy', teach.rep(:pdf))-->
         <h2>Recent Posts</h2>
         <ul><a href="/2013/05/making-space/">Making Space</a></ul>
+        <ul><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></ul>
         <ul><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></ul>
         <ul><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></ul>
+        <ul><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></ul>
         <h2>imported posts</h2>
         <ul><a href="/2013/05/new-site/">New Site, New Framework</a></ul>
-        <ul><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></ul>
         <ul><a href="/2013/05/something-funny-about-school-part-1/">Something Funny about School (Part 1)</a></ul>
         <ul><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></ul>
         <ul><a href="/2013/04/nyquist-frequency-of-a-concept/">Nyquist frequency of a concept?</a></ul>
@@ -50,7 +57,6 @@
         <ul><a href="/2013/02/does-awareness-of-our-limitations-aid-in-overcoming-them/">Does awareness of our limitations aid in overcoming them?</a></ul>
         <ul><a href="/2013/02/on-farming-the-internet-and-funny-hats/">On Farming, the Internet and Funny Hats</a></ul>
         <ul><a href="/2013/01/stranger-in-a-commonplace-land/">Stranger in a Commonplace Land</a></ul>
-        <ul><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></ul>
         <ul><a href="/2012/12/semester-in-review/">Semester in Review</a></ul>
         <ul><a href="/2012/12/211/">Re: the little things of ubuntu</a></ul>
         <ul><a href="/2012/12/structure-language-and-art/">Structure, Language and Art</a></ul>
@@ -78,6 +84,9 @@
         </a>
       </div>
       <div id='content'>
+        <div class='notice'>
+          <p>This site is still under heavy development. I am in the process of transfering old posts from the <a href="http://blogs.lt.vt.edu/shebang">old site</a> to this location. I have not decided how I want to handle commenting yet, so for the time being tweet your comments with a url to the post.</p>
+        </div>
         <div class='post'>
           <h1>
             <a href="/2013/05/making-space/">Making Space</a>
@@ -101,6 +110,75 @@
             the outside world.</p>
             
             <div class='read-more'><a href='/2013/05/making-space/'>Continue reading &rsaquo;</a></div>
+          </article>
+        </div>
+        <div class='post'>
+          <h1>
+            <a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a>
+          </h1>
+          <aside>Posted at: May 15, 2013</aside>
+          <article>
+            <p>There have <a href="http://blogs.lt.vt.edu/leonp/2013/05/08/here-comes-linux/">been</a> a <a href="https://blogs.lt.vt.edu/hussaino/2013/05/15/linux-dominating-space/">couple</a> of blog posts recently referencing the recent switch <a href="http://www.nasa.gov/">NASA</a> made from Windows to <a href="http://www.debian.org/">Debian 6</a>, a <a href="http://www.gnu.org/gnu/linux-and-gnu.html">GNU/Linux</a> distribution, as the OS running on the laptops abord the <a href="http://www.nasa.gov/mission_pages/station/main/index.html">International Space Station</a>. It’s worth noting that Linux is no stranger to the ISS, as it has been a part of ground control operations <a href="http://www.linux-magazine.com/w3/issue/12/Linux_on_the_International_Space_Station.pdf%20">since the beginning</a>.</p>
+            
+            <p>The reasons for the space-side switch <a href="http://www.zdnet.com/to-the-space-station-and-beyond-with-linux-7000014958/">are quoted</a> as</p>
+            
+            <blockquote>
+              <p>…we needed an operating system that was stable and reliable – one
+            that would give us in-house control. So if we needed to patch,
+            adjust, or adapt, we could.</p>
+            </blockquote>
+            
+            <p>This is satisfying to many Open Source/Linux fans in its own right: a
+            collaborative open source project has
+            <a href="http://en.wikipedia.org/wiki/Internet">once again</a> proved itself more
+            stable and reliable for the (relatively) extrodinary conditions of low
+            Earth orbit than a product produced by a major software giant. Plus
+            one for open source collaboration and peer networks!</p>
+            
+            <p>But there’s another reason to be excited. And it’s a reason that would
+            not necessarily apply
+            (<a href="https://www.youtube.com/watch?v=7XTHdcmjenI#t=9m08s">mostly</a>) to,
+            say, Apple fanatics had NASA decided to switch to OS X instead of
+            Debian. And that reason has to do with the collaborative nature of the
+            open source movement, codified in many open source licenses under
+            which the software is released. Linux, and the GNU tools, which
+            together make up a fully functional operating system, are released
+            under the
+            <a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a>. Unlike
+            many licenses used for commersial software, the GPL esures that
+            software licenses under its terms remains free for users to use,modify
+            and redistribute. There are certainly some strong criticisms and
+            <a href="https://blogs.oracle.com/roumen/entry/sun_s_criticism_of_gpl">ongoing debate</a>
+            regarding some key aspects of the GPL, especially
+            <a href="http://www.osnews.com/story/19133/Torvalds_Still_Will_Not_License_Linux_Under_GPL_v3/">version 3</a>,
+            the point of contention mostly lies in what is popularly called the
+            “viral” effect of the license: that modified and derived work must
+            also be released under the same license. The GPL might not be
+            appropriate for every developer and every project, but it embodies the
+            spirit of open source software in a way that is agreeable with many
+            developers and users.</p>
+            
+            <p>So what does this all mean in terms of NASA’s move? We already know
+            that they chose GNU/Linux for its reliability and stability over
+            alternatives, but that doesn’t mean it’s completely bug free, or will
+            always work perfectly with every piece of hardware, which after all is
+            another reason for the switch: no OS will be completely bug free or
+            always work with all hardware, but at least Debian gives NASA the
+            flexibility of making improvements themselves. And there in lies the
+            reason for excitement. While there is no requirement that NASA
+            redistribute their own modified versions of the software, there is no
+            reason to assume they wouldn’t in most cases, and if they do, it will
+            be redistributed under the same license. It’s certainly realistic to
+            expect they will be directing a lot of attention to making the Linux
+            kernel, and the GNU tools packaged with Debian even more stable and
+            more reliable, and those improvements will make their way back into
+            the general distributions that we all use. This means better hardware
+            support for all GNU/Linux users in the future!</p>
+            
+            <p>And of course it works both ways. Any bug fixes you make and
+            redistribute may make their way back to the ISS, transforming
+            humanity’s thirst for exploring “the final frontier” into a truly
+            collaborative and global endeavor.</p>
           </article>
         </div>
         <div class='post'>
@@ -384,6 +462,105 @@
                 </li>
               </ol>
             </div>
+          </article>
+        </div>
+        <div class='post'>
+          <h1>
+            <a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a>
+          </h1>
+          <aside>Posted at: January 28, 2013</aside>
+          <article>
+            <p>In his article
+            <a href="http://www.guardian.co.uk/technology/2010/jun/20/internet-everything-need-to-know">The internet: Everything you ever need to know</a>,
+            John Naughton lists nine key concepts about the Internet to help us
+            understand that profound impact it is having, and will continue to
+            have, on our lives. Reading number 3 “DISRUPTION IS A FEATURE, NOT A
+            BUG” I found myself drawing parallels to the design of the Internet
+            and the design of the Unix operating system. The similarities are no
+            accident, as the history of Unix and the Internet became closely
+            intertwined after DARPA’s 1980 decisions that the BSD Unix team would
+            implement the brand new TCP/IP stack which controls how data packets
+            are routed between machines on the Internet.  Of the design of the
+            Internet, Naughton says</p>
+            
+            <blockquote>
+              <p>It was based on two axioms. Firstly, there should be no central
+             ownership or control – no institution which would decide who could
+             join or what the network could be used for. Secondly, the network
+             should not be optimised for any particular application. This led to
+             the idea of a “simple” network that did only one thing – take in
+             data packets at one end and do its best to deliver them to their
+             destinations.</p>
+            </blockquote>
+            
+            <p>The result of this was a general purpose
+            network from which sprang a diverse collection of services and
+            applications (including the World Wide Web, see item number 2), some
+            of which began disrupting established industries. This
+            disruption, Naughton argues, is a desirable effect, though not
+            necessarily to the existing music labels and media
+            distributor behemoths such Warner Music Group and others that are
+            having to drastically rethink their business models to remain relevant
+            in the era of peer-to-peer data networks. Like the Internet, Unix was
+            designed around a number of axioms, the relevant ones being that the
+            system should provide a core set of well defined, simple system calls
+            for interacting with hardware and data, and that passing data between
+            processes should be as easy as possible. As a result of these design
+            choices an environment of diverse programs, each of which “do one
+            thing and one thing well” and can easily share data with other
+            programs has developed. The end result of this can be thought of as a
+            direct contrast to this description by Eric Raymond in his book
+            <a href="http://www.catb.org/esr/writings/taoup/html/ch01s05.html">The Art of Unix Programming</a>:</p>
+            
+            <blockquote>
+              <p>Many operating systems touted as more ‘modern’ or ‘user friendly’
+            than Unix achieve their surface glossiness by locking users and
+            developers into one interface policy, and offer an
+            application-programming interface that for all its elaborateness is
+            rather narrow and rigid. On such systems, tasks the designers have
+            anticipated are very easy — but tasks they have not anticipated are
+            often impossible or at best extremely painful.</p>
+            </blockquote>
+            
+            <p>Unix users, on the other hand, have consistently been able to
+            complete tasks that were never anticipated by the original designers,
+            a key factor in its continued relevance.  As technology changes and
+            users demand new tools and applications developers on other systems
+            have to work a lot harder and are at the mercy of the system
+            developers to make changes to the underlying system to continue to
+            produce cutting edge software solutions.  On a Unix system it is just
+            as easy to copy a file from your USB  flash drive to your hard drive
+            as it is to copy a file from your harddrive to a machine on the other
+            side of the world and it is just as easy to stream video data from a
+            local file as it is from a server on the internet.  The design has
+            lead to a remarkable, even surprising degree of flexibility and
+            usefulness:</p>
+            
+            <blockquote>
+              <p>Unix has supported a mind-bogglingly wide spectrum of uses. No other
+            operating system has shone simultaneously as a research vehicle, a
+            friendly host for technical custom applications, a platform for
+            commercial-off-the-shelf business software, and a vital component
+            technology of the Internet. <cite>- Eric Raymond, The Art of Unix
+            Programming</cite></p>
+            </blockquote>
+            
+            <p>Like the Internet, the simple infrastructure layer by Unix (and its
+            present-day incarnations such as BSD and GNU/Linux) provides an
+            environment for nearly unlimited creativity, one which continues to
+            surprise users and non-users alike with its ability to solve problems
+            and implement ideas that a year ago didn’t even exist.  And likewise,
+            the disruption it has caused has been a boon to individuals: The Linux
+            based Android operating system is running on
+            <a href="http://www.gartner.com/newsroom/id/2237315">over half the world’s smart phones</a>
+            and
+            <a href="http://en.wikipedia.org/wiki/Mobile_operating_system#Market_share">quickly overtoke</a> more
+            established contenders such as Apple’s iOS. Linux has already
+            disrupted the
+            <a href="http://softwareandunicycles.wordpress.com/2010/07/31/does-desktop-linux-need-a-killer-app/">server market, the embedded market and most recently the phone market</a>.  It
+            remains to be seen whether or not it will have a noticeable impact on
+            Microsoft’s stranglehold on the desktop market, unless you consider
+            Apple’s Unix derived OS X as an example.</p>
           </article>
         </div>
       </div>

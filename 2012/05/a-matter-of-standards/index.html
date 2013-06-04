@@ -2,7 +2,7 @@
 <html lang='en'>
   <head>
     <meta charset='utf-8'>
-    <title>A Brand New nano Site - A Matter of Standards</title>
+    <title>#!/dkm - A Matter of Standards</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
@@ -10,12 +10,18 @@
     <!--[if lt IE 8]>
       <link href='/output/stylesheets/ie.css' media='screen, projection' rel='stylesheet' type='text/css'>
     <![endif]-->
+    <meta content='summary' name='twitter:card'>
+    <meta content='' name='twitter:creator:id'>
+    <meta content='A Matter of Standards' name='twitter:title'>
+    <meta content='' name='twitter:description'>
+    <meta content='http://www.hazyblue.me/2012/05/a-matter-of-standards/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
   <body class='bp two-col light'>
     <div id='container'>
       <div id='header'>
-        #!/dkm
+        <span id='title'>#!/dkm</span>
+        <span id='subtitle'>open to interpretation</span>
       </div>
       <div id='sidebar'>
         <h2>About</h2>
@@ -23,11 +29,12 @@
         <!--= link_to('Philosophy', teach.rep(:pdf))-->
         <h2>Recent Posts</h2>
         <ul><a href="/2013/05/making-space/">Making Space</a></ul>
+        <ul><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></ul>
         <ul><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></ul>
         <ul><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></ul>
+        <ul><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></ul>
         <h2>imported posts</h2>
         <ul><a href="/2013/05/new-site/">New Site, New Framework</a></ul>
-        <ul><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></ul>
         <ul><a href="/2013/05/something-funny-about-school-part-1/">Something Funny about School (Part 1)</a></ul>
         <ul><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></ul>
         <ul><a href="/2013/04/nyquist-frequency-of-a-concept/">Nyquist frequency of a concept?</a></ul>
@@ -50,7 +57,6 @@
         <ul><a href="/2013/02/does-awareness-of-our-limitations-aid-in-overcoming-them/">Does awareness of our limitations aid in overcoming them?</a></ul>
         <ul><a href="/2013/02/on-farming-the-internet-and-funny-hats/">On Farming, the Internet and Funny Hats</a></ul>
         <ul><a href="/2013/01/stranger-in-a-commonplace-land/">Stranger in a Commonplace Land</a></ul>
-        <ul><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></ul>
         <ul><a href="/2012/12/semester-in-review/">Semester in Review</a></ul>
         <ul><a href="/2012/12/211/">Re: the little things of ubuntu</a></ul>
         <ul><a href="/2012/12/structure-language-and-art/">Structure, Language and Art</a></ul>
@@ -88,24 +94,12 @@
             <p>Last night on my bike ride home from PFP class I mentally prepared a “todo list” of things to get done in the couple of hours I’d have  before getting too tired to be productive.  In a classic example of the story of my life, all that mental preparation went out the window when I finally arrived home, checked my email (probably mistake #1, checking email wasn’t on the original todo list) and read a message from a student in the class I’m teaching, ECE2524: Introduction to Unix for Engineers. On the face of it, the question seemed to be a simple one: “how do I display a certain character on the screen?” Furthermore, they noted that when they compiled their program in Windows, it worked fine and displayed the character they wanted, a block symbole: ▊, but when compiling and running on Linux the character displayed as a question mark ‘?’ Now, before you get turned off by words like “compile” and “Linux”, let me assure you, this all has a point and it relates to a discussion we had in PFP about “standards for the Ph.D.” plus, it resulted in one of my favorite methods of procrastination, exploring things we take for granted and discovering why we do things the way we do. After some googling around I came across this <a href="http://www.joelonsoftware.com/articles/Unicode.html">excellent post</a>, from which I pulled many of the examples that I use here. The problem was one of standards, but before we can talk about that we need to know a little bit about the history of how characters are stored and represented on a computer.  Even if you aren’t a computer engineer you probably know that computers don’t work with letters at all, they work with numbers, and you probably know they work with numbers represented in base 2, or binary, where ‘10’ represents ‘2’, ‘11’ represents 3, ‘100’ is a ‘4’ and so on.  And if you didn’t know some or any of that, that’s perfectly ok, because you don’t actually <strong>need **to know how a computer stores and manipulates information in order to use a computer any more, but back in the early days of computing, you did.  Also important for the story, back in the early days of computing the kind of information people needed to represent was much more limited, pictures and graphics of any kind were far beyond the capabilities of hardware used to represent information, in fact, early computer terminals were just <a href="http://en.wikipedia.org/wiki/Teleprinter">glorified typewriters</a>, only capable of representing letters in the <a href="http://en.wikipedia.org/wiki/Latin_alphabet">Classical Latin alphabet</a>, a-z, A-Z, numbers 0-9 and, because much of the early development was done in the United States, punctuation used in the English language.  To represent these letters with numbers a code had to be developed: a 1 to 1 relationship between a number and a letter.  The code that  came to widespred use, was called </strong>American Standard Code for Information Interchange, <strong>or</strong><a href="http://en.wikipedia.org/wiki/ASCII">ASCII</a>. ** [caption id=”” align=”alignnone” width=”723” caption=”ASCII chart”][/caption] This was a nice code for the time, with a total of 128 characters, any once character could be represented with 7 digital bits (2^7 = 128), so for instance 100 0001 in binary, which is 65 in good ol’ base 10, represents upper case ‘A’ while 110 001, or 97 represents lower case ‘a’.  For technical reasons it is convenient to store binary data in chunk bits totaling a <a href="http://en.wikipedia.org/wiki/Power_of_two#Computer_science">power of 2</a>.  7 is not a power of two, but 8 is, and so early computers stored and used information in chunks of 8 bits (today’s modern processors use data in chunks of 32 or 64 bits). Well, this was all fine and good, we could represent all the printed characters we needed, along with a set of “control” characters that were used for other purposes needed for transmitting data from one location to another.  But soon 128 characters started feeling limited, for one thing, even in English, it is sometimes useful to print accented characters, such as é in résumé.  Well, people noticed that ASCII only used 7 bits, but recognized that information was stored in groups of 8 bits, so there was a whole other bit that could be used.  People got creative and created <a href="http://en.wikipedia.org/wiki/Extended_ASCII">extended ASCII</a> which assigned symbols to the integer range 128-255 thereby making complete use of all 8 bits, but taking care not to change the meaning of the lower 127 codes, so for instance 130 now was used to represent é. The problem was that even 255 characters is not enough to represent the richness of <strong>all</strong> human languages around the world, and so as computer use became more prevalent in other parts of the world the upper 127 codes were used to represent different sets of symbols, for instance computers sold in Israel used 130 to represent the Hebrew letter Gimel (ג) instead of the accented é.  At first, everyone was happy.  People could represent all or most symbols needed for their native language (ignoring for the moment Chinese or Japanese, which have thousands of different symbols, with no hope of fitting in an 8-bit code). Then the unthinkable happened.  The Internet, and more to the point, email, changed the landscape of character representation, because all of a sudden people were trying to send and receive information to and from different parts of the world.  So now, when an American sent their résumé to their colleague in Isreal is showed up as a rגsumג.  Woops! But what to do?  At this point there were hundreds of different “code pages” used to represent a set of 255 characters with 8 bits.  While the lower 127 bits remained mostly consistent between code pages, the upper 127 were a bit of a free-for-all.  It became clear that a new standard was needed for representing characters on computers, one that could be used on any computer to represent any printed character of any human language, including ones that did could not easily be represented by only 255 characters. The solution is called Unicode, and it is a fundamentally different way of thinking about character representation.  In ASCII, and all the code pages developed after that, the relationship between a character and how that character was stored in computer memory was exact (even if different people didn’t agree what that relationship was).  In ASCII, an upper case ‘A’ was stored as 0100 0001, and if you could look at the individual bits physically stored in memory, that is what you would see, end of story.  Unicode relates letters to an abstract concept called a “code point”, a Unicode A is represented as U+0041.  A code point does **not **tell you anything about how a letter is stored in 1s and 0s, instead U+0041 just means the concept or idea of “upper case A”, likewise U+00E9 means the “lower case accented e”  (é), and U+05D2 means “the Hebrew letter gimel” (ג).  You can find all the Unicode representation for any supported character on the <a href="http://www.unicode.org/charts/">Unicode website</a>, or for quick reference at a variety of online charts, like <a href="http://www.tamasoft.co.jp/en/general-info/unicode.html">this one</a>. But remember, the Unicode representations are associated with the **concept **of the letter, not how it is stored on a computer.  The relationship between Unicode value and storage value is determined by the encoding scheme, the most common being <a href="http://en.wikipedia.org/wiki/UTF-8">UTF-8</a>.  A neat property of the UTF-8 encoding is that it is backwards compatible with the lower 127 ASCII characters, and so if those are the only characters you are using they’ll show up just fine in older software that doesn’t know anything about Unicode and assumes everything is in ASCII. I know I’m risking losing my point at this point, but one last thing.  Right click on this webpage and click “View Page Source”.  Near the top of the page you should see something that looks like  or  This is the line that tells your web browser what encoding scheme is used for the characters on this web page.  But “wait”, you might say, I have a self-reference problem, to write out “charset=UTF-8”, I need to first pick an encoding to use, so how can I tell the web browser what encoding I’m using without assuming it already knows what encoding I’m using?  Well, luckily, all the characters needed to write out the first few header lines, including “charset=UTF-8” just happen to be contained in the lower 127 characters of the original ASCII specification, which is the same as UTF-8 for that small range.  So web browsers can safely assume “UTF-8” until they read the line  at which point they will reload the page and switch to the specified encoding scheme. Ok. So where the heck was I going with this?  Well for one thing, the history of character representation is quite interesting and highlights various aspects of the history of computing, and sheds light on something that we all take for granted now, that I can open up a web page on any computer and be reasonably sure that the symbols used to represent the characters displayed are what the author intended. But it also highlights the importance of forming good standards, because without them, it is difficult to communicate across boundaries.  Standards don’t need to specify the details of implementation (how a character is stored in computer memory), but at the very least, to be useful and flexible they need to specify a common map between a specific concept (the letter ‘A’ in the Latin alphabet) and some agreed upon label (U+0041). Currently, we don’t really have a standardized way of talking about a Ph.D.  What is a “qualifier exam”? “prelims”?, “proposal”? all of these things could mean something different depending on your department and discipline.  While trying to standardize details such as “how many publications” or “how many years” or “what kind of work” would be difficult at best, nonsensical in many cases, to do across disciplines, we could start talking about standardizing the language we use to talk about various parts of the Ph.D process that are similar across fields. And incidentally, this is why I still haven’t finished grading the stack of homeworks I told myself I’d finish last night. And for what it’s worth, the answer to the student’s question was to use the Unicode representation of the ▊ symbol, which is standardized, not the extended-ASCII representation, which is **not **a standard way to represent that symbol.  </p>
           </article>
         </div>
-        <div id='disqus_thread'></div>
-        <script type='text/javascript'>
-          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-          var disqus_shortname = 'hazybluedot'; // required: replace example with your forum shortname
-          
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-        </script>
-        <noscript>
-          Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </noscript>
-        <a class='dsq-brlink' href='http://disqus.com'>
-          comments powered by <span class="logo-disqus">Disqus</span>
-        </a>
+        <div class='social'>
+          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+          <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+          </script>
+        </div>
       </div>
       <div id='footer'>
         a dkm production

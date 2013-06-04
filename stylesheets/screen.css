@@ -58,7 +58,7 @@ a img {
 }
 
 /* light is default mode, so pair with general html definition */
-/* line 53, content/stylesheets/partials/_base.scss */
+/* line 56, content/stylesheets/partials/_base.scss */
 html, .light {
   backgorund-color: #eee8d5;
   color: #657b83;
@@ -70,22 +70,23 @@ html #container, .light #container {
 /* line 40, content/stylesheets/partials/_base.scss */
 html #header, .light #header {
   background-color: #93a1a1;
+  color: #6c71c4;
 }
-/* line 42, content/stylesheets/partials/_base.scss */
+/* line 45, content/stylesheets/partials/_base.scss */
 html *, .light * {
   color: #657b83;
 }
-/* line 43, content/stylesheets/partials/_base.scss */
+/* line 46, content/stylesheets/partials/_base.scss */
 html h1, html h2, html h3, html h4, html h5, html h6, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
   color: #586e75;
   border-color: #657b83;
 }
-/* line 44, content/stylesheets/partials/_base.scss */
+/* line 47, content/stylesheets/partials/_base.scss */
 html a, html a:active, html a:visited, .light a, .light a:active, .light a:visited {
   color: #586e75;
 }
 
-/* line 54, content/stylesheets/partials/_base.scss */
+/* line 57, content/stylesheets/partials/_base.scss */
 .dark {
   backgorund-color: #073642;
   color: #839496;
@@ -97,22 +98,23 @@ html a, html a:active, html a:visited, .light a, .light a:active, .light a:visit
 /* line 40, content/stylesheets/partials/_base.scss */
 .dark #header {
   background-color: #586e75;
+  color: #6c71c4;
 }
-/* line 42, content/stylesheets/partials/_base.scss */
+/* line 45, content/stylesheets/partials/_base.scss */
 .dark * {
   color: #839496;
 }
-/* line 43, content/stylesheets/partials/_base.scss */
+/* line 46, content/stylesheets/partials/_base.scss */
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
   color: #93a1a1;
   border-color: #839496;
 }
-/* line 44, content/stylesheets/partials/_base.scss */
+/* line 47, content/stylesheets/partials/_base.scss */
 .dark a, .dark a:active, .dark a:visited {
   color: #93a1a1;
 }
 
-/* line 56, content/stylesheets/partials/_base.scss */
+/* line 59, content/stylesheets/partials/_base.scss */
 html * {
   color-profile: sRGB;
   rendering-intent: auto;
@@ -437,6 +439,57 @@ body.bp .removed {
   background: #990000;
   color: white;
 }
+/* line 39, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+body.bp .box {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  background: #e5ecf9;
+}
+/* line 42, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+body.bp .border {
+  padding-right: 4px;
+  margin-right: 5px;
+  border-right: 1px solid #dddddd;
+}
+/* line 45, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+body.bp .colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid #dddddd;
+}
+/* line 47, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+body.bp hr {
+  background: #dddddd;
+  color: #dddddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 0.1em;
+  margin: 0 0 1.45em;
+  border: none;
+}
+/* line 49, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+body.bp hr.space {
+  background: #dddddd;
+  color: #dddddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 0.1em;
+  margin: 0 0 1.45em;
+  border: none;
+  background: white;
+  color: white;
+  visibility: hidden;
+}
+/* line 51, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+body.bp form.inline {
+  line-height: 3;
+}
+/* line 6, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body.bp form.inline p {
+  margin-bottom: 0;
+}
 
 /* line 18, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp label {
@@ -501,77 +554,27 @@ form.bp textarea {
   width: 390px;
   height: 250px;
 }
-/* line 39, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
-form.bp .box {
-  padding: 1.5em;
-  margin-bottom: 1.5em;
-  background: #e5ecf9;
-}
-/* line 42, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
-form.bp .border {
-  padding-right: 4px;
-  margin-right: 5px;
-  border-right: 1px solid #dddddd;
-}
-/* line 45, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
-form.bp .colborder {
-  padding-right: 24px;
-  margin-right: 25px;
-  border-right: 1px solid #dddddd;
-}
-/* line 47, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
-form.bp hr {
-  background: #dddddd;
-  color: #dddddd;
-  clear: both;
-  float: none;
-  width: 100%;
-  height: 0.1em;
-  margin: 0 0 1.45em;
-  border: none;
-}
-/* line 49, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
-form.bp hr.space {
-  background: #dddddd;
-  color: #dddddd;
-  clear: both;
-  float: none;
-  width: 100%;
-  height: 0.1em;
-  margin: 0 0 1.45em;
-  border: none;
-  background: white;
-  color: white;
-  visibility: hidden;
-}
-/* line 51, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
-form.bp form.inline {
-  line-height: 3;
-}
-/* line 6, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.bp form.inline p {
-  margin-bottom: 0;
-}
 
-/* line 37, content/stylesheets/screen.scss */
+/* line 38, content/stylesheets/screen.scss */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 40, content/stylesheets/screen.scss */
+/* line 41, content/stylesheets/screen.scss */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 950px;
+  height: 40px;
 }
 /* line 147, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 43, content/stylesheets/screen.scss */
+/* line 45, content/stylesheets/screen.scss */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -582,15 +585,15 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 48, content/stylesheets/partials/_base.scss */
+/* line 51, content/stylesheets/partials/_base.scss */
 body.two-col #sidebar a, body.two-col #sidebar a:active, body.two-col #sidebar a:visited, body.two-col #sidebar code.url {
   color: #cb4b16;
 }
-/* line 49, content/stylesheets/partials/_base.scss */
+/* line 52, content/stylesheets/partials/_base.scss */
 body.two-col #sidebar h1, body.two-col #sidebar h2, body.two-col #sidebar h3, body.two-col #sidebar h4, body.two-col #sidebar h5, body.two-col #sidebar h6 {
   color: #cb4b16;
 }
-/* line 49, content/stylesheets/screen.scss */
+/* line 51, content/stylesheets/screen.scss */
 body.two-col #content {
   display: inline;
   float: left;
@@ -601,20 +604,24 @@ body.two-col #content {
 * html body.two-col #content {
   overflow-x: hidden;
 }
+/* line 57, content/stylesheets/screen.scss */
+body.two-col #content a {
+  text-decoration: none;
+}
 
-/* line 58, content/stylesheets/screen.scss */
+/* line 63, content/stylesheets/screen.scss */
 aside {
   color: #586e75;
   padding-bottom: 8px;
   border-bottom: 1px solid #839496;
 }
 
-/* line 64, content/stylesheets/screen.scss */
+/* line 69, content/stylesheets/screen.scss */
 span {
   display: inline-block;
 }
 
-/* line 68, content/stylesheets/screen.scss */
+/* line 73, content/stylesheets/screen.scss */
 pre {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -634,7 +641,7 @@ pre {
   clear: both;
 }
 
-/* line 87, content/stylesheets/screen.scss */
+/* line 92, content/stylesheets/screen.scss */
 pre:not([class]) {
   /* color: #555555; */
   font-size: 16px;
@@ -645,7 +652,7 @@ pre:not([class]) {
   border: solid 1px #e1e1e1;
 }
 
-/* line 96, content/stylesheets/screen.scss */
+/* line 101, content/stylesheets/screen.scss */
 code pre:not([class]) {
   line-height: 1.2em;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;

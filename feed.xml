@@ -302,16 +302,62 @@ I’m finished posting final grades.&lt;/p&gt;
 &lt;p&gt;The reasons for the space-side switch &lt;a href="http://www.zdnet.com/to-the-space-station-and-beyond-with-linux-7000014958/"&gt;are quoted&lt;/a&gt; as&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;…we needed an operating system that was stable and reliable – one that would give us in-house control. So if we needed to patch, adjust, or adapt, we could.&lt;/p&gt;
-
-  &lt;p&gt;This is satisfying to many Open Source/Linux fans in it’s own right: a collaborative open source project has &lt;a href="http://en.wikipedia.org/wiki/Internet"&gt;once again&lt;/a&gt; proved itself more stable and reliable for the (relatively) extrodinary conditions of low Earth orbit than a product produced by a major software giant. Plus one for open source collaboration and peer networks!&lt;/p&gt;
+  &lt;p&gt;…we needed an operating system that was stable and reliable – one
+that would give us in-house control. So if we needed to patch,
+adjust, or adapt, we could.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;But theres another reason to be excited. And it’s a reason that would not necessarily applied (&lt;a href="https://www.youtube.com/watch?v=7XTHdcmjenI#t=9m08s"&gt;mostly&lt;/a&gt;) to, say, Apple fanatics had NASA decided to switch to OS X instead of Debian. And that reason has to do with the collaborative nature of the open source movement, codified in many open source licenses under which the software is released. Linux, and the GNU tools, which together make up a fully functional operating system, are released under the &lt;a href="http://www.gnu.org/copyleft/gpl.html"&gt;GNU General Public License&lt;/a&gt;. Unlike many licenses used for commersial software, the GPL esures that software licenses under its terms remains free for users to use,modify and redistribute. There are certainly some strong criticisms and &lt;a href="https://blogs.oracle.com/roumen/entry/sun_s_criticism_of_gpl"&gt;ongoing debate&lt;/a&gt; regarding some key aspects of the GPL, especially &lt;a href="http://www.osnews.com/story/19133/Torvalds_Still_Will_Not_License_Linux_Under_GPL_v3/"&gt;version 3&lt;/a&gt;, the point of contention mostly lies in what is popularly called the “viral” effect of the license: that modified and derived work must also be released under the same license. The GPL might not be appropriate for every developer and every project, but it codifies the spirit of open source software in a way that is agreeable with many developers and users.&lt;/p&gt;
+&lt;p&gt;This is satisfying to many Open Source/Linux fans in its own right: a
+collaborative open source project has
+&lt;a href="http://en.wikipedia.org/wiki/Internet"&gt;once again&lt;/a&gt; proved itself more
+stable and reliable for the (relatively) extrodinary conditions of low
+Earth orbit than a product produced by a major software giant. Plus
+one for open source collaboration and peer networks!&lt;/p&gt;
 
-&lt;p&gt;So what does this all mean in terms of NASA’s move? We already know that they chose GNU/Linux for its reliability and stability over alternatives, but that doesn’t mean it’s completely bug free, or will always work perfectly with every piece of hardware, which after all is another reason for the switch: no OS will be completely bug free or always work with all hardware, but at least Debian gives NASA the flexibility of making improvements themselves. And there in lies the reason for excitement. While there is no requirement that NASA redistribute their own modified versions of the software, there is no reason to assume they wouldn’t in most cases, and if they do, it will be redistributed under the same license. It’s certainly realistic to expect they will be directing a lot of attention to making the Linux kernel, and the GNU tools packaged with Debian even more stable and more reliable, and those improvements will make their way back into the general distributions that we all use. This means better hardware support for all GNU/Linux users in the future!&lt;/p&gt;
+&lt;p&gt;But there’s another reason to be excited. And it’s a reason that would
+not necessarily apply
+(&lt;a href="https://www.youtube.com/watch?v=7XTHdcmjenI#t=9m08s"&gt;mostly&lt;/a&gt;) to,
+say, Apple fanatics had NASA decided to switch to OS X instead of
+Debian. And that reason has to do with the collaborative nature of the
+open source movement, codified in many open source licenses under
+which the software is released. Linux, and the GNU tools, which
+together make up a fully functional operating system, are released
+under the
+&lt;a href="http://www.gnu.org/copyleft/gpl.html"&gt;GNU General Public License&lt;/a&gt;. Unlike
+many licenses used for commersial software, the GPL esures that
+software licenses under its terms remains free for users to use,modify
+and redistribute. There are certainly some strong criticisms and
+&lt;a href="https://blogs.oracle.com/roumen/entry/sun_s_criticism_of_gpl"&gt;ongoing debate&lt;/a&gt;
+regarding some key aspects of the GPL, especially
+&lt;a href="http://www.osnews.com/story/19133/Torvalds_Still_Will_Not_License_Linux_Under_GPL_v3/"&gt;version 3&lt;/a&gt;,
+the point of contention mostly lies in what is popularly called the
+“viral” effect of the license: that modified and derived work must
+also be released under the same license. The GPL might not be
+appropriate for every developer and every project, but it embodies the
+spirit of open source software in a way that is agreeable with many
+developers and users.&lt;/p&gt;
 
-&lt;p&gt;And of course it works both ways. Any bug fixes you make and redistribute may make their way back to the ISS, transforming humanity’s thirst for exploring “the final frontier” into a truly collaborative and global endeavor.&lt;/p&gt;
+&lt;p&gt;So what does this all mean in terms of NASA’s move? We already know
+that they chose GNU/Linux for its reliability and stability over
+alternatives, but that doesn’t mean it’s completely bug free, or will
+always work perfectly with every piece of hardware, which after all is
+another reason for the switch: no OS will be completely bug free or
+always work with all hardware, but at least Debian gives NASA the
+flexibility of making improvements themselves. And there in lies the
+reason for excitement. While there is no requirement that NASA
+redistribute their own modified versions of the software, there is no
+reason to assume they wouldn’t in most cases, and if they do, it will
+be redistributed under the same license. It’s certainly realistic to
+expect they will be directing a lot of attention to making the Linux
+kernel, and the GNU tools packaged with Debian even more stable and
+more reliable, and those improvements will make their way back into
+the general distributions that we all use. This means better hardware
+support for all GNU/Linux users in the future!&lt;/p&gt;
+
+&lt;p&gt;And of course it works both ways. Any bug fixes you make and
+redistribute may make their way back to the ISS, transforming
+humanity’s thirst for exploring “the final frontier” into a truly
+collaborative and global endeavor.&lt;/p&gt;
 </content>
   </entry>
   <entry>
