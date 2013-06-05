@@ -94,8 +94,7 @@ involved with the version 3.2 release, each contributing an average of
 linxfoundation’s website summarizes how this tremendous feat is
 possible:&lt;/p&gt;
 
-&lt;p&gt;http://youtu.be/yVpbFMhOAwE?t=1m43s &lt;/p&gt;
-
+&lt;p&gt;&lt;iframe title="YouTube video player" width="584" height="329" src="http://www.youtube.com/embed/yVpbFMhOAwE" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;There is a fairly simple and effective hierarchy in place: individual
 developers submit patches to senior kernel developer who in turn
 review and sign off on patches before sending onward to Linus Torvalds
@@ -145,8 +144,7 @@ status, a role I would associate with Illich’s notion of an “elder”.&lt;/p
 
 &lt;h3 id="couchsurfingorg"&gt;couchsurfing.org&lt;/h3&gt;
 
-&lt;p&gt;http://www.youtube.com/watch?feature=player_embedded&amp;amp;v=Lr_VNUTvOeQ &lt;/p&gt;
-
+&lt;p&gt;&lt;iframe title="YouTube video player" width="584" height="329" src="http://www.youtube.com/embed/feature=player%5C_embedded" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;Up until this point the sites I’ve surveyed have been what we would
 generally refer to “virtual” spaces. The communities and interactions
 exist primarily in
@@ -297,8 +295,7 @@ I’m finished posting final grades.&lt;/p&gt;
     <published>2013-05-15T17:09:32Z</published>
     <updated>2013-05-15T17:09:32Z</updated>
     <link rel="alternate" href="http://www.hazyblue.me/2013/05/open-source-treks-to-the-final-frontier/"/>
-    <content type="html">&lt;p&gt;There have &lt;a href="http://blogs.lt.vt.edu/leonp/2013/05/08/here-comes-linux/"&gt;been&lt;/a&gt; a &lt;a href="https://blogs.lt.vt.edu/hussaino/2013/05/15/linux-dominating-space/"&gt;couple&lt;/a&gt; of blog posts recently referencing the recent switch &lt;a href="http://www.nasa.gov/"&gt;NASA&lt;/a&gt; made from Windows to &lt;a href="http://www.debian.org/"&gt;Debian 6&lt;/a&gt;, a &lt;a href="http://www.gnu.org/gnu/linux-and-gnu.html"&gt;GNU/Linux&lt;/a&gt; distribution, as the OS running on the laptops abord the &lt;a href="http://www.nasa.gov/mission_pages/station/main/index.html"&gt;International Space Station&lt;/a&gt;. It’s worth noting that Linux is no stranger to the ISS, as it has been a part of ground control operations &lt;a href="http://www.linux-magazine.com/w3/issue/12/Linux_on_the_International_Space_Station.pdf%20"&gt;since the beginning&lt;/a&gt;.&lt;/p&gt;
-
+    <content type="html">&lt;p&gt;&lt;iframe title="YouTube video player" width="584" height="329" src="http://www.youtube.com/embed/mission_pages/station/main/index.html).%20It's%20worth%20noting%20that%20Linux%20is%20no%20stranger%20to%20the%20ISS,%20as%20it%20has%20been%20a%20part%20of%20ground%20control%20operations%20%5Bsince%20the%20beginning%5D(http://www.linux-magazine.com/w3/issue/12/Linux_on_the_International_Space_Station.pdf%20).%0A" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;The reasons for the space-side switch &lt;a href="http://www.zdnet.com/to-the-space-station-and-beyond-with-linux-7000014958/"&gt;are quoted&lt;/a&gt; as&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -315,9 +312,9 @@ Earth orbit than a product produced by a major software giant. Plus
 one for open source collaboration and peer networks!&lt;/p&gt;
 
 &lt;p&gt;But there’s another reason to be excited. And it’s a reason that would
-not necessarily apply
-(&lt;a href="https://www.youtube.com/watch?v=7XTHdcmjenI#t=9m08s"&gt;mostly&lt;/a&gt;) to,
-say, Apple fanatics had NASA decided to switch to OS X instead of
+not necessarily apply&lt;/p&gt;
+&lt;p&gt;&lt;iframe title="YouTube video player" width="584" height="329" src="http://www.youtube.com/embed/7XTHdcmjenI#t=9m08s))%20to,%0A" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;say, Apple fanatics had NASA decided to switch to OS X instead of
 Debian. And that reason has to do with the collaborative nature of the
 open source movement, codified in many open source licenses under
 which the software is released. Linux, and the GNU tools, which
