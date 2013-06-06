@@ -586,6 +586,10 @@ body.two-col #header #subtitle, body.two-col #footer #subtitle {
   font-style: italic;
 }
 /* line 56, content/stylesheets/screen.scss */
+body.two-col #footer {
+  text-align: center;
+}
+/* line 59, content/stylesheets/screen.scss */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -604,7 +608,7 @@ body.two-col #sidebar a, body.two-col #sidebar a:active, body.two-col #sidebar a
 body.two-col #sidebar h1, body.two-col #sidebar h2, body.two-col #sidebar h3, body.two-col #sidebar h4, body.two-col #sidebar h5, body.two-col #sidebar h6 {
   color: #cb4b16;
 }
-/* line 62, content/stylesheets/screen.scss */
+/* line 65, content/stylesheets/screen.scss */
 body.two-col #content {
   margin-top: 1;
   display: inline;
@@ -616,24 +620,29 @@ body.two-col #content {
 * html body.two-col #content {
   overflow-x: hidden;
 }
-/* line 69, content/stylesheets/screen.scss */
+/* line 72, content/stylesheets/screen.scss */
 body.two-col #content a {
   text-decoration: none;
 }
 
-/* line 75, content/stylesheets/screen.scss */
+/* line 78, content/stylesheets/screen.scss */
+.post {
+  padding-top: 20px;
+}
+
+/* line 82, content/stylesheets/screen.scss */
 aside {
   color: #586e75;
   padding-bottom: 8px;
   border-bottom: 1px solid #839496;
 }
 
-/* line 81, content/stylesheets/screen.scss */
+/* line 88, content/stylesheets/screen.scss */
 span {
   display: inline-block;
 }
 
-/* line 85, content/stylesheets/screen.scss */
+/* line 92, content/stylesheets/screen.scss */
 pre {
   /* @include border-radius(5px); */
   /* font-size: 90%; */
@@ -649,7 +658,7 @@ pre {
   clear: both;
 }
 
-/* line 104, content/stylesheets/screen.scss */
+/* line 111, content/stylesheets/screen.scss */
 pre:not([class]) {
   /* color: #555555; */
   font-size: 16px;
@@ -660,7 +669,7 @@ pre:not([class]) {
   border: solid 1px #e1e1e1;
 }
 
-/* line 113, content/stylesheets/screen.scss */
+/* line 120, content/stylesheets/screen.scss */
 code pre:not([class]) {
   line-height: 1.2em;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
