@@ -575,13 +575,17 @@ body.two-col #header .title, body.two-col #footer .title {
   font-size: 25px;
   virtical-align: middle;
 }
-/* line 48, content/stylesheets/screen.scss */
+/* line 47, content/stylesheets/screen.scss */
+body.two-col #header .title a, body.two-col #footer .title a {
+  text-decoration: none;
+}
+/* line 49, content/stylesheets/screen.scss */
 body.two-col #header #subtitle, body.two-col #footer #subtitle {
   display: block;
   font-size: 16px;
   font-style: italic;
 }
-/* line 55, content/stylesheets/screen.scss */
+/* line 56, content/stylesheets/screen.scss */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -600,7 +604,7 @@ body.two-col #sidebar a, body.two-col #sidebar a:active, body.two-col #sidebar a
 body.two-col #sidebar h1, body.two-col #sidebar h2, body.two-col #sidebar h3, body.two-col #sidebar h4, body.two-col #sidebar h5, body.two-col #sidebar h6 {
   color: #cb4b16;
 }
-/* line 61, content/stylesheets/screen.scss */
+/* line 62, content/stylesheets/screen.scss */
 body.two-col #content {
   margin-top: 1;
   display: inline;
@@ -612,24 +616,24 @@ body.two-col #content {
 * html body.two-col #content {
   overflow-x: hidden;
 }
-/* line 68, content/stylesheets/screen.scss */
+/* line 69, content/stylesheets/screen.scss */
 body.two-col #content a {
   text-decoration: none;
 }
 
-/* line 74, content/stylesheets/screen.scss */
+/* line 75, content/stylesheets/screen.scss */
 aside {
   color: #586e75;
   padding-bottom: 8px;
   border-bottom: 1px solid #839496;
 }
 
-/* line 80, content/stylesheets/screen.scss */
+/* line 81, content/stylesheets/screen.scss */
 span {
   display: inline-block;
 }
 
-/* line 84, content/stylesheets/screen.scss */
+/* line 85, content/stylesheets/screen.scss */
 pre {
   /* @include border-radius(5px); */
   /* font-size: 90%; */
@@ -645,7 +649,7 @@ pre {
   clear: both;
 }
 
-/* line 103, content/stylesheets/screen.scss */
+/* line 104, content/stylesheets/screen.scss */
 pre:not([class]) {
   /* color: #555555; */
   font-size: 16px;
@@ -656,7 +660,7 @@ pre:not([class]) {
   border: solid 1px #e1e1e1;
 }
 
-/* line 112, content/stylesheets/screen.scss */
+/* line 113, content/stylesheets/screen.scss */
 code pre:not([class]) {
   line-height: 1.2em;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
