@@ -30,6 +30,7 @@
         <h2>Recent Posts</h2>
         <ul><a href="/2013/05/making-space/">Making Space</a></ul>
         <ul><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></ul>
+        <ul><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></ul>
         <ul><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></ul>
         <ul><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></ul>
         <ul><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></ul>
@@ -47,26 +48,18 @@
           <h1>Not making this up: The Medium is the Message</h1>
           <aside>Posted at: April 29, 2013</aside>
           <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
+            <div class='notice'>
+              This post was imported from the old WordPress site. It is possible that some content is missing, or formatting is screwy. If you see something that doesn't look quite right, please <a href="mailto:darmacz@gmail.com">let me know</a>.
             </div>
-            <table>
-              <tbody>
-                <tr>
-                  <td>I’ve been meaning to post something about the interesting interactions between the unix commands <a href="http://linux.die.net/man/6/fortune">fortune</a> and <a href="http://linux.die.net/man/1/cowsay">cowsay</a>. This is not that post. Long story short, fortune prints a random tidbit to the terminal and cowsay takes an input string and draws an ASCII art cow with a speech bubble containing the text you sent to the command. In addition, there are a number of different “cows” that can be drawn and so when pairing up random fortunes and random cows can be a parataxis gold mine. Here’s the command I have in my bash login script that does just that: [code light=”true”] fortune -s</td>
-                  <td>cowsay -f $( find /usr/share/cows -name ‘*.cow’</td>
-                  <td>shuf</td>
-                  <td>head -n 1 ) [/code] More on that in the “real” post, but for now, I couldn’t pass this up which popped up when I opened a new terminal window just now: [code light=”true”] s _________________________________ / “The medium is the message.” – \ \ Marshall McLuhan / ——————————— \ \_______ v__v \ \ O ) (oo)</td>
-                  <td> </td>
-                  <td>—-w</td>
-                  <td>(__)</td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                  <td>\/\ [/code] ponder that for a bit.</td>
-                </tr>
-              </tbody>
-            </table>
+            <p>I’ve been meaning to post something about the interesting interactions between the unix commands <a href="http://linux.die.net/man/6/fortune">fortune</a> and <a href="http://linux.die.net/man/1/cowsay">cowsay</a>. This is not that post. Long story short, fortune prints a random tidbit to the terminal and cowsay takes an input string and draws an ASCII art cow with a speech bubble containing the text you sent to the command. In addition, there are a number of different “cows” that can be drawn and so when pairing up random fortunes and random cows can be a parataxis gold mine. Here’s the command I have in my bash login script that does just that: </p>
+            
+            <pre><code class="language-bash">fortune -s | cowsay -f <span class="k">$(</span> find /usr/share/cows -name <span class="s1">'*.cow'</span> | shuf | head -n 1 <span class="k">)</span></code></pre>
+            
+            <p>More on that in the “real” post, but for now, I couldn’t pass this up which popped up when I opened a new terminal window just now:</p>
+            
+            <pre class="text"><code>  _________________________________&#x000A; / "The medium is the message." -- \&#x000A; \ Marshall McLuhan                /&#x000A;  ---------------------------------&#x000A;        \   \_______&#x000A;  v__v   \  \   O   )&#x000A;  (oo)      ||----w |&#x000A;  (__)      ||     ||  \/\&#x000A;&#x000A;</code></pre>
+            
+            <p>ponder that for a bit.</p>
           </article>
         </div>
         <div class='social'>

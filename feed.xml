@@ -94,7 +94,7 @@ involved with the version 3.2 release, each contributing an average of
 linxfoundation’s website summarizes how this tremendous feat is
 possible:&lt;/p&gt;
 
-&lt;p&gt;&lt;iframe title="YouTube video player" width="584" height="329" src="http://www.youtube.com/embed/yVpbFMhOAwE" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe title="YouTube video player" width="584" height="329" src="http://www.youtube.com/embed/yVpbFMhOAwE?t=1m43s%20" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;There is a fairly simple and effective hierarchy in place: individual
 developers submit patches to senior kernel developer who in turn
 review and sign off on patches before sending onward to Linus Torvalds
@@ -144,7 +144,7 @@ status, a role I would associate with Illich’s notion of an “elder”.&lt;/p
 
 &lt;h3 id="couchsurfingorg"&gt;couchsurfing.org&lt;/h3&gt;
 
-&lt;p&gt;&lt;iframe title="YouTube video player" width="584" height="329" src="http://www.youtube.com/embed/feature=player%5C_embedded" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe title="YouTube video player" width="584" height="329" src="http://www.youtube.com/embed/Lr_VNUTvOeQ%20" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;Up until this point the sites I’ve surveyed have been what we would
 generally refer to “virtual” spaces. The communities and interactions
 exist primarily in
@@ -295,7 +295,8 @@ I’m finished posting final grades.&lt;/p&gt;
     <published>2013-05-15T17:09:32Z</published>
     <updated>2013-05-15T17:09:32Z</updated>
     <link rel="alternate" href="http://www.hazyblue.me/2013/05/open-source-treks-to-the-final-frontier/"/>
-    <content type="html">&lt;p&gt;&lt;iframe title="YouTube video player" width="584" height="329" src="http://www.youtube.com/embed/mission_pages/station/main/index.html).%20It's%20worth%20noting%20that%20Linux%20is%20no%20stranger%20to%20the%20ISS,%20as%20it%20has%20been%20a%20part%20of%20ground%20control%20operations%20%5Bsince%20the%20beginning%5D(http://www.linux-magazine.com/w3/issue/12/Linux_on_the_International_Space_Station.pdf%20).%0A" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;There have &lt;a href="http://blogs.lt.vt.edu/leonp/2013/05/08/here-comes-linux/"&gt;been&lt;/a&gt; a &lt;a href="https://blogs.lt.vt.edu/hussaino/2013/05/15/linux-dominating-space/"&gt;couple&lt;/a&gt; of blog posts recently referencing the recent switch &lt;a href="http://www.nasa.gov/"&gt;NASA&lt;/a&gt; made from Windows to &lt;a href="http://www.debian.org/"&gt;Debian 6&lt;/a&gt;, a &lt;a href="http://www.gnu.org/gnu/linux-and-gnu.html"&gt;GNU/Linux&lt;/a&gt; distribution, as the OS running on the laptops abord the &lt;a href="http://www.nasa.gov/mission_pages/station/main/index.html"&gt;International Space Station&lt;/a&gt;. It’s worth noting that Linux is no stranger to the ISS, as it has been a part of ground control operations &lt;a href="http://www.linux-magazine.com/w3/issue/12/Linux_on_the_International_Space_Station.pdf%20"&gt;since the beginning&lt;/a&gt;.&lt;/p&gt;
+
 &lt;p&gt;The reasons for the space-side switch &lt;a href="http://www.zdnet.com/to-the-space-station-and-beyond-with-linux-7000014958/"&gt;are quoted&lt;/a&gt; as&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -312,9 +313,9 @@ Earth orbit than a product produced by a major software giant. Plus
 one for open source collaboration and peer networks!&lt;/p&gt;
 
 &lt;p&gt;But there’s another reason to be excited. And it’s a reason that would
-not necessarily apply&lt;/p&gt;
-&lt;p&gt;&lt;iframe title="YouTube video player" width="584" height="329" src="http://www.youtube.com/embed/7XTHdcmjenI#t=9m08s))%20to,%0A" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;p&gt;say, Apple fanatics had NASA decided to switch to OS X instead of
+not necessarily apply
+(&lt;a href="https://www.youtube.com/watch?v=7XTHdcmjenI#t=9m08s"&gt;mostly&lt;/a&gt;) to,
+say, Apple fanatics had NASA decided to switch to OS X instead of
 Debian. And that reason has to do with the collaborative nature of the
 open source movement, codified in many open source licenses under
 which the software is released. Linux, and the GNU tools, which
@@ -372,23 +373,24 @@ collaborative and global endeavor.&lt;/p&gt;
     <published>2013-04-29T18:40:01Z</published>
     <updated>2013-04-29T18:40:01Z</updated>
     <link rel="alternate" href="http://www.hazyblue.me/2013/04/not-making-this-up-the-medium-is-the-message/"/>
-    <content type="html">&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;I’ve been meaning to post something about the interesting interactions between the unix commands &lt;a href="http://linux.die.net/man/6/fortune"&gt;fortune&lt;/a&gt; and &lt;a href="http://linux.die.net/man/1/cowsay"&gt;cowsay&lt;/a&gt;. This is not that post. Long story short, fortune prints a random tidbit to the terminal and cowsay takes an input string and draws an ASCII art cow with a speech bubble containing the text you sent to the command. In addition, there are a number of different “cows” that can be drawn and so when pairing up random fortunes and random cows can be a parataxis gold mine. Here’s the command I have in my bash login script that does just that: [code light=”true”] fortune -s&lt;/td&gt;
-      &lt;td&gt;cowsay -f $( find /usr/share/cows -name ‘*.cow’&lt;/td&gt;
-      &lt;td&gt;shuf&lt;/td&gt;
-      &lt;td&gt;head -n 1 ) [/code] More on that in the “real” post, but for now, I couldn’t pass this up which popped up when I opened a new terminal window just now: [code light=”true”] s _________________________________ / “The medium is the message.” – \ \ Marshall McLuhan / ——————————— \ \_______ v__v \ \ O ) (oo)&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;—-w&lt;/td&gt;
-      &lt;td&gt;(__)&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;\/\ [/code] ponder that for a bit.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+    <content type="html">&lt;p&gt;I’ve been meaning to post something about the interesting interactions between the unix commands &lt;a href="http://linux.die.net/man/6/fortune"&gt;fortune&lt;/a&gt; and &lt;a href="http://linux.die.net/man/1/cowsay"&gt;cowsay&lt;/a&gt;. This is not that post. Long story short, fortune prints a random tidbit to the terminal and cowsay takes an input string and draws an ASCII art cow with a speech bubble containing the text you sent to the command. In addition, there are a number of different “cows” that can be drawn and so when pairing up random fortunes and random cows can be a parataxis gold mine. Here’s the command I have in my bash login script that does just that: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-bash"&gt;fortune -s | cowsay -f &lt;span class="k"&gt;$(&lt;/span&gt; find /usr/share/cows -name &lt;span class="s1"&gt;'*.cow'&lt;/span&gt; | shuf | head -n 1 &lt;span class="k"&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;More on that in the “real” post, but for now, I couldn’t pass this up which popped up when I opened a new terminal window just now:&lt;/p&gt;
+
+&lt;pre class="text"&gt;&lt;code&gt;  _________________________________
+ / "The medium is the message." -- \
+ \ Marshall McLuhan                /
+  ---------------------------------
+        \   \_______
+  v__v   \  \   O   )
+  (oo)      ||----w |
+  (__)      ||     ||  \/\
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ponder that for a bit.&lt;/p&gt;
 </content>
   </entry>
 </feed>
