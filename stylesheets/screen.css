@@ -58,7 +58,7 @@ a img {
 }
 
 /* light is default mode, so pair with general html definition */
-/* line 56, content/stylesheets/partials/_base.scss */
+/* line 52, content/stylesheets/partials/_base.scss */
 html, .light {
   backgorund-color: #eee8d5;
   color: #657b83;
@@ -67,26 +67,21 @@ html, .light {
 html #container, .light #container {
   background-color: #fdf6e3;
 }
-/* line 40, content/stylesheets/partials/_base.scss */
-html #header, .light #header {
-  background-color: #93a1a1;
-  color: #6c71c4;
-}
-/* line 45, content/stylesheets/partials/_base.scss */
+/* line 41, content/stylesheets/partials/_base.scss */
 html *, .light * {
   color: #657b83;
 }
-/* line 46, content/stylesheets/partials/_base.scss */
+/* line 42, content/stylesheets/partials/_base.scss */
 html h1, html h2, html h3, html h4, html h5, html h6, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
   color: #586e75;
   border-color: #657b83;
 }
-/* line 47, content/stylesheets/partials/_base.scss */
+/* line 43, content/stylesheets/partials/_base.scss */
 html a, html a:active, html a:visited, .light a, .light a:active, .light a:visited {
   color: #586e75;
 }
 
-/* line 57, content/stylesheets/partials/_base.scss */
+/* line 53, content/stylesheets/partials/_base.scss */
 .dark {
   backgorund-color: #073642;
   color: #839496;
@@ -95,23 +90,23 @@ html a, html a:active, html a:visited, .light a, .light a:active, .light a:visit
 .dark #container {
   background-color: #002b36;
 }
-/* line 40, content/stylesheets/partials/_base.scss */
-.dark #header {
-  background-color: #586e75;
-  color: #6c71c4;
-}
-/* line 45, content/stylesheets/partials/_base.scss */
+/* line 41, content/stylesheets/partials/_base.scss */
 .dark * {
   color: #839496;
 }
-/* line 46, content/stylesheets/partials/_base.scss */
+/* line 42, content/stylesheets/partials/_base.scss */
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
   color: #93a1a1;
   border-color: #839496;
 }
-/* line 47, content/stylesheets/partials/_base.scss */
+/* line 43, content/stylesheets/partials/_base.scss */
 .dark a, .dark a:active, .dark a:visited {
   color: #93a1a1;
+}
+
+/* line 55, content/stylesheets/partials/_base.scss */
+#header {
+  background-color: #002b36;
 }
 
 /* line 59, content/stylesheets/partials/_base.scss */
@@ -568,13 +563,25 @@ body.two-col #header, body.two-col #footer {
   float: left;
   margin-right: 10px;
   width: 950px;
-  height: 40px;
+  height: 60px;
+  padding: 1em;
 }
 /* line 147, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 45, content/stylesheets/screen.scss */
+/* line 44, content/stylesheets/screen.scss */
+body.two-col #header .title, body.two-col #footer .title {
+  font-size: 25px;
+  virtical-align: middle;
+}
+/* line 48, content/stylesheets/screen.scss */
+body.two-col #header #subtitle, body.two-col #footer #subtitle {
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+}
+/* line 55, content/stylesheets/screen.scss */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -585,49 +592,46 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 51, content/stylesheets/partials/_base.scss */
+/* line 47, content/stylesheets/partials/_base.scss */
 body.two-col #sidebar a, body.two-col #sidebar a:active, body.two-col #sidebar a:visited, body.two-col #sidebar code.url {
   color: #cb4b16;
 }
-/* line 52, content/stylesheets/partials/_base.scss */
+/* line 48, content/stylesheets/partials/_base.scss */
 body.two-col #sidebar h1, body.two-col #sidebar h2, body.two-col #sidebar h3, body.two-col #sidebar h4, body.two-col #sidebar h5, body.two-col #sidebar h6 {
   color: #cb4b16;
 }
-/* line 51, content/stylesheets/screen.scss */
+/* line 61, content/stylesheets/screen.scss */
 body.two-col #content {
+  margin-top: 1;
   display: inline;
   float: left;
   margin-right: 0;
-  width: 630px;
+  width: 590px;
 }
 /* line 147, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #content {
   overflow-x: hidden;
 }
-/* line 57, content/stylesheets/screen.scss */
+/* line 68, content/stylesheets/screen.scss */
 body.two-col #content a {
   text-decoration: none;
 }
 
-/* line 63, content/stylesheets/screen.scss */
+/* line 74, content/stylesheets/screen.scss */
 aside {
   color: #586e75;
   padding-bottom: 8px;
   border-bottom: 1px solid #839496;
 }
 
-/* line 69, content/stylesheets/screen.scss */
+/* line 80, content/stylesheets/screen.scss */
 span {
   display: inline-block;
 }
 
-/* line 73, content/stylesheets/screen.scss */
+/* line 84, content/stylesheets/screen.scss */
 pre {
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-  border-radius: 25px;
+  /* @include border-radius(5px); */
   /* font-size: 90%; */
   line-height: 1.2em;
   font-size: 13px;
@@ -635,13 +639,13 @@ pre {
   margin-bottom: 1.625em;
   overflow: auto;
   padding: 0.75em 1.625em;
-  width: 500pt;
+  width: 440pt;
   height: 1%;
   display: block;
   clear: both;
 }
 
-/* line 92, content/stylesheets/screen.scss */
+/* line 103, content/stylesheets/screen.scss */
 pre:not([class]) {
   /* color: #555555; */
   font-size: 16px;
@@ -652,7 +656,7 @@ pre:not([class]) {
   border: solid 1px #e1e1e1;
 }
 
-/* line 101, content/stylesheets/screen.scss */
+/* line 112, content/stylesheets/screen.scss */
 code pre:not([class]) {
   line-height: 1.2em;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
