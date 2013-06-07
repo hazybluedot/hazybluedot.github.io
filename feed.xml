@@ -21,9 +21,156 @@
 &lt;a href="https://blogs.lt.vt.edu/"&gt;Blogs@VT&lt;/a&gt; service to host my blog. It’s
 been nice and all, but my goal had always been to move away from the
 VT hosted option and away from &lt;a href="http://www.wordpress.org"&gt;WordPress&lt;/a&gt;
-too.&lt;/p&gt;
+too. It’s not that I don’t appreciate all that Blogs@VT or WordPress
+has done: I think Blogs@VT is an excellent service providing
+easy-access blog hosting to the Virginia Tech community (though they
+really should fix whatever is making
+&lt;a href="https://blogs.lt.vt.edu/support/2012/11/27/faq-i-cant-access-or-feed-out-my-posts-by-category/"&gt;this hack&lt;/a&gt;
+necessary to get tag feeds), and WordPress is fine for what it does,
+but there were a few things that bugged me, mostly relating to the…&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;UI and work-flow. As a WordPress blogger I was pretty much forced to
+use the WordPress interface for entering content, which is kind of
+crummy if you want to do anything other than add elements that had
+buttons associated with them.  The text mode interface is almost not
+worth the effort, as it seems to allow HTML tags, but does some
+extra parsing that makes it a pain to copy and paste HTML generated
+elsewhere: WordPress seems to replace empty lines with &lt;code&gt;&amp;lt;br/&amp;gt;&lt;/code&gt; tags,
+which is incredibly annoying when the code you’re pasting in has
+been hard-wrapped to 80 columns. Either be a straight forward HTML
+pass through, OR assume some kind of well established markup syntax
+such as &lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;speed. WordPress is a dynamic site generator. The actual data for
+the posts is stored in a database somewhere and HTML pages are
+created on the fly when a visitor requests a particular
+resource. This isn’t a major issue with today’s internet and
+computer speeds, but for something like a simple blog that serves up
+mostly static content WordPress can feel sluggish at
+times. Especially, I found, when syndicating a lot of feeds, such as
+on a &lt;a href="http://blogs.lt.vt.edu/ece2524s13"&gt;mother blog&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;code syntax highlighting and equations. Yes, there are WordPress
+plugins to handle both of these things, but each seem to have their
+own non-standard syntax making it difficult to switch between
+different engines. Furthermore, the themeing of WordPress makes it
+harder than it should be to style code blocks without having to muck
+around with the CSS for the rest of the site. While Blogs@VT is
+excellent at responding to plugin-install requests, there is still a
+non-zero turn around time, making it difficult to try a number of
+solutions before settling on a final one.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;lack of versioning/backup. I was at the mercy of blogs@vt as far as
+backups were concerned, and versioning control is pretty dismal with
+the WordPress interface.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id="hello-nanoc"&gt;Hello Nanoc&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://nanoc.ws"&gt;Nanoc&lt;/a&gt; is one of roughly
+&lt;a href="https://iwantmyname.com/blog/2011/02/list-static-website-generators.html"&gt;32 bazillion static site generators&lt;/a&gt;. A
+static site generator works a lot like the software behind a dynamic
+site, like WordPress, but instead of doing the transformation of data
+to HTML pages on the fly on the server, all the work is done locally
+on your own machine. What gets sent to the server is a set of HTML and
+CSS files that make up a complete site.&lt;/p&gt;
+
+&lt;p&gt;Nanoc happens to be written in &lt;a href="http://www.ruby-lang.org/en/"&gt;Ruby&lt;/a&gt;, a
+language I am not terribly familiar with, but want to learn, one
+reasons I choose Nanoc over some of the other options. Jekyll is
+another popular Ruby-based static-site generator. It seems to be
+primarily aimed at generating blog sites, and is very good at what it
+does. While this is certainly a blog, I am also interest in creating
+less blog-specific websites, and so the more general-site approach
+used by Nanoc (but with some handy dandy
+&lt;a href="http://nanoc.ws/docs/api/Nanoc/Helpers/Blogging.html"&gt;blogging helper modules&lt;/a&gt;)
+was more appealing for my long term goals.&lt;/p&gt;
+
+&lt;h2 id="static-is-better-for-me"&gt;Static is Better (for me)&lt;/h2&gt;
+
+&lt;p&gt;I can use the same work-flow I use for most other text files. I create
+content mostly in Markdown using Emacs. This makes it super easy to
+include things like source code blocks and equations, things that were
+always a bit tricky in WordPress. Since everything is stored as text
+files I can use &lt;a href="http://git-scm.com"&gt;git&lt;/a&gt; for version control and because the generated
+content is just a bunch of static files I can use the awesomely free
+&lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; to host my site.&lt;/p&gt;
+
+&lt;p&gt;I have more control. There are a ton of decent themes for WordPress,
+but tweaking to get things the way you want can be a pain. The
+stylesheets tend to be big and complex, and finding just the right
+place to change can be difficult when you don’t know what you’re
+looking for and there seem to be 10 times the necessary structural
+elements.&lt;/p&gt;
+
+&lt;h2 id="static-has-challenges"&gt;Static has Challenges&lt;/h2&gt;
+
+&lt;p&gt;As I mentioned, &lt;em&gt;most&lt;/em&gt; content on a blog is static, and so it makes
+sense to serve it up as static pages. As with all things in life,
+there are some exceptions, notably commenting systems. The real-time
+comments you see on WordPress and the like are dynamic features and
+implementing these with a static site generator can be a challenge. I
+had originally planned on going with a popular 3rd party service
+Disqus, but after reading
+&lt;a href="http://www.jeremyscheff.com/2011/08/jekyll-and-other-static-site-generators-are-currently-harmful-to-the-free-open-source-software-movement/"&gt;a strong argument&lt;/a&gt;
+against Disqus on grounds of it not being open source I wavered. I’m
+not sure how much of an open source fundamentalist I want to be
+yet. Generally I’d like to adopt a more pragmatic philosophy and use
+non-free-as-in-speech software if it gets the job done better than
+free alternatives. But comments are a little special, because there’s
+the other issue of data privacy. Of course, the comments themselves
+will be made public, but there are other pieces of data associated
+with a comment, such as email and IP addresses, that would warrant a
+good read of Disqus’s (or whatever other social commenting service I’d
+consider)
+&lt;a href="http://help.disqus.com/customer/portal/articles/466259-privacy-policy"&gt;privacy policy&lt;/a&gt;
+before jumping in head first.&lt;/p&gt;
+
+&lt;p&gt;It turns out that there &lt;em&gt;is&lt;/em&gt; an open-source alternative called
+&lt;a href="https://github.com/phusion/juvia"&gt;juvia&lt;/a&gt;. I haven’t taken too much of
+a look at it but it seems to have all the important bits in
+place. Since it is just the code, I’d have to set up my own server to
+run the service itself, so integrating the comments with my static
+blog would be similar to the process with Disqus and make use of some
+JavaScript magic.&lt;/p&gt;
+
+&lt;p&gt;The simplicity of a
+&lt;a href="http://tlvince.com/static-commenting"&gt;static commenting solution&lt;/a&gt; has
+its draw. It seems the most elegant approach, if I can just get a good
+workflow. Matt Palmer
+&lt;a href="http://hezmatt.org/~mpalmer/blog/2011/07/19/static-comments-in-jekyll.html"&gt;has developed&lt;/a&gt;
+&lt;a href="http://theshed.hezmatt.org/jekyll-static-comments/"&gt;a plugin&lt;/a&gt; for
+&lt;a href="https://github.com/mojombo/jekyll"&gt;Jekyll&lt;/a&gt; to handle static comments,
+I suspect it could be easily modified to work with nanoc.&lt;/p&gt;
+
+&lt;h2 id="trackbacks-vs-referrals"&gt;Trackbacks vs. Referrals&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://webtrainingwheels.com/what-are-pingbacks-and-trackbacks-and-how-do-i-use-them/"&gt;Trackbacks and Pingbacks&lt;/a&gt;
+are protocols to help connect blog posts that refer to each other. The
+rely on special software running on a server responding in real-time
+to requests and as such are dynamic features. I have not read up
+enough on either protocol to determine how or if I want to implement in
+on this site. I did come across &lt;a href="http://daringfireball.net/2003/06/take_your_trackbacks_and_dangle.htmlq"&gt;a relatively old post&lt;/a&gt; making the
+argument that given the majority use of Trackback it is unnecessary and
+duplicates the functionality already gained by referrals. There is of
+course &lt;a href="http://www.onfocus.com/2003/06/32182"&gt;a rebuttal&lt;/a&gt;, so I am still not sure what to do. One way or
+another, it would be nice to generate a list of posts/pages/resources
+that link back to individual articles here.&lt;/p&gt;
+
+&lt;p&gt;Some other resources not previously linked that helped a great deal:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://el-tramo.be/blog/wordpress-to-nanoc/"&gt;From WordPress to Nanoc&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://mhyee.com/blog/nanoc.html"&gt;Blogging with nanoc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   <entry>
