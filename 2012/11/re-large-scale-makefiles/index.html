@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - Re: large scale makefiles</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,60 +18,71 @@
     <meta content='http://www.hazyblue.me/2012/11/re-large-scale-makefiles/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>Re: large scale makefiles</h1>
-          <aside>Posted on: November 25, 2012</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <p>In a <a href="https://blogs.lt.vt.edu/thomaswy/2012/11/21/large-scale-makefiles/">recent post</a> <a href="https://blogs.lt.vt.edu/ece2524/author/thomaswy/">thomaswy</a> asked about maintaining makefiles for larger projects.  It is certainly true that manually updating lists of dependencies for many (hundreds… thousands even, the Linux kernel is comprised of some 22,000 source files) can become tedious.  Luckily there are tools that will generate Makefiles for you, though really their motivation is to automate the build process on a wide variety of machines and platforms.  If you’ve used Qt for development you have probably been using the ‘qmake’ command.  This is generate a ‘Makefile’ that is then read with a subsequent call to ‘make’.  For more general projects GNU provides Autoconf and Automake.  Along with a couple other programs these are referred to as the <a href="http://www.gnu.org/savannah-checkouts/gnu/automake/manual/html_node/Autotools-Introduction.html">GNU Autotools</a>.  If you ever need to install a piece of GNU software from source (if a package isn’t available for your distribution, for instance) chances are it will use Autotools and you will build it with two commands: [code light=”true” lang=”bash”] $ ./configure $ make [/code] The first command will generate the Makefile that is then used when you run <code>make</code>.  In the process of generating the Makefile, <code>configure</code> will check your system for necessary libraries and tools and notify you if something needed is missing.  This is also where you would specify optional build parameters.  To get a list of options run [code light=”true” lang=”bash”] $ ./configure –help [/code] If you decide you do want to make your project available to the open source community, it’s a good idea to set up the build process using GNU Autotools since folks will be expecting it. Another option is <a href="http://www.cmake.org">cmake</a>, which provides similar functionality to GNU Autotools and in addition has the capability to generate project files for a number of IDEs. A quick google search will turn up several commentaries on the merits of the two build systems (and probably several others). If you do find yourself writing several Makefiles for larger projects (and even if you don’t), be sure to familiarize yourself with the issues raised in the now well-known paper <a href="http://miller.emu.id.au/pmiller/books/rmch/">Recursive Make Considered Harmful</a> by Peter Miller.</p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
+            <ul>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>Re: large scale makefiles</h1>
+            <p>
+              Published on
+              <time datetime='Mon, 26 Nov 2012 04:56:58 +0000' pubdate>
+                November 25, 2012
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <p>In a <a href="https://blogs.lt.vt.edu/thomaswy/2012/11/21/large-scale-makefiles/">recent post</a> <a href="https://blogs.lt.vt.edu/ece2524/author/thomaswy/">thomaswy</a> asked about maintaining makefiles for larger projects.  It is certainly true that manually updating lists of dependencies for many (hundreds… thousands even, the Linux kernel is comprised of some 22,000 source files) can become tedious.  Luckily there are tools that will generate Makefiles for you, though really their motivation is to automate the build process on a wide variety of machines and platforms.  If you’ve used Qt for development you have probably been using the ‘qmake’ command.  This is generate a ‘Makefile’ that is then read with a subsequent call to ‘make’.  For more general projects GNU provides Autoconf and Automake.  Along with a couple other programs these are referred to as the <a href="http://www.gnu.org/savannah-checkouts/gnu/automake/manual/html_node/Autotools-Introduction.html">GNU Autotools</a>.  If you ever need to install a piece of GNU software from source (if a package isn’t available for your distribution, for instance) chances are it will use Autotools and you will build it with two commands: [code light=”true” lang=”bash”] $ ./configure $ make [/code] The first command will generate the Makefile that is then used when you run <code>make</code>.  In the process of generating the Makefile, <code>configure</code> will check your system for necessary libraries and tools and notify you if something needed is missing.  This is also where you would specify optional build parameters.  To get a list of options run [code light=”true” lang=”bash”] $ ./configure –help [/code] If you decide you do want to make your project available to the open source community, it’s a good idea to set up the build process using GNU Autotools since folks will be expecting it. Another option is <a href="http://www.cmake.org">cmake</a>, which provides similar functionality to GNU Autotools and in addition has the capability to generate project files for a number of IDEs. A quick google search will turn up several commentaries on the merits of the two build systems (and probably several others). If you do find yourself writing several Makefiles for larger projects (and even if you don’t), be sure to familiarize yourself with the issues raised in the now well-known paper <a href="http://miller.emu.id.au/pmiller/books/rmch/">Recursive Make Considered Harmful</a> by Peter Miller.</p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

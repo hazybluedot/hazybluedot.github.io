@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - About Time: Idioms About Time</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,80 +18,91 @@
     <meta content='http://www.hazyblue.me/2013/03/about-time-idioms-about-time/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>About Time: Idioms About Time</h1>
-          <aside>Posted on: March 19, 2013</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <h3 id="tldr">TL;DR:</h3>
-            
-            <p>In the comments below please post, in your native language, or a non-English language in which you are fluent:</p>
-            
-            <ol>
-              <li>how you would ask someone what time it is, and the literal word-for-word translation into English</li>
-              <li>how you would ask someone where you are and the literal word-for-word translation into English</li>
-            </ol>
-            
-            <p>I wonder if I should stop being surprised when topics I’ve discussed separately with separate people all start to relate. On Monday I talked about idioms in <a href="http://blogs.lt.vt.edu/ece2524s13">ECE2524</a> and made some comparisons between idioms in programming languages to idioms in spoken languages. As I thought about examples of idioms I noticed there were quite a lot about time:</p>
-            
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
             <ul>
-              <li>on time</li>
-              <li>about time</li>
-              <li>in time</li>
-              <li>next time</li>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
             </ul>
-            
-            <p>just to name a few (I’ve somewhat intentionally left out more complex examples like “a watched pot never boils”, “better late than never”, etc.). Today in <a href="http://gardnercampbell.wetpaint.com/page/vtclis13">vtclis13</a> we discussed <a href="http://en.wikipedia.org/wiki/Scott_McCloud">McCloud’s</a> “Time Frames”, a comic that explores the various ways time and motion are represented in comics. Inevitably we talked about the different ways of talking about and perceiving time, from the relativistic physical properties of the dimension, to our own personal perception of the passage of time, and how in both cases the rate of time can change based on the environment. Time is such a funny thing. We often talk about it as if we know what we’re talking about and we take various metrics for granted: In the U.S. what is it about taking 16 trips around the sun that makes someone ready to drive a car? 2 more orbits and we’re deemed ready to vote, and after a total of 21 orbits, after we have been on the Earth as it has traveled through about 19,740,000,000 kilometers relative to the sun, we are legally able to purchase alcohol.</p>
-            
-            <p>But if <a href="http://en.wikipedia.org/wiki/Einstein">Einstein’s</a><a href="http://en.wikipedia.org/wiki/Theory_of_relativity">forays into relativity</a> have taught us anything it is that nothing about time is absolute as we generally have an intuition for. And so I became curious about the idioms we use to talk about time and how they differ from culture to culture, language to language. <a href="https://twitter.com/GardnerCampbell">Dr. C</a> put my thought into a question: “Are idioms about time especially diverse?”. And so, through this little survey, I would like to explore that question by gathering some time idioms in the comments section, please refer back to the first paragraph for specific instructions!</p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>About Time: Idioms About Time</h1>
+            <p>
+              Published on
+              <time datetime='Tue, 19 Mar 2013 15:56:20 +0000' pubdate>
+                March 19, 2013
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <h3 id="tldr">TL;DR:</h3>
+          
+          <p>In the comments below please post, in your native language, or a non-English language in which you are fluent:</p>
+          
+          <ol>
+            <li>how you would ask someone what time it is, and the literal word-for-word translation into English</li>
+            <li>how you would ask someone where you are and the literal word-for-word translation into English</li>
+          </ol>
+          
+          <p>I wonder if I should stop being surprised when topics I’ve discussed separately with separate people all start to relate. On Monday I talked about idioms in <a href="http://blogs.lt.vt.edu/ece2524s13">ECE2524</a> and made some comparisons between idioms in programming languages to idioms in spoken languages. As I thought about examples of idioms I noticed there were quite a lot about time:</p>
+          
+          <ul>
+            <li>on time</li>
+            <li>about time</li>
+            <li>in time</li>
+            <li>next time</li>
+          </ul>
+          
+          <p>just to name a few (I’ve somewhat intentionally left out more complex examples like “a watched pot never boils”, “better late than never”, etc.). Today in <a href="http://gardnercampbell.wetpaint.com/page/vtclis13">vtclis13</a> we discussed <a href="http://en.wikipedia.org/wiki/Scott_McCloud">McCloud’s</a> “Time Frames”, a comic that explores the various ways time and motion are represented in comics. Inevitably we talked about the different ways of talking about and perceiving time, from the relativistic physical properties of the dimension, to our own personal perception of the passage of time, and how in both cases the rate of time can change based on the environment. Time is such a funny thing. We often talk about it as if we know what we’re talking about and we take various metrics for granted: In the U.S. what is it about taking 16 trips around the sun that makes someone ready to drive a car? 2 more orbits and we’re deemed ready to vote, and after a total of 21 orbits, after we have been on the Earth as it has traveled through about 19,740,000,000 kilometers relative to the sun, we are legally able to purchase alcohol.</p>
+          
+          <p>But if <a href="http://en.wikipedia.org/wiki/Einstein">Einstein’s</a><a href="http://en.wikipedia.org/wiki/Theory_of_relativity">forays into relativity</a> have taught us anything it is that nothing about time is absolute as we generally have an intuition for. And so I became curious about the idioms we use to talk about time and how they differ from culture to culture, language to language. <a href="https://twitter.com/GardnerCampbell">Dr. C</a> put my thought into a question: “Are idioms about time especially diverse?”. And so, through this little survey, I would like to explore that question by gathering some time idioms in the comments section, please refer back to the first paragraph for specific instructions!</p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

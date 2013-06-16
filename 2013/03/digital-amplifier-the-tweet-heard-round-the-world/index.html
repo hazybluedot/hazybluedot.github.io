@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - Digital amplifier: the tweet heard 'round the world</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,105 +18,116 @@
     <meta content='http://www.hazyblue.me/2013/03/digital-amplifier-the-tweet-heard-round-the-world/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>Digital amplifier: the tweet heard 'round the world</h1>
-          <aside>Posted on: March 26, 2013</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <p>Sometimes, in the face based modern world we live in, it feels like we’re living in the future. But all it takes is the watchful eye of the Internet, and specifically, its uncanny, sometimes disruptive tendency to amplify lurking social ills to remind us we are still very much in the past.</p>
-            
-            <p>Last week, <a href="https://us.pycon.org/2013/">PyCon</a> nearly ended quietly, without causing much of ruckus, as all good annual gatherings of open source software developers strive for. The organizers of PyCon understand the importance of diversity in the technology field, a currently white male dominated field, have worked hard to create an environment that is open and welcome to everyone, and in case there’s any confusion, they have a published <a href="https://us.pycon.org/2013/about/code-of-conduct/">code of conduct</a>.</p>
-            
-            <p>So when Adria Richards grew frustrated with two men making lewd jokes behind her at a closing talk she snapped their picture and tweeted</p>
-            
-            <blockquote>
-              <p>Not cool.Jokes about forking repo’s in a sexual way and “big” dongles.Right behind me <a href="https://twitter.com/search/%23pycon">#pycon</a><a href="http://t.co/Hv1bkeOsYP">twitter.com/adriarichards/…</a></p>
-            
-              <p>— Adria Richards (@adriarichards) <a href="https://twitter.com/adriarichards/status/313417655879102464">March 17, 2013</a>
-             Moments later, PyCon staff saw her tweet, responded and escorted the two men into the hallway. The situation was resolved with minimal disruption. It would have all been finished, and we wouldn’t be still talking about it now if it hadn’t been for the first inappropriate response to the, up until this point, fairly minor ordeal.</p>
-            </blockquote>
-            
-            <p>The company for which the two men were working for, and representing at PyCon, made the decision to fire one of them. The company sited multiple contributing factors, not just the joke, but the timing was extreamly poor on their part if they really didn’t want to connect the termination to the joke incident.</p>
-            
-            <p>And then the Internet exploded.</p>
-            
-            <p>Adria Richards got a man fired. A man who had three children to feed. The Internet was not pleased. And to show its displeasure it sent Adria death threats, rape threats, racial epithets and suggested that she consider suicide. A group of hackers, some claiming to be Anonymous, initiated a <a href="http://venturebeat.com/2013/03/21/sendgrid-under-ddos-attack-after-its-developer-evangelist-complains-about-sexual-jokes-at-pycon/">series of DDOS attacks</a> on her employer’s servers demanding that they fire her for retribution.</p>
-            
-            <p>And because SendGrid, the company employing Adria, had no spine, they gave into the mob and publicly fired her. It was the easy thing to do, after all.</p>
-            
-            <p>Justice served?</p>
-            
-            <p>Bloggers the tech world over chimed in with their support or critique. Many asking whether <a href="http://www.forbes.com/sites/quora/2013/03/22/was-it-appropriate-for-adria-richards-to-tweet-a-photo-of-two-men-at-pycon-and-accuse-them-of-being-sexist/">she should have posted the photo</a> of the two men and how she should have handled the incident differently, in a more lady-like fashion. Many jumped on <a href="http://amandablumwords.wordpress.com/2013/03/21/3/">a post by Amanda Blum</a> that proved Richards “acted out” like this on more than one occasion, though Blum mentioned that she does not like Adria personally, and criticized her actions at PyCon, she did bring up the point that</p>
-            
-            <blockquote>
-              <p>Within 24 hours, Adria was being attacked with the vile words people use only when attacking women.</p>
-            
-              <p>And this is the real issue, I think. And the bashful excuses from members of the tech community (both men and women) that “this is just how tech conferences are”, and “she should have a thicker skin”. The voices that suggest she shouldn’t have responded because the lewd comments were likely not directed at her seem to miss the point completely.</p>
-            </blockquote>
-            
-            <p>But at least we’re talking about it. Soon after the event the organizers of PyCon put the Code of Conduct up on GitHub, a popular open source hosting service, and invited members of the community to collaborate on changes in light of recent events. The community responded by adding language to the policy that prohibits public shaming. This is not unreasonable, and probably desirable and consistent with a “innocent until proven guilty” mentality. But unless a clear, easy communication path is given to report incidents as quickly and efficiently as twitter, in a private manner is provided, this could also be seen as a measure to silence others who may feel the need to speak out about poor conduct, but for whatever reason (and there are many) do not feel comfortable addressing the individuals directly.</p>
-            
-            <p>The issue is not limited to sex or race, it is a larger one. Folks who are empowered by the status quo, whether they’re conscious of their priveledge or not, do not like the status quo challenged. Christie Koehler blogged about the incident <a href="http://subfictional.com/2013/03/22/bold-ideas-uttered-publicly/">from that perspective</a></p>
-            
-            <blockquote>
-              <p>It’s not easy because the tactics available to those who oppose institutional oppression are limited and judged by the very institution that is oppressive.</p>
-            
-              <p>Those who benefit from the status quo, whether they realize it or not, have a vested interested in maintaining that status quo. That means working to ensure that any threat to it is rendered ineffectual. The best way to do that is to discredit the person who generated the threat. If the threat is the reporting of a transgressive act that the dominant social class enjoys with impunity, then the reaction is to attack the person who reported it.</p>
-            
-              <p>And when it comes down to it, the vast majority of the negative backlash against Richards and her company (and none that I’ve heard of towards PlayHaven, the company that actually fired the male developer and started the whole fiasco) comes down to defending the status quo with a passion. People will fight for their place of privilege. They will fight hard and they will fight dirty.</p>
-            </blockquote>
-            
-            <p>And the very sordid nature of their fight will continue to prove unequivocally why we need to keep challenging the status quo until we create a world that is welcoming to all.</p>
-            
-            <p>More reading: <a href="http://www.forbes.com/sites/deannazandt/2013/03/22/why-asking-what-adria-richards-could-have-done-differently-is-the-wrong-question/">Why Asking What Adria Richards Could have done different is the wronge question</a><a href="http://freethoughtblogs.com/pharyngula/2013/03/22/adria-richards-did-everything-exactly-right/">Adria Richards did Everything Exactly Right</a></p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
+            <ul>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>Digital amplifier: the tweet heard 'round the world</h1>
+            <p>
+              Published on
+              <time datetime='Tue, 26 Mar 2013 04:17:30 +0000' pubdate>
+                March 26, 2013
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <p>Sometimes, in the face based modern world we live in, it feels like we’re living in the future. But all it takes is the watchful eye of the Internet, and specifically, its uncanny, sometimes disruptive tendency to amplify lurking social ills to remind us we are still very much in the past.</p>
+          
+          <p>Last week, <a href="https://us.pycon.org/2013/">PyCon</a> nearly ended quietly, without causing much of ruckus, as all good annual gatherings of open source software developers strive for. The organizers of PyCon understand the importance of diversity in the technology field, a currently white male dominated field, have worked hard to create an environment that is open and welcome to everyone, and in case there’s any confusion, they have a published <a href="https://us.pycon.org/2013/about/code-of-conduct/">code of conduct</a>.</p>
+          
+          <p>So when Adria Richards grew frustrated with two men making lewd jokes behind her at a closing talk she snapped their picture and tweeted</p>
+          
+          <blockquote>
+            <p>Not cool.Jokes about forking repo’s in a sexual way and “big” dongles.Right behind me <a href="https://twitter.com/search/%23pycon">#pycon</a><a href="http://t.co/Hv1bkeOsYP">twitter.com/adriarichards/…</a></p>
+          
+            <p>— Adria Richards (@adriarichards) <a href="https://twitter.com/adriarichards/status/313417655879102464">March 17, 2013</a>
+           Moments later, PyCon staff saw her tweet, responded and escorted the two men into the hallway. The situation was resolved with minimal disruption. It would have all been finished, and we wouldn’t be still talking about it now if it hadn’t been for the first inappropriate response to the, up until this point, fairly minor ordeal.</p>
+          </blockquote>
+          
+          <p>The company for which the two men were working for, and representing at PyCon, made the decision to fire one of them. The company sited multiple contributing factors, not just the joke, but the timing was extreamly poor on their part if they really didn’t want to connect the termination to the joke incident.</p>
+          
+          <p>And then the Internet exploded.</p>
+          
+          <p>Adria Richards got a man fired. A man who had three children to feed. The Internet was not pleased. And to show its displeasure it sent Adria death threats, rape threats, racial epithets and suggested that she consider suicide. A group of hackers, some claiming to be Anonymous, initiated a <a href="http://venturebeat.com/2013/03/21/sendgrid-under-ddos-attack-after-its-developer-evangelist-complains-about-sexual-jokes-at-pycon/">series of DDOS attacks</a> on her employer’s servers demanding that they fire her for retribution.</p>
+          
+          <p>And because SendGrid, the company employing Adria, had no spine, they gave into the mob and publicly fired her. It was the easy thing to do, after all.</p>
+          
+          <p>Justice served?</p>
+          
+          <p>Bloggers the tech world over chimed in with their support or critique. Many asking whether <a href="http://www.forbes.com/sites/quora/2013/03/22/was-it-appropriate-for-adria-richards-to-tweet-a-photo-of-two-men-at-pycon-and-accuse-them-of-being-sexist/">she should have posted the photo</a> of the two men and how she should have handled the incident differently, in a more lady-like fashion. Many jumped on <a href="http://amandablumwords.wordpress.com/2013/03/21/3/">a post by Amanda Blum</a> that proved Richards “acted out” like this on more than one occasion, though Blum mentioned that she does not like Adria personally, and criticized her actions at PyCon, she did bring up the point that</p>
+          
+          <blockquote>
+            <p>Within 24 hours, Adria was being attacked with the vile words people use only when attacking women.</p>
+          
+            <p>And this is the real issue, I think. And the bashful excuses from members of the tech community (both men and women) that “this is just how tech conferences are”, and “she should have a thicker skin”. The voices that suggest she shouldn’t have responded because the lewd comments were likely not directed at her seem to miss the point completely.</p>
+          </blockquote>
+          
+          <p>But at least we’re talking about it. Soon after the event the organizers of PyCon put the Code of Conduct up on GitHub, a popular open source hosting service, and invited members of the community to collaborate on changes in light of recent events. The community responded by adding language to the policy that prohibits public shaming. This is not unreasonable, and probably desirable and consistent with a “innocent until proven guilty” mentality. But unless a clear, easy communication path is given to report incidents as quickly and efficiently as twitter, in a private manner is provided, this could also be seen as a measure to silence others who may feel the need to speak out about poor conduct, but for whatever reason (and there are many) do not feel comfortable addressing the individuals directly.</p>
+          
+          <p>The issue is not limited to sex or race, it is a larger one. Folks who are empowered by the status quo, whether they’re conscious of their priveledge or not, do not like the status quo challenged. Christie Koehler blogged about the incident <a href="http://subfictional.com/2013/03/22/bold-ideas-uttered-publicly/">from that perspective</a></p>
+          
+          <blockquote>
+            <p>It’s not easy because the tactics available to those who oppose institutional oppression are limited and judged by the very institution that is oppressive.</p>
+          
+            <p>Those who benefit from the status quo, whether they realize it or not, have a vested interested in maintaining that status quo. That means working to ensure that any threat to it is rendered ineffectual. The best way to do that is to discredit the person who generated the threat. If the threat is the reporting of a transgressive act that the dominant social class enjoys with impunity, then the reaction is to attack the person who reported it.</p>
+          
+            <p>And when it comes down to it, the vast majority of the negative backlash against Richards and her company (and none that I’ve heard of towards PlayHaven, the company that actually fired the male developer and started the whole fiasco) comes down to defending the status quo with a passion. People will fight for their place of privilege. They will fight hard and they will fight dirty.</p>
+          </blockquote>
+          
+          <p>And the very sordid nature of their fight will continue to prove unequivocally why we need to keep challenging the status quo until we create a world that is welcoming to all.</p>
+          
+          <p>More reading: <a href="http://www.forbes.com/sites/deannazandt/2013/03/22/why-asking-what-adria-richards-could-have-done-differently-is-the-wrong-question/">Why Asking What Adria Richards Could have done different is the wronge question</a><a href="http://freethoughtblogs.com/pharyngula/2013/03/22/adria-richards-did-everything-exactly-right/">Adria Richards did Everything Exactly Right</a></p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

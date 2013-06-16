@@ -1,62 +1,70 @@
+// Here is where you can define your constants for your application and to configure the blueprint framework.
+// Feel free to delete these if you want keep the defaults:
+
+// Font Sizes --------------------------------------------------------------
+//$relative-font-sizing : false;
+$base-font-size       : 14px;
+$base-line-height     : 20px;
+
+$border-radius: 3px;
+
+$blueprint-font-size: $base-font-size;
+$blueprint-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+
+// Grid --------------------------------------------------------------
+$total-cols         : 16;
+$col-width          : 4em;
+$gutter-width       : 1em;
+$side-gutter-width  : $gutter-width;
+
+@import "susy";
+
+// Solarized Color Scheme
+$base03: #002b36;
+$base02: #073642;
+$base01: #586e75;
+$base00: #657b83;
+$base0: #839496;
+$base1: #93a1a1;
+$base2: #eee8d5;
+$base3: #fdf6e3;
+$yellow: #b58900;
+$orange: #cb4b16;
+$red: #dc322f;
+$magenta: #d33682;
+$violet: #6c71c4;
+$blue: #268bd2;
+$cyan: #2aa198;
+$green: #859900;
+$fontstack: "ff-din-web-pro-1","ff-din-web-pro-2",sans-serif;
+$hmargin: 70px;
+$vmargin: 20px;
+
+@mixin rebase($rebase03,$rebase02,$rebase01,$rebase00,$rebase0,$rebase1,$rebase2,$rebase3) 
+{
+    backgorund-color:$rebase02;
+    #container { 
+        background-color:$rebase03; 
+    }
+
+    color:$rebase0;
+    * { color:$rebase0; }
+    h1,h2,h3,h4,h5,h6 { color:$rebase2; border-color: $rebase0; }
+    a { @include link-colors($rebase1); }
+}
+
+@mixin accentize($accent) {
+    code.url { color: $accent; }
+
+    a { @include link-colors($accent); }
+    h1,h2,h3,h4,h5,h6 {color:$accent}
+}
+
 /* light is default mode, so pair with general html definition */
-/* line 52, content/stylesheets/partials/_base.scss */
-html, .light {
-  backgorund-color: #eee8d5;
-  color: #657b83;
-}
-/* line 39, content/stylesheets/partials/_base.scss */
-html #container, .light #container {
-  background-color: #fdf6e3;
-}
-/* line 41, content/stylesheets/partials/_base.scss */
-html *, .light * {
-  color: #657b83;
-}
-/* line 42, content/stylesheets/partials/_base.scss */
-html h1, html h2, html h3, html h4, html h5, html h6, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
-  color: #586e75;
-  border-color: #657b83;
-}
-/* line 43, content/stylesheets/partials/_base.scss */
-html a, html a:active, html a:visited, .light a, .light a:active, .light a:visited {
-  color: #586e75;
-}
+html, .light { @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)}
+.dark  { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)}
 
-/* line 53, content/stylesheets/partials/_base.scss */
-.dark {
-  backgorund-color: #073642;
-  color: #839496;
-}
-/* line 39, content/stylesheets/partials/_base.scss */
-.dark #container {
-  background-color: #002b36;
-}
-/* line 41, content/stylesheets/partials/_base.scss */
-.dark * {
-  color: #839496;
-}
-/* line 42, content/stylesheets/partials/_base.scss */
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-  color: #93a1a1;
-  border-color: #839496;
-}
-/* line 43, content/stylesheets/partials/_base.scss */
-.dark a, .dark a:active, .dark a:visited {
-  color: #93a1a1;
-}
-
-/* line 55, content/stylesheets/partials/_base.scss */
-#header {
-  background-color: #002b36;
-}
-
-/* line 59, content/stylesheets/partials/_base.scss */
-#nav {
-  background-color: #073642;
-}
-
-/* line 63, content/stylesheets/partials/_base.scss */
 html * {
-  color-profile: sRGB;
-  rendering-intent: auto;
+    color-profile: sRGB;
+    rendering-intent: auto;
 }

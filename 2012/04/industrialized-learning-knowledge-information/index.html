@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - Industrialized Learning: Knowledge != Information</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,60 +18,71 @@
     <meta content='http://www.hazyblue.me/2012/04/industrialized-learning-knowledge-information/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>Industrialized Learning: Knowledge != Information</h1>
-          <aside>Posted on: April 13, 2012</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <p>To comment on Dan’s post titled <a href="https://blogs.lt.vt.edu/diggingdeeper/?p=42">Industrialized Learning??</a> I agree the the industrialization of the search for <strong>knowledge</strong> is a scary thing indeed, and in many respects the structure of our education system has suggested a trend in that direction (for more on that, <a href="http://www.youtube.com/watch?v=zDZFcDGpL4U">watch this excellent video</a>).  However, I don’t think that is necessarily Google’s goal.  As Carr mentioned, Google’s mission is “to organize the world’s information and make it universally accessible and useful.”  Organizing information, and creating tools to systematically archive and find information is <strong>not</strong> the same as industrializing the search for <strong>knowledge</strong>.  In fact, I would argue that the search for knowledge benefits if all the world’s existing information is organized in a systematic way to make it easy for anyone to access it.  Libraries have had a similar goal long before Google came around. Now certainly, the way our information is organized and the way we search for it does change the way we think about information, I think that was one of the key points in <a href="http://www.theatlantic.com/magazine/archive/2008/07/is-google-making-us-stupid/6868/">Carr’s article</a>.  However, changing the way we think in and of itself isn’t necessarily a bad thing, and it is in fact a continuous process that has been a reality since we were able to stand upright freeing our hands for tasks other than mobility. To be clear, I am not suggesting we give Google (or any other organization that deals with our information) _carte blanche_when it comes to the handling of the world’s information.  However, it is important to keep in mind that while information is a component of knowledge, information alone does not define knowledge.  The fear that the standardization and systematization of tasks will turn humans into mindless automatons is certainly something to think about and there is plenty of evidence from the Industrial Revolution that that is indeed the case.  However, the same economic forces that favor standardizing and systematization of a task also favor replacing a human automaton with a robot designed to complete that task.  Of course, currently we are facing a new problem as a result: how do we employ all these people who’s jobs have been replaced with robots?  We definitely need to have that discussion, but I don’t think the answer is to fight the systematization of tasks and put people back in those jobs, but rather to focus on what we are still better at than any  algorithm: creative thinking and imagination, and <strong>the search for knowledge</strong>.</p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
+            <ul>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>Industrialized Learning: Knowledge != Information</h1>
+            <p>
+              Published on
+              <time datetime='Fri, 13 Apr 2012 15:38:09 +0000' pubdate>
+                April 13, 2012
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <p>To comment on Dan’s post titled <a href="https://blogs.lt.vt.edu/diggingdeeper/?p=42">Industrialized Learning??</a> I agree the the industrialization of the search for <strong>knowledge</strong> is a scary thing indeed, and in many respects the structure of our education system has suggested a trend in that direction (for more on that, <a href="http://www.youtube.com/watch?v=zDZFcDGpL4U">watch this excellent video</a>).  However, I don’t think that is necessarily Google’s goal.  As Carr mentioned, Google’s mission is “to organize the world’s information and make it universally accessible and useful.”  Organizing information, and creating tools to systematically archive and find information is <strong>not</strong> the same as industrializing the search for <strong>knowledge</strong>.  In fact, I would argue that the search for knowledge benefits if all the world’s existing information is organized in a systematic way to make it easy for anyone to access it.  Libraries have had a similar goal long before Google came around. Now certainly, the way our information is organized and the way we search for it does change the way we think about information, I think that was one of the key points in <a href="http://www.theatlantic.com/magazine/archive/2008/07/is-google-making-us-stupid/6868/">Carr’s article</a>.  However, changing the way we think in and of itself isn’t necessarily a bad thing, and it is in fact a continuous process that has been a reality since we were able to stand upright freeing our hands for tasks other than mobility. To be clear, I am not suggesting we give Google (or any other organization that deals with our information) _carte blanche_when it comes to the handling of the world’s information.  However, it is important to keep in mind that while information is a component of knowledge, information alone does not define knowledge.  The fear that the standardization and systematization of tasks will turn humans into mindless automatons is certainly something to think about and there is plenty of evidence from the Industrial Revolution that that is indeed the case.  However, the same economic forces that favor standardizing and systematization of a task also favor replacing a human automaton with a robot designed to complete that task.  Of course, currently we are facing a new problem as a result: how do we employ all these people who’s jobs have been replaced with robots?  We definitely need to have that discussion, but I don’t think the answer is to fight the systematization of tasks and put people back in those jobs, but rather to focus on what we are still better at than any  algorithm: creative thinking and imagination, and <strong>the search for knowledge</strong>.</p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

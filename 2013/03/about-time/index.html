@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - About Time</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,62 +18,73 @@
     <meta content='http://www.hazyblue.me/2013/03/about-time/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>About Time</h1>
-          <aside>Posted on: March 18, 2013</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <p>Reading the “Time Frames” comic about depicting time in comics made me think about Brian Greene’s The Fabric of the Cosmos in which he uses several <a href="https://www.youtube.com/watch?v=cbaV4O98KfE#t=19m50s">metaphors and visualizations</a> to help explain the nature of this thing we call time. We tend to think we know what “now” is, and think of it as a snapshot of the current state of the world. That model suffices in our day-to-day lives quite nicely, but it isn’t a very good model of the concept of time on a universe-sized scale. Einstein’s famous Theory of relativity states that time and space are closely related, and that perception of both time and space is relative to the observer. The concept of “now” is also relative. Greene uses the metaphor of <a href="https://www.youtube.com/watch?v=cbaV4O98KfE#t=22m10s">a loaf of bread</a>, the long axis representing time, and a “slice” of the loaf representing an instant in time across a 2D universe. The angle at which the bread is sliced depends on an observer’s relative motion, with a maximum angle of 45 degrees corresponding to a maximum velocity of the speed of light. Two observers, Bob and Alice at different relative velocities would have slices at different angles, and so their “now” slices would intersect at some line in space. In Bob’s “now” some events in Alice’s “now” haven’t happened yet, they are in Bob’s “future”, while others are in Bob’s “past”. Time is an elusive concept, just when we think we know what we’re talking about we get hit with something like “my ‘now’ isn’t the same as your ‘now’”. It’s no wonder there are so many ways to depict its passage in the comic medium!</p>
-            
-            <p>On a slightly related tangent, the medium used can have some interesting affects on our perception of time and motion. In <a href="https://www.youtube.com/watch?v=mODqQvlrgIQ">this video</a>, recorded at 25 frames per second, a stream of falling water appears to freeze in time, or even flow backwards, when it interacts with sound waves at or near 25Hz. It’s not really an optical illusion, more of a media illusion.</p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
+            <ul>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>About Time</h1>
+            <p>
+              Published on
+              <time datetime='Tue, 19 Mar 2013 02:19:28 +0000' pubdate>
+                March 18, 2013
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <p>Reading the “Time Frames” comic about depicting time in comics made me think about Brian Greene’s The Fabric of the Cosmos in which he uses several <a href="https://www.youtube.com/watch?v=cbaV4O98KfE#t=19m50s">metaphors and visualizations</a> to help explain the nature of this thing we call time. We tend to think we know what “now” is, and think of it as a snapshot of the current state of the world. That model suffices in our day-to-day lives quite nicely, but it isn’t a very good model of the concept of time on a universe-sized scale. Einstein’s famous Theory of relativity states that time and space are closely related, and that perception of both time and space is relative to the observer. The concept of “now” is also relative. Greene uses the metaphor of <a href="https://www.youtube.com/watch?v=cbaV4O98KfE#t=22m10s">a loaf of bread</a>, the long axis representing time, and a “slice” of the loaf representing an instant in time across a 2D universe. The angle at which the bread is sliced depends on an observer’s relative motion, with a maximum angle of 45 degrees corresponding to a maximum velocity of the speed of light. Two observers, Bob and Alice at different relative velocities would have slices at different angles, and so their “now” slices would intersect at some line in space. In Bob’s “now” some events in Alice’s “now” haven’t happened yet, they are in Bob’s “future”, while others are in Bob’s “past”. Time is an elusive concept, just when we think we know what we’re talking about we get hit with something like “my ‘now’ isn’t the same as your ‘now’”. It’s no wonder there are so many ways to depict its passage in the comic medium!</p>
+          
+          <p>On a slightly related tangent, the medium used can have some interesting affects on our perception of time and motion. In <a href="https://www.youtube.com/watch?v=mODqQvlrgIQ">this video</a>, recorded at 25 frames per second, a stream of falling water appears to freeze in time, or even flow backwards, when it interacts with sound waves at or near 25Hz. It’s not really an optical illusion, more of a media illusion.</p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

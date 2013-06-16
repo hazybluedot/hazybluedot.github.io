@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - Creative writing, technically</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,60 +18,71 @@
     <meta content='http://www.hazyblue.me/2013/02/creative-writing-technically/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>Creative writing, technically</h1>
-          <aside>Posted on: February 27, 2013</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <p>A number of recent conversations, combined with topics-of-interest in both <a href="https://blogs.lt.vt.edu/ece2524s13">ECE2524</a> and <a href="http://gardnercampbell.wetpaint.com/page/vtclis13">VTCLI</a>, followed by a chance encounter with an unfamiliar (to me) blogger’s <a href="http://craphound.com/?p=2171:ta">post</a> have all led me to believe I should write a bit about interface design and various tools available to aid in writing workflow.No matter our field, I’m willing to bet we all do some writing. Our writing workflow has undergon some changes since transitioning to the digital era, most notably for my interests is this quote from the <a href="http://craphound.com/?p=2171:ta">aforementioned blog post</a>: &gt; The author then introduces a <a href="http://bitbucketlabs.net/flashbake/">set of scripts</a> a colleague wrote as the response to a question on how to integrate version control into his writing process. The scripts are essentially a wrapper around <a href="http://git-scm.com/video/what-is-git">git</a>, a popular version control system used by software developers and originally designed to meet the needs of a massively distributed collaborative projects, namely <a href="http://www.kernel.org/">the Linux kernel</a>. What’s really great about this (aside from the clear awesomeness of a sci-fi author collaborating with a <a href="http://thecommandline.net/">techie blogger/podcaster</a> to create a tool that is useful and usable by writers using tools that that are useful and usable by software developers) is that it brings into clear focus some thoughts I wanted to get out last semester about the benefits of writing in a plain text format. This gets back to one of the recent conversations that also ties into all of this: I was talking to a friend of mine, another grad student in a STEM field, and we were discussing the unfortunate prevalence of the use of MS Word for scientific papers. I don’t want to get into a long discussion of the demerits of MS Word in general, but suffice it to say, if you are interested in producing a professional quality paper, and enjoy the experience of shooting yourself in both foot followed by running a marathon, then by all means, use MS Word. There are also a number of excuses of questionable validity that people use to defend their MS Word usage in scientific writing. The ones that are often brought up often involve the need to collaborate with other authors who are also using MS Word. Now run that marathon backwards while juggling flaming torches. I should point out I don’t want to just pick on MS Word here, the same goes for Apple’s Pages or any large software package that tries to be the solution to all your writing needs. I will hence forth refer to this problematic piece of software generically as a “Word Processor”, capitalized to reinforce the idea that I am indeed referring to a number of specific widely used tools. The conversation led to user interfaces, and the alleged intuitiveness of a modern Word Processor, compared to simple, yet powerful text editor such as <a href="http://www.gnu.org/software/emacs/">emac</a>s or <a href="http://www.vim.org/index.php">vim</a>. Out of that, my friend discovered a post on a neuroscience blog about <a href="http://theness.com/neurologicablog/index.php/neuroscience-of-user-friendly/">user friendly user interfaces</a> that did a nice job putting into writing thoughts that I had been trying to verbalize during our discussion. Namely that the supposed intuitiveness of a Word Processor to “new” users is largely a factor of familiarity rather than any innate intuitiveness to the interface. Once your learn what the symbols mean and where the numerous menu items are that you need to access then it all seems just dandy. Until they go and <a href="http://en.wikipedia.org/wiki/History_of_Microsoft_Word">change the interface</a> on you. I could and probably should write an entire post on ALL the benefits of adopting a plain-text workflow, and the benefits of using one text editor that you know well for all your writing needs, from scientific papers, to blog, presentations and emails (how many people ever stop to think why it is acceptable and normal to have to learn a new user interface for each different writing task, even though fundamentally the actual work is all the same?). The key benefit I want to highlight here is the one that made it possible for the collaborative effort I mentioned towards the top to take place. By writing in a plain text format, you immediately have the ability to use the enormous wealth of tools that have been developed throughout the history of computing that work with plain text. If our earlier mentioned hero had been doing his writing in a Word Processor, it would have been nearly impossible for his friend to piece together a tool for him that allows him to regain something that was lost with the transition away from a paper workflow, a tool that can “illuminate the creative process in a way that often reveals the hidden stories”, and in many ways goes beyond what was possible or convenient with the paper workflow. What tools do you use to track your writing process? Do they allow you to go back to any earlier revision, or allow you to easily discover what recent blog’s you had read, what your mood and what the weather was when you wrote a particular passage? Do you use a tool with an interface that is a constant distraction, or one that is hardly noticeable and lets you focus on what actually matters: the words on the page. If not, then why?</p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
+            <ul>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>Creative writing, technically</h1>
+            <p>
+              Published on
+              <time datetime='Thu, 28 Feb 2013 04:52:03 +0000' pubdate>
+                February 27, 2013
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <p>A number of recent conversations, combined with topics-of-interest in both <a href="https://blogs.lt.vt.edu/ece2524s13">ECE2524</a> and <a href="http://gardnercampbell.wetpaint.com/page/vtclis13">VTCLI</a>, followed by a chance encounter with an unfamiliar (to me) blogger’s <a href="http://craphound.com/?p=2171:ta">post</a> have all led me to believe I should write a bit about interface design and various tools available to aid in writing workflow.No matter our field, I’m willing to bet we all do some writing. Our writing workflow has undergon some changes since transitioning to the digital era, most notably for my interests is this quote from the <a href="http://craphound.com/?p=2171:ta">aforementioned blog post</a>: &gt; The author then introduces a <a href="http://bitbucketlabs.net/flashbake/">set of scripts</a> a colleague wrote as the response to a question on how to integrate version control into his writing process. The scripts are essentially a wrapper around <a href="http://git-scm.com/video/what-is-git">git</a>, a popular version control system used by software developers and originally designed to meet the needs of a massively distributed collaborative projects, namely <a href="http://www.kernel.org/">the Linux kernel</a>. What’s really great about this (aside from the clear awesomeness of a sci-fi author collaborating with a <a href="http://thecommandline.net/">techie blogger/podcaster</a> to create a tool that is useful and usable by writers using tools that that are useful and usable by software developers) is that it brings into clear focus some thoughts I wanted to get out last semester about the benefits of writing in a plain text format. This gets back to one of the recent conversations that also ties into all of this: I was talking to a friend of mine, another grad student in a STEM field, and we were discussing the unfortunate prevalence of the use of MS Word for scientific papers. I don’t want to get into a long discussion of the demerits of MS Word in general, but suffice it to say, if you are interested in producing a professional quality paper, and enjoy the experience of shooting yourself in both foot followed by running a marathon, then by all means, use MS Word. There are also a number of excuses of questionable validity that people use to defend their MS Word usage in scientific writing. The ones that are often brought up often involve the need to collaborate with other authors who are also using MS Word. Now run that marathon backwards while juggling flaming torches. I should point out I don’t want to just pick on MS Word here, the same goes for Apple’s Pages or any large software package that tries to be the solution to all your writing needs. I will hence forth refer to this problematic piece of software generically as a “Word Processor”, capitalized to reinforce the idea that I am indeed referring to a number of specific widely used tools. The conversation led to user interfaces, and the alleged intuitiveness of a modern Word Processor, compared to simple, yet powerful text editor such as <a href="http://www.gnu.org/software/emacs/">emac</a>s or <a href="http://www.vim.org/index.php">vim</a>. Out of that, my friend discovered a post on a neuroscience blog about <a href="http://theness.com/neurologicablog/index.php/neuroscience-of-user-friendly/">user friendly user interfaces</a> that did a nice job putting into writing thoughts that I had been trying to verbalize during our discussion. Namely that the supposed intuitiveness of a Word Processor to “new” users is largely a factor of familiarity rather than any innate intuitiveness to the interface. Once your learn what the symbols mean and where the numerous menu items are that you need to access then it all seems just dandy. Until they go and <a href="http://en.wikipedia.org/wiki/History_of_Microsoft_Word">change the interface</a> on you. I could and probably should write an entire post on ALL the benefits of adopting a plain-text workflow, and the benefits of using one text editor that you know well for all your writing needs, from scientific papers, to blog, presentations and emails (how many people ever stop to think why it is acceptable and normal to have to learn a new user interface for each different writing task, even though fundamentally the actual work is all the same?). The key benefit I want to highlight here is the one that made it possible for the collaborative effort I mentioned towards the top to take place. By writing in a plain text format, you immediately have the ability to use the enormous wealth of tools that have been developed throughout the history of computing that work with plain text. If our earlier mentioned hero had been doing his writing in a Word Processor, it would have been nearly impossible for his friend to piece together a tool for him that allows him to regain something that was lost with the transition away from a paper workflow, a tool that can “illuminate the creative process in a way that often reveals the hidden stories”, and in many ways goes beyond what was possible or convenient with the paper workflow. What tools do you use to track your writing process? Do they allow you to go back to any earlier revision, or allow you to easily discover what recent blog’s you had read, what your mood and what the weather was when you wrote a particular passage? Do you use a tool with an interface that is a constant distraction, or one that is hardly noticeable and lets you focus on what actually matters: the words on the page. If not, then why?</p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

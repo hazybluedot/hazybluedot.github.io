@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - List of Projects Past</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,84 +18,95 @@
     <meta content='http://www.hazyblue.me/2012/10/list-of-projects-past/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>List of Projects Past</h1>
-          <aside>Posted on: October 12, 2012</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <p>I wanted to generate a list of Unix projects from last semester to provide a reference for what has been done before. The first complete list I found was in the forum of last semester’s Scholar site. There wasn’t a “download” option, and given the formatting I predicted that I’d spend more time writing a program to parse the raw HTML file and properly match up titles to urls than I’d save by just doing an old fashioned copy and paste operation for the 19 projects. So that’s what I did, and ended up with a file one title/url per line formatted like this: [code light=”true”] Snake Game https://github.com/ccwertz7/2524snake Go, Dog, Go https://github.com/rokthewok/ECE2524-Final-Project … [/code] Just white space separating the title and the url. I wanted to generate a nicely formatted list of links to each project and also filter out any urls that were no longer valid, so I wrote a short python script that read in lines of test, split them at the ‘http’ of a possible url treating everythign to the left of the split as the title and then used the urllib module to check for a 200 status before printing out a markdown formated line: [code light=”true”] <a href="https://github.com/ccwertz7/2524snake">Snake Game</a> <a href="https://github.com/rokthewok/ECE2524-Final-Project">Go, Dog, Go</a> [/code] I have uploaded the source for <a href="https://github.com/hazybluedot/ece2524/blob/master/examples/url_200filter.py">this program</a> to the <a href="https://github.com/hazybluedot/ece2524/tree/master/examples">examples</a> directory in my <a href="https://github.com/hazybluedot/ece2524">ece2524</a> repository on github.  After checking the output of my program I decided that I’d like to create a bulleted list by preceding each line with a ‘- ‘ (this is standard Markdown syntax).  Rather than change my python script, which is already on the verge of being too specific to be useful for much else, I just piped the output through a simple sed command to tack on the dash: [code light=”true” language=”bash”] url_200filter.py  Spring2012ProjectList.html [/code] To generate the HTML code that I then pasted here:</p>
-            
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
             <ul>
-              <li><a href="https://github.com/ccwertz7/2524snake">Snake Game</a></li>
-              <li><a href="https://github.com/rokthewok/ECE2524-Final-Project">Go, Dog, Go</a></li>
-              <li><a href="https://github.com/rc2524/Battleship-game">Battleship Game</a></li>
-              <li><a href="https://github.com/lubbs65/Catan">Settlers of Catan</a></li>
-              <li><a href="https://github.com/rogpog13/ECE2524_LostPyramidOfUnix">Pyramid of Unix</a></li>
-              <li><a href="https://github.com/cabotzj/guessing_game">Guessing Game</a></li>
-              <li><a href="https://github.com/tavispa/Timer_Application">Timer Application</a></li>
-              <li><a href="https://github.com/cfol103/Terminal_Game">Dodge the ASCII Characters Game</a></li>
-              <li><a href="https://github.com/gomezfx/ECE2524_Millionaire">Millionaire Game</a></li>
-              <li><a href="https://github.com/cfol103/Terminal_Game">Terminal Game</a></li>
-              <li><a href="https://github.com/alexsupp/CheckersGame">Checkers Game</a></li>
-              <li><a href="https://github.com/gecock14/UnixFinalProject">Text Adventure Game</a></li>
-              <li><a href="https://github.com/lnr0626/Monopoly">Monopoly</a></li>
-              <li><a href="https://github.com/JCAMP17/Hangman-Final-Project">Hangman</a></li>
-              <li><a href="https://github.com/patrickto2/ECECalculator">ECECalculator</a></li>
-              <li><a href="https://github.com/hessionb/ece2524">Class Catcher</a></li>
-              <li><a href="https://github.com/MattyBo5/Game-of-Life">Conway’s Game of Life</a></li>
-              <li><a href="https://github.com/crimsondynamo329/Tic-Tac-Toe">Tic Tac Toe</a></li>
-              <li><a href="https://github.com/0x5654/ece2524">Leaderboards Hub</a></li>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
             </ul>
-            
-            <p>While you are thinking about project ideas keep in mind that the goal of the project is to apply and demonstrate understanding of the Unix design philosophy.  A project doesn’t need to be terribly complex to show this, but if you have a complex idea that you would really like to explore it may be sufficient to just implement a piece of it for this project.  I look forward to hearing about your ideas and discussing some details next week!</p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>List of Projects Past</h1>
+            <p>
+              Published on
+              <time datetime='Fri, 12 Oct 2012 19:30:39 +0000' pubdate>
+                October 12, 2012
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <p>I wanted to generate a list of Unix projects from last semester to provide a reference for what has been done before. The first complete list I found was in the forum of last semester’s Scholar site. There wasn’t a “download” option, and given the formatting I predicted that I’d spend more time writing a program to parse the raw HTML file and properly match up titles to urls than I’d save by just doing an old fashioned copy and paste operation for the 19 projects. So that’s what I did, and ended up with a file one title/url per line formatted like this: [code light=”true”] Snake Game https://github.com/ccwertz7/2524snake Go, Dog, Go https://github.com/rokthewok/ECE2524-Final-Project … [/code] Just white space separating the title and the url. I wanted to generate a nicely formatted list of links to each project and also filter out any urls that were no longer valid, so I wrote a short python script that read in lines of test, split them at the ‘http’ of a possible url treating everythign to the left of the split as the title and then used the urllib module to check for a 200 status before printing out a markdown formated line: [code light=”true”] <a href="https://github.com/ccwertz7/2524snake">Snake Game</a> <a href="https://github.com/rokthewok/ECE2524-Final-Project">Go, Dog, Go</a> [/code] I have uploaded the source for <a href="https://github.com/hazybluedot/ece2524/blob/master/examples/url_200filter.py">this program</a> to the <a href="https://github.com/hazybluedot/ece2524/tree/master/examples">examples</a> directory in my <a href="https://github.com/hazybluedot/ece2524">ece2524</a> repository on github.  After checking the output of my program I decided that I’d like to create a bulleted list by preceding each line with a ‘- ‘ (this is standard Markdown syntax).  Rather than change my python script, which is already on the verge of being too specific to be useful for much else, I just piped the output through a simple sed command to tack on the dash: [code light=”true” language=”bash”] url_200filter.py  Spring2012ProjectList.html [/code] To generate the HTML code that I then pasted here:</p>
+          
+          <ul>
+            <li><a href="https://github.com/ccwertz7/2524snake">Snake Game</a></li>
+            <li><a href="https://github.com/rokthewok/ECE2524-Final-Project">Go, Dog, Go</a></li>
+            <li><a href="https://github.com/rc2524/Battleship-game">Battleship Game</a></li>
+            <li><a href="https://github.com/lubbs65/Catan">Settlers of Catan</a></li>
+            <li><a href="https://github.com/rogpog13/ECE2524_LostPyramidOfUnix">Pyramid of Unix</a></li>
+            <li><a href="https://github.com/cabotzj/guessing_game">Guessing Game</a></li>
+            <li><a href="https://github.com/tavispa/Timer_Application">Timer Application</a></li>
+            <li><a href="https://github.com/cfol103/Terminal_Game">Dodge the ASCII Characters Game</a></li>
+            <li><a href="https://github.com/gomezfx/ECE2524_Millionaire">Millionaire Game</a></li>
+            <li><a href="https://github.com/cfol103/Terminal_Game">Terminal Game</a></li>
+            <li><a href="https://github.com/alexsupp/CheckersGame">Checkers Game</a></li>
+            <li><a href="https://github.com/gecock14/UnixFinalProject">Text Adventure Game</a></li>
+            <li><a href="https://github.com/lnr0626/Monopoly">Monopoly</a></li>
+            <li><a href="https://github.com/JCAMP17/Hangman-Final-Project">Hangman</a></li>
+            <li><a href="https://github.com/patrickto2/ECECalculator">ECECalculator</a></li>
+            <li><a href="https://github.com/hessionb/ece2524">Class Catcher</a></li>
+            <li><a href="https://github.com/MattyBo5/Game-of-Life">Conway’s Game of Life</a></li>
+            <li><a href="https://github.com/crimsondynamo329/Tic-Tac-Toe">Tic Tac Toe</a></li>
+            <li><a href="https://github.com/0x5654/ece2524">Leaderboards Hub</a></li>
+          </ul>
+          
+          <p>While you are thinking about project ideas keep in mind that the goal of the project is to apply and demonstrate understanding of the Unix design philosophy.  A project doesn’t need to be terribly complex to show this, but if you have a complex idea that you would really like to explore it may be sufficient to just implement a piece of it for this project.  I look forward to hearing about your ideas and discussing some details next week!</p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

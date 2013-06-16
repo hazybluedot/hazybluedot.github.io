@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - Blasphemy?: DRMed Games on Linux</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,68 +18,79 @@
     <meta content='http://www.hazyblue.me/2013/02/blasphemy-drmed-games-on-linux/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>Blasphemy?: DRMed Games on Linux</h1>
-          <aside>Posted on: February 18, 2013</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <p>The interwebz have been all atwitter the past month or so with <a href="http://www.wired.com/gamelife/2013/02/steam-linux/">Valve’s announcement</a> of the porting of their Steam gaming service to the GNU/Linux platform. Many Linux users were thrilled about the announcement and saw it as a sign that Linux was breaking out of the small niche culture of hackers to more mainstream folk who just want to turn there computer on and play a game. To be fair, Linux is not without a large number of free (both as in <a href="http://en.wikipedia.org/wiki/Gratis_versus_libre">beer and as in speech</a>) <a href="https://libregamewiki.org/Main_Page">games already</a>, but the announcement of a major (are they? I actually only heard of Valve and Steam because of the Linux announcement) gaming company moving to the platform as seen by some as legitimizing the OS to the masses. It certainly gives everyone something to talk about.</p>
-            
-            <p>I consider myself more of a pragmatic when it comes to the philosophical debate surrounding free (for those familiar, the debate mostly deals with libre software. English has many deficiencies, one of which is the multiple meanings of the word “free”. In general free software supporters do support the idea of paying for software and believe that people should be able to make money off of the software they write). I think free software is a great ideal to strive for, and certainly for mission critical software I believe it is important to have the freedom to view and modify the source code. As I brought up in <a href="http://gardnercampbell.wetpaint.com/page/vtclis13">vtcli</a> earlier this semester, as an example it is important to have the freedom to confirm that the incognito mode of your web browser really is doing what it says it is and not storing or sharing your browsing information (as an aside to that, I erroneously claimed that Chrome was open source, it is not, however, it theoretically uses the same code-base as <a href="http://www.chromium.org/">Chromium</a>, which is open source, and happens to be the browser I use both when in Linux and OS X. I highly encourage any users of Chrome to switch to Chromium for the open sourced goodness it provides, including the ability to confirm that incognito mode really is incognito). That being said, if there’s a great game I like I am not terribly concerned with not being able to look at or distribute the source code, though I certainly would encourage game developers to release their code under one of the many open source licenses.</p>
-            
-            <p>It is interesting to note that free software evangelist Richard Stallman himself <a href="http://www.gnu.org/philosophy/nonfree-games.html">isn’t ALL doom and gloom</a> about the news. Though he certainly isn’t thrilled and encourages people to try out any of the free games that are available, he does see the move as a possible motivator for some people to ditch their non-free OSes completely if gaming had been the only thing holding them back.</p>
-            
-            <blockquote>
-              <p>I installed Steam on my <a href="https://www.archlinux.org/">Arch Linux</a> install last week and so far have tried out <a href="http://store.steampowered.com/app/107100/">Bastion</a>, <a href="http://store.steampowered.com/app/209790/">Splice</a> and <a href="http://store.steampowered.com/app/22000/">The World of Goo</a>. All work very well and have been fun (I had played World of Goo before both on OS X and Android, it is fun on any platform!). Offically, Arch Linux isn’t supported but after adding a couple of the libraries and font packages <a href="https://wiki.archlinux.org/index.php/Steam">mentioned on the wiki</a> everything worked like a charm. One down side that Stallman failed to mention in his response was the fact that it is much easier for me to spend money on games now that I don’t need to switch over to OS X to run them.</p>
-            </blockquote>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
+            <ul>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>Blasphemy?: DRMed Games on Linux</h1>
+            <p>
+              Published on
+              <time datetime='Mon, 18 Feb 2013 22:15:53 +0000' pubdate>
+                February 18, 2013
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <p>The interwebz have been all atwitter the past month or so with <a href="http://www.wired.com/gamelife/2013/02/steam-linux/">Valve’s announcement</a> of the porting of their Steam gaming service to the GNU/Linux platform. Many Linux users were thrilled about the announcement and saw it as a sign that Linux was breaking out of the small niche culture of hackers to more mainstream folk who just want to turn there computer on and play a game. To be fair, Linux is not without a large number of free (both as in <a href="http://en.wikipedia.org/wiki/Gratis_versus_libre">beer and as in speech</a>) <a href="https://libregamewiki.org/Main_Page">games already</a>, but the announcement of a major (are they? I actually only heard of Valve and Steam because of the Linux announcement) gaming company moving to the platform as seen by some as legitimizing the OS to the masses. It certainly gives everyone something to talk about.</p>
+          
+          <p>I consider myself more of a pragmatic when it comes to the philosophical debate surrounding free (for those familiar, the debate mostly deals with libre software. English has many deficiencies, one of which is the multiple meanings of the word “free”. In general free software supporters do support the idea of paying for software and believe that people should be able to make money off of the software they write). I think free software is a great ideal to strive for, and certainly for mission critical software I believe it is important to have the freedom to view and modify the source code. As I brought up in <a href="http://gardnercampbell.wetpaint.com/page/vtclis13">vtcli</a> earlier this semester, as an example it is important to have the freedom to confirm that the incognito mode of your web browser really is doing what it says it is and not storing or sharing your browsing information (as an aside to that, I erroneously claimed that Chrome was open source, it is not, however, it theoretically uses the same code-base as <a href="http://www.chromium.org/">Chromium</a>, which is open source, and happens to be the browser I use both when in Linux and OS X. I highly encourage any users of Chrome to switch to Chromium for the open sourced goodness it provides, including the ability to confirm that incognito mode really is incognito). That being said, if there’s a great game I like I am not terribly concerned with not being able to look at or distribute the source code, though I certainly would encourage game developers to release their code under one of the many open source licenses.</p>
+          
+          <p>It is interesting to note that free software evangelist Richard Stallman himself <a href="http://www.gnu.org/philosophy/nonfree-games.html">isn’t ALL doom and gloom</a> about the news. Though he certainly isn’t thrilled and encourages people to try out any of the free games that are available, he does see the move as a possible motivator for some people to ditch their non-free OSes completely if gaming had been the only thing holding them back.</p>
+          
+          <blockquote>
+            <p>I installed Steam on my <a href="https://www.archlinux.org/">Arch Linux</a> install last week and so far have tried out <a href="http://store.steampowered.com/app/107100/">Bastion</a>, <a href="http://store.steampowered.com/app/209790/">Splice</a> and <a href="http://store.steampowered.com/app/22000/">The World of Goo</a>. All work very well and have been fun (I had played World of Goo before both on OS X and Android, it is fun on any platform!). Offically, Arch Linux isn’t supported but after adding a couple of the libraries and font packages <a href="https://wiki.archlinux.org/index.php/Steam">mentioned on the wiki</a> everything worked like a charm. One down side that Stallman failed to mention in his response was the fact that it is much easier for me to spend money on games now that I don’t need to switch over to OS X to run them.</p>
+          </blockquote>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

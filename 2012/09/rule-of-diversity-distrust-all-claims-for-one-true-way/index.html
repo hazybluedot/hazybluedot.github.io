@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - Rule of Diversity: Distrust all claims for “one true way”.</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,79 +18,90 @@
     <meta content='http://www.hazyblue.me/2012/09/rule-of-diversity-distrust-all-claims-for-one-true-way/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>Rule of Diversity: Distrust all claims for “one true way”.</h1>
-          <aside>Posted on: September 2, 2012</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <p>I’ve been programming simulations and algorithms in C++ for several years now, but it’s only been in the last year or so that I’ve really began to appreciate the advantages of diversifying ones language repertoire.  My conversion began after reading <a href="http://catb.org/esr/writings/taoup/html/">The Art of Unix Programming</a> by Eric Raymond last year while exploring new material for ECE2524.  In the book Raymond lays out a list of design rules making up the Unix philosophy and explains how following these rules has produced clean, powerful, maintainable code and been the reason why Unix has so easily evolved and adapted and flourished in the fast paced world of technology from it’s roots in 1969 running on under-powered hardware, even for the time. The <a href="http://catb.org/esr/writings/taoup/html/ch01s06.html#id2879078">Rule of Diversity</a> appears towards the end of the list, but is interesting in that I feel it is one of the few rules that few people, curriculums or corporations outside of the Unix community have yet to seriously embrace.  I hope that people with a Computer Science background can contribute their own view, but in my experience with the limited software design instruction in my Engineering curriculum, and talking to several other people, the focus has been strictly on Object Oriented Programming (<a href="http://en.wikipedia.org/wiki/Object_Oriented_Programming">OOP</a>), usually using Java or C++. As a result of this focus on OOP, programmers (including my past self) are encouraged to  adopt a programming paradigm that may work well for some problems, but not well for others.  I’ve learned from first hand experience that forcing an OOP framework on a problem that doesn’t really lend itself intuitively to the features of the framework (data encapsulation, inheritance) leads to an impossible-to-maintain mess consisting of many layers of brittle “glue” code and a spiting headache as soon as concurrent processing is thrown into the mix. Discovering the Rule of Diversity was refreshing to me for many reasons, as I tend to reject dogma of any kind, but hadn’t really been made aware of the alternatives when it came to programming.  This process lead to me learning <a href="www.python.org">Python</a>, which I now use to do the majority of my data visualization, and becoming interested in <a href="http://www.ruby-lang.org/">Ruby</a> for web development and <a href="http://www.haskell.org/">Haskell</a> to learn about functional programming and how I might employ it to more elegantly implement the mathematical algorithms that are a large part of my field of study (Control Systems). When a friend of mine recommended <a href="http://pragprog.com/book/btlang/seven-languages-in-seven-weeks">Seven Languages in Seven Weeks</a> by Bruce A. Tate I was intregued by the idea of learning 7 different programming languages, along with their strenghts, weaknesses, histories and accompanying programming philosophies.  When I found out that two of the languages covered were Ruby and Haskell I was sold. I have decided to work my way through the book over the next 7 weeks, and write about my experience with each language.  So far I really enjoy the structure of the book, the motivations of the author, and in particular his method of associating each language with a unique fictional character:</p>
-            
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
             <ul>
-              <li>
-            <a href="http://www.imdb.com/character/ch0011238/">Mary Poppins</a> from <a href="http://www.imdb.com/title/tt0058331/">Mary Poppins</a>(1964) - (Ruby) because unlike other nannies of the time she “made the household more efficient by making it fun and coaxing every last bit of pasion from her charges.” And wasn’t afraid to use a little magic to accomplish her goals.</li>
-              <li>
-            <a href="http://www.imdb.com/character/ch0005859/">Ferris Bueller</a>  from <a href="http://www.imdb.com/title/tt0091042/">Ferris Bueller’s Day Off</a>(1986) - (Io) ”He might give you the ride of your life, wreck your dad’s car, or both.  Either way, you will not be bored.”</li>
-              <li>
-            <a href="http://www.imdb.com/character/ch0004559/">Raymond</a> from <a href="http://www.imdb.com/title/tt0095953/">Rain Man</a>(1988) - (Prolog) ”He’s a fountain of knowledge, if you can only frame your question in the right way.”</li>
-              <li>
-            <a href="http://www.imdb.com/character/ch0005544/">Edward Scissorhands</a>from <a href="http://www.imdb.com/title/tt0099487/">Edward Scissorhands</a> (1990) - (Scala) “He was often awkward, was sometimes amazing, but always had a unique expression.”</li>
-              <li>
-            <a href="http://www.imdb.com/character/ch0000745/">Agent Smith</a>from <a href="http://www.imdb.com/title/tt0133093/">The Matrix</a>(1999) - (Erlang) “You could call it efficient, even brutally so, but Erlang’s syntax lacks the beauty and simplicity of, say, a Ruby.”  ”Agent Smith … had an amazing ability to take any form and bend the rules of reality to be in many places at once. He was unavoidable.”</li>
-              <li>
-            <a href="http://www.imdb.com/character/ch0000015/">Yoda</a>from <a href="http://www.imdb.com/title/tt0080684/">Star Wars: Episode V - The Empire Strikes Back</a> (1980) - (Clojure) “His communication style is often inverted and hard to understand”, “he is old, with wisdom that has been honed by time … and tried under fire.”</li>
-              <li>
-            <a href="http://www.imdb.com/character/ch0001439/">Spock</a>from <a href="http://www.imdb.com/title/tt0060028/">“Star Trek”</a> (1966) - (Haskell) “…embracing logic and truth. His character has a single-minded purity that has endeared him to generations.”</li>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
             </ul>
-            
-            <p>Even though I’ve only began working through the exercises in the Ruby section, I’ve already developed an intuition about the “personality” of each of these languages through Tate’s analogies.  He has also chosen the perfect level of detail, not spending any time on the details of the syntax, or building up canonical examples, only focusing on what makes each language unique and powerful and expecting the reader to explore on his or her own to fill in the gaps. I’ve almost worked through the Ruby section, so expect a post about that soon.  In the mean time, how do you feel about the Rule of Diversity?  Have you been offput when teachers/mentors/bosses treat a particular idea/framework/concept as “The One True Way”?</p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>Rule of Diversity: Distrust all claims for “one true way”.</h1>
+            <p>
+              Published on
+              <time datetime='Sun, 02 Sep 2012 19:11:45 +0000' pubdate>
+                September 2, 2012
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <p>I’ve been programming simulations and algorithms in C++ for several years now, but it’s only been in the last year or so that I’ve really began to appreciate the advantages of diversifying ones language repertoire.  My conversion began after reading <a href="http://catb.org/esr/writings/taoup/html/">The Art of Unix Programming</a> by Eric Raymond last year while exploring new material for ECE2524.  In the book Raymond lays out a list of design rules making up the Unix philosophy and explains how following these rules has produced clean, powerful, maintainable code and been the reason why Unix has so easily evolved and adapted and flourished in the fast paced world of technology from it’s roots in 1969 running on under-powered hardware, even for the time. The <a href="http://catb.org/esr/writings/taoup/html/ch01s06.html#id2879078">Rule of Diversity</a> appears towards the end of the list, but is interesting in that I feel it is one of the few rules that few people, curriculums or corporations outside of the Unix community have yet to seriously embrace.  I hope that people with a Computer Science background can contribute their own view, but in my experience with the limited software design instruction in my Engineering curriculum, and talking to several other people, the focus has been strictly on Object Oriented Programming (<a href="http://en.wikipedia.org/wiki/Object_Oriented_Programming">OOP</a>), usually using Java or C++. As a result of this focus on OOP, programmers (including my past self) are encouraged to  adopt a programming paradigm that may work well for some problems, but not well for others.  I’ve learned from first hand experience that forcing an OOP framework on a problem that doesn’t really lend itself intuitively to the features of the framework (data encapsulation, inheritance) leads to an impossible-to-maintain mess consisting of many layers of brittle “glue” code and a spiting headache as soon as concurrent processing is thrown into the mix. Discovering the Rule of Diversity was refreshing to me for many reasons, as I tend to reject dogma of any kind, but hadn’t really been made aware of the alternatives when it came to programming.  This process lead to me learning <a href="www.python.org">Python</a>, which I now use to do the majority of my data visualization, and becoming interested in <a href="http://www.ruby-lang.org/">Ruby</a> for web development and <a href="http://www.haskell.org/">Haskell</a> to learn about functional programming and how I might employ it to more elegantly implement the mathematical algorithms that are a large part of my field of study (Control Systems). When a friend of mine recommended <a href="http://pragprog.com/book/btlang/seven-languages-in-seven-weeks">Seven Languages in Seven Weeks</a> by Bruce A. Tate I was intregued by the idea of learning 7 different programming languages, along with their strenghts, weaknesses, histories and accompanying programming philosophies.  When I found out that two of the languages covered were Ruby and Haskell I was sold. I have decided to work my way through the book over the next 7 weeks, and write about my experience with each language.  So far I really enjoy the structure of the book, the motivations of the author, and in particular his method of associating each language with a unique fictional character:</p>
+          
+          <ul>
+            <li>
+          <a href="http://www.imdb.com/character/ch0011238/">Mary Poppins</a> from <a href="http://www.imdb.com/title/tt0058331/">Mary Poppins</a>(1964) - (Ruby) because unlike other nannies of the time she “made the household more efficient by making it fun and coaxing every last bit of pasion from her charges.” And wasn’t afraid to use a little magic to accomplish her goals.</li>
+            <li>
+          <a href="http://www.imdb.com/character/ch0005859/">Ferris Bueller</a>  from <a href="http://www.imdb.com/title/tt0091042/">Ferris Bueller’s Day Off</a>(1986) - (Io) ”He might give you the ride of your life, wreck your dad’s car, or both.  Either way, you will not be bored.”</li>
+            <li>
+          <a href="http://www.imdb.com/character/ch0004559/">Raymond</a> from <a href="http://www.imdb.com/title/tt0095953/">Rain Man</a>(1988) - (Prolog) ”He’s a fountain of knowledge, if you can only frame your question in the right way.”</li>
+            <li>
+          <a href="http://www.imdb.com/character/ch0005544/">Edward Scissorhands</a>from <a href="http://www.imdb.com/title/tt0099487/">Edward Scissorhands</a> (1990) - (Scala) “He was often awkward, was sometimes amazing, but always had a unique expression.”</li>
+            <li>
+          <a href="http://www.imdb.com/character/ch0000745/">Agent Smith</a>from <a href="http://www.imdb.com/title/tt0133093/">The Matrix</a>(1999) - (Erlang) “You could call it efficient, even brutally so, but Erlang’s syntax lacks the beauty and simplicity of, say, a Ruby.”  ”Agent Smith … had an amazing ability to take any form and bend the rules of reality to be in many places at once. He was unavoidable.”</li>
+            <li>
+          <a href="http://www.imdb.com/character/ch0000015/">Yoda</a>from <a href="http://www.imdb.com/title/tt0080684/">Star Wars: Episode V - The Empire Strikes Back</a> (1980) - (Clojure) “His communication style is often inverted and hard to understand”, “he is old, with wisdom that has been honed by time … and tried under fire.”</li>
+            <li>
+          <a href="http://www.imdb.com/character/ch0001439/">Spock</a>from <a href="http://www.imdb.com/title/tt0060028/">“Star Trek”</a> (1966) - (Haskell) “…embracing logic and truth. His character has a single-minded purity that has endeared him to generations.”</li>
+          </ul>
+          
+          <p>Even though I’ve only began working through the exercises in the Ruby section, I’ve already developed an intuition about the “personality” of each of these languages through Tate’s analogies.  He has also chosen the perfect level of detail, not spending any time on the details of the syntax, or building up canonical examples, only focusing on what makes each language unique and powerful and expecting the reader to explore on his or her own to fill in the gaps. I’ve almost worked through the Ruby section, so expect a post about that soon.  In the mean time, how do you feel about the Rule of Diversity?  Have you been offput when teachers/mentors/bosses treat a particular idea/framework/concept as “The One True Way”?</p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

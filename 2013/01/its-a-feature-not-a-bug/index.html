@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - It's a Feature, not a Bug</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,152 +18,163 @@
     <meta content='http://www.hazyblue.me/2013/01/its-a-feature-not-a-bug/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>It's a Feature, not a Bug</h1>
-          <aside>Posted on: January 28, 2013</aside>
-          <article>
-            <div class='notice'>
-              This post was imported from the old WordPress site. It is possible that some content is missing, or formatting is screwy. If you see something that doesn't look quite right, please <a href="mailto:darmacz@gmail.com">let me know</a>.
-            </div>
-            <p>In his article
-            <a href="http://www.guardian.co.uk/technology/2010/jun/20/internet-everything-need-to-know">The internet: Everything you ever need to know</a>,
-            John Naughton lists nine key concepts about the Internet to help us
-            understand that profound impact it is having, and will continue to
-            have, on our lives. Reading number 3 “DISRUPTION IS A FEATURE, NOT A
-            BUG” I found myself drawing parallels to the design of the Internet
-            and the design of the Unix operating system. The similarities are no
-            accident, as the history of Unix and the Internet became closely
-            intertwined after DARPA’s 1980 decisions that the BSD Unix team would
-            implement the brand new TCP/IP stack which controls how data packets
-            are routed between machines on the Internet.  Of the design of the
-            Internet, Naughton says</p>
-            
-            <blockquote>
-              <p>It was based on two axioms. Firstly, there should be no central
-             ownership or control – no institution which would decide who could
-             join or what the network could be used for. Secondly, the network
-             should not be optimised for any particular application. This led to
-             the idea of a “simple” network that did only one thing – take in
-             data packets at one end and do its best to deliver them to their
-             destinations.</p>
-            </blockquote>
-            
-            <!-- more -->
-            
-            <p>The result of this was a general purpose
-            network from which sprang a diverse collection of services and
-            applications (including the World Wide Web, see item number 2), some
-            of which began disrupting established industries. This
-            disruption, Naughton argues, is a desirable effect, though not
-            necessarily to the existing music labels and media
-            distributor behemoths such Warner Music Group and others that are
-            having to drastically rethink their business models to remain relevant
-            in the era of peer-to-peer data networks. Like the Internet, Unix was
-            designed around a number of axioms, the relevant ones being that the
-            system should provide a core set of well defined, simple system calls
-            for interacting with hardware and data, and that passing data between
-            processes should be as easy as possible. As a result of these design
-            choices an environment of diverse programs, each of which “do one
-            thing and one thing well” and can easily share data with other
-            programs has developed. The end result of this can be thought of as a
-            direct contrast to this description by Eric Raymond in his book
-            <a href="http://www.catb.org/esr/writings/taoup/html/ch01s05.html">The Art of Unix Programming</a>:</p>
-            
-            <blockquote>
-              <p>Many operating systems touted as more ‘modern’ or ‘user friendly’
-            than Unix achieve their surface glossiness by locking users and
-            developers into one interface policy, and offer an
-            application-programming interface that for all its elaborateness is
-            rather narrow and rigid. On such systems, tasks the designers have
-            anticipated are very easy — but tasks they have not anticipated are
-            often impossible or at best extremely painful.</p>
-            </blockquote>
-            
-            <p>Unix users, on the other hand, have consistently been able to
-            complete tasks that were never anticipated by the original designers,
-            a key factor in its continued relevance.  As technology changes and
-            users demand new tools and applications developers on other systems
-            have to work a lot harder and are at the mercy of the system
-            developers to make changes to the underlying system to continue to
-            produce cutting edge software solutions.  On a Unix system it is just
-            as easy to copy a file from your USB  flash drive to your hard drive
-            as it is to copy a file from your harddrive to a machine on the other
-            side of the world and it is just as easy to stream video data from a
-            local file as it is from a server on the internet.  The design has
-            lead to a remarkable, even surprising degree of flexibility and
-            usefulness:</p>
-            
-            <blockquote>
-              <p>Unix has supported a mind-bogglingly wide spectrum of uses. No other
-            operating system has shone simultaneously as a research vehicle, a
-            friendly host for technical custom applications, a platform for
-            commercial-off-the-shelf business software, and a vital component
-            technology of the Internet. <cite>- Eric Raymond, The Art of Unix
-            Programming</cite></p>
-            </blockquote>
-            
-            <p>Like the Internet, the simple infrastructure layer by Unix (and its
-            present-day incarnations such as BSD and GNU/Linux) provides an
-            environment for nearly unlimited creativity, one which continues to
-            surprise users and non-users alike with its ability to solve problems
-            and implement ideas that a year ago didn’t even exist.  And likewise,
-            the disruption it has caused has been a boon to individuals: The Linux
-            based Android operating system is running on
-            <a href="http://www.gartner.com/newsroom/id/2237315">over half the world’s smart phones</a>
-            and
-            <a href="http://en.wikipedia.org/wiki/Mobile_operating_system#Market_share">quickly overtoke</a> more
-            established contenders such as Apple’s iOS. Linux has already
-            disrupted the
-            <a href="http://softwareandunicycles.wordpress.com/2010/07/31/does-desktop-linux-need-a-killer-app/">server market, the embedded market and most recently the phone market</a>.  It
-            remains to be seen whether or not it will have a noticeable impact on
-            Microsoft’s stranglehold on the desktop market, unless you consider
-            Apple’s Unix derived OS X as an example.</p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
+            <ul>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>It's a Feature, not a Bug</h1>
+            <p>
+              Published on
+              <time datetime='Mon, 28 Jan 2013 20:47:51 +0000' pubdate>
+                January 28, 2013
+              </time>
+            </p>
+          </header>
+          <div class='notice'>
+            This post was imported from the old WordPress site. It is possible that some content is missing, or formatting is screwy. If you see something that doesn't look quite right, please <a href="mailto:darmacz@gmail.com">let me know</a>.
+          </div>
+          <p>In his article
+          <a href="http://www.guardian.co.uk/technology/2010/jun/20/internet-everything-need-to-know">The internet: Everything you ever need to know</a>,
+          John Naughton lists nine key concepts about the Internet to help us
+          understand that profound impact it is having, and will continue to
+          have, on our lives. Reading number 3 “DISRUPTION IS A FEATURE, NOT A
+          BUG” I found myself drawing parallels to the design of the Internet
+          and the design of the Unix operating system. The similarities are no
+          accident, as the history of Unix and the Internet became closely
+          intertwined after DARPA’s 1980 decisions that the BSD Unix team would
+          implement the brand new TCP/IP stack which controls how data packets
+          are routed between machines on the Internet.  Of the design of the
+          Internet, Naughton says</p>
+          
+          <blockquote>
+            <p>It was based on two axioms. Firstly, there should be no central
+           ownership or control – no institution which would decide who could
+           join or what the network could be used for. Secondly, the network
+           should not be optimised for any particular application. This led to
+           the idea of a “simple” network that did only one thing – take in
+           data packets at one end and do its best to deliver them to their
+           destinations.</p>
+          </blockquote>
+          
+          <!-- more -->
+          
+          <p>The result of this was a general purpose
+          network from which sprang a diverse collection of services and
+          applications (including the World Wide Web, see item number 2), some
+          of which began disrupting established industries. This
+          disruption, Naughton argues, is a desirable effect, though not
+          necessarily to the existing music labels and media
+          distributor behemoths such Warner Music Group and others that are
+          having to drastically rethink their business models to remain relevant
+          in the era of peer-to-peer data networks. Like the Internet, Unix was
+          designed around a number of axioms, the relevant ones being that the
+          system should provide a core set of well defined, simple system calls
+          for interacting with hardware and data, and that passing data between
+          processes should be as easy as possible. As a result of these design
+          choices an environment of diverse programs, each of which “do one
+          thing and one thing well” and can easily share data with other
+          programs has developed. The end result of this can be thought of as a
+          direct contrast to this description by Eric Raymond in his book
+          <a href="http://www.catb.org/esr/writings/taoup/html/ch01s05.html">The Art of Unix Programming</a>:</p>
+          
+          <blockquote>
+            <p>Many operating systems touted as more ‘modern’ or ‘user friendly’
+          than Unix achieve their surface glossiness by locking users and
+          developers into one interface policy, and offer an
+          application-programming interface that for all its elaborateness is
+          rather narrow and rigid. On such systems, tasks the designers have
+          anticipated are very easy — but tasks they have not anticipated are
+          often impossible or at best extremely painful.</p>
+          </blockquote>
+          
+          <p>Unix users, on the other hand, have consistently been able to
+          complete tasks that were never anticipated by the original designers,
+          a key factor in its continued relevance.  As technology changes and
+          users demand new tools and applications developers on other systems
+          have to work a lot harder and are at the mercy of the system
+          developers to make changes to the underlying system to continue to
+          produce cutting edge software solutions.  On a Unix system it is just
+          as easy to copy a file from your USB  flash drive to your hard drive
+          as it is to copy a file from your harddrive to a machine on the other
+          side of the world and it is just as easy to stream video data from a
+          local file as it is from a server on the internet.  The design has
+          lead to a remarkable, even surprising degree of flexibility and
+          usefulness:</p>
+          
+          <blockquote>
+            <p>Unix has supported a mind-bogglingly wide spectrum of uses. No other
+          operating system has shone simultaneously as a research vehicle, a
+          friendly host for technical custom applications, a platform for
+          commercial-off-the-shelf business software, and a vital component
+          technology of the Internet. <cite>- Eric Raymond, The Art of Unix
+          Programming</cite></p>
+          </blockquote>
+          
+          <p>Like the Internet, the simple infrastructure layer by Unix (and its
+          present-day incarnations such as BSD and GNU/Linux) provides an
+          environment for nearly unlimited creativity, one which continues to
+          surprise users and non-users alike with its ability to solve problems
+          and implement ideas that a year ago didn’t even exist.  And likewise,
+          the disruption it has caused has been a boon to individuals: The Linux
+          based Android operating system is running on
+          <a href="http://www.gartner.com/newsroom/id/2237315">over half the world’s smart phones</a>
+          and
+          <a href="http://en.wikipedia.org/wiki/Mobile_operating_system#Market_share">quickly overtoke</a> more
+          established contenders such as Apple’s iOS. Linux has already
+          disrupted the
+          <a href="http://softwareandunicycles.wordpress.com/2010/07/31/does-desktop-linux-need-a-killer-app/">server market, the embedded market and most recently the phone market</a>.  It
+          remains to be seen whether or not it will have a noticeable impact on
+          Microsoft’s stranglehold on the desktop market, unless you consider
+          Apple’s Unix derived OS X as an example.</p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

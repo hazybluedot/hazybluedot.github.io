@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - The Tides of Change?</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,60 +18,71 @@
     <meta content='http://www.hazyblue.me/2012/12/the-tides-of-change/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>The Tides of Change?</h1>
-          <aside>Posted on: December 3, 2012</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <p>As Linus Torvalds has mentioned in <a href="http://www.youtube.com/results?search_query=Linus+Torvalds+interview&amp;oq=Linus+Torvalds+interview">several video interviews</a>, probably the main reason Linux has been lagging behind in the desktop market is that it doesn’t come pre-installed on desktop hardware, and the average computer user just isn’t going to put forth the effort to install a different operating system and configure it* than came with their new machine. Recently Dell caused <a href="http://www.zdnet.com/dell-xps-13-laptop-the-ubuntu-developer-edition-arrives-7000008059/">a bit of excitement</a> with their release of an Ubuntu addition of their “<a href="http://www.dell.com/us/soho/p/xps-13-linux/pd.aspx">XPS 13: The Ubuntu developers</a>” edition laptop.  To be fair, this is not the first machine that Dell has offered with Linux pre-installed, but it does seem to be the first that they’ve tried pushing to the mainstream (or in this case, developer) community (in the past you really had to make an effort to find the Ubuntu option on their ordering form).  Dell is also <a href="http://linuxpreloaded.com/">not the only desktop distributor</a> to offer systems with Linux pre-loaded (indeed, many of the others exclusively offer Linux machines), but it is probably the brand with the most name recognition to the general audience.  Could this be the beginning of the end of the Microsoft monopoly on the desktop OS market?  I am optimistic! *Be wary of the blog posts and forum comments that recount stories of installing Linux and being frustrated with the difficulty of getting all the necessary drivers for their hardware and using that as an argument that the OS wasn’t “ready” for prime time.  If you have ever installed Windows on a fresh new machine you will be well aware that it can be just as frustrating.  Windows doesn’t “just work” on the machines you buy because it is a superior OS (it isn’t), it works because the system distributors like Dell take the time to make sure that the necessary drivers for the particular hardware in the machine are all included.</p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
+            <ul>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>The Tides of Change?</h1>
+            <p>
+              Published on
+              <time datetime='Mon, 03 Dec 2012 22:50:38 +0000' pubdate>
+                December 3, 2012
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <p>As Linus Torvalds has mentioned in <a href="http://www.youtube.com/results?search_query=Linus+Torvalds+interview&amp;oq=Linus+Torvalds+interview">several video interviews</a>, probably the main reason Linux has been lagging behind in the desktop market is that it doesn’t come pre-installed on desktop hardware, and the average computer user just isn’t going to put forth the effort to install a different operating system and configure it* than came with their new machine. Recently Dell caused <a href="http://www.zdnet.com/dell-xps-13-laptop-the-ubuntu-developer-edition-arrives-7000008059/">a bit of excitement</a> with their release of an Ubuntu addition of their “<a href="http://www.dell.com/us/soho/p/xps-13-linux/pd.aspx">XPS 13: The Ubuntu developers</a>” edition laptop.  To be fair, this is not the first machine that Dell has offered with Linux pre-installed, but it does seem to be the first that they’ve tried pushing to the mainstream (or in this case, developer) community (in the past you really had to make an effort to find the Ubuntu option on their ordering form).  Dell is also <a href="http://linuxpreloaded.com/">not the only desktop distributor</a> to offer systems with Linux pre-loaded (indeed, many of the others exclusively offer Linux machines), but it is probably the brand with the most name recognition to the general audience.  Could this be the beginning of the end of the Microsoft monopoly on the desktop OS market?  I am optimistic! *Be wary of the blog posts and forum comments that recount stories of installing Linux and being frustrated with the difficulty of getting all the necessary drivers for their hardware and using that as an argument that the OS wasn’t “ready” for prime time.  If you have ever installed Windows on a fresh new machine you will be well aware that it can be just as frustrating.  Windows doesn’t “just work” on the machines you buy because it is a superior OS (it isn’t), it works because the system distributors like Dell take the time to make sure that the necessary drivers for the particular hardware in the machine are all included.</p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

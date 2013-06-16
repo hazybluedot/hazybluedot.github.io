@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - ToDo: Make ECE2524 Obsolete</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,213 +18,224 @@
     <meta content='http://www.hazyblue.me/2013/04/todo-make-ece2524-obsolete/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>ToDo: Make ECE2524 Obsolete</h1>
-          <aside>Posted on: April 9, 2013</aside>
-          <article>
-            <div class='notice'>
-              This post was imported from the old WordPress site. It is possible that some content is missing, or formatting is screwy. If you see something that doesn't look quite right, please <a href="mailto:darmacz@gmail.com">let me know</a>.
-            </div>
-            <p>Why would I want to eliminate the course that I’ve been teaching the
-            past four semesters, that I have put so many hours into to update
-            content, create new assignments, written (and re-written each
-            semester… another topic altogether) a set of scripts to facilitate
-            reviewing stacks of programming assignments and generally had a great
-            time with?</p>
-            
-            <p>Well, because I don’t think it should be a separate course to begin
-            with. As many have noted, and I have agreed, ECE2524 in many respects
-            is a kind of a “catch-all” course for all those really important
-            topics and tools (version control, anyone?) that just don’t get
-            covered anywhere else. It is also officially (but not rigorously
-            enforced in the form of a prereq) to be an introduction to more
-            advanced software engineering courses, so it has the general feel of a
-            programming course.</p>
-            
-            <!-- more -->
-            
-            <p>I think programming (and *nix OS usage and philosophy) is too
-            important to delegate off to a 2 credit course and treat separately
-            from the rest of the engineering curriculum, an idea that was
-            solidified after reading an excerpt from Mindstorms by Seymour Papert.</p>
-            
-            <blockquote>
-              <p>I began to see how children who had learned to program computers
-            could use very concrete computer models to think about thinking and
-            to learn about learning and in doing so, enhance their powers as
-            psychologists and as epistemologists.</p>
-            </blockquote>
-            
-            <p>Papert is a strong advocate to introducing computer programming to
-            children at an early age and using it as a tool to learn other
-            disciplines</p>
-            
-            <blockquote>
-              <p>The metaphor of computer as mathematics-speaking entity puts the
-            learner in a qualitatively new kind of relationship to an important
-            domain of knowledge. Even the best of educational television is
-            limited to offering quantitative improvements in the kinds of
-            learning that existed without it… By contrast, when a child learns to
-            program, the process of learning is transformed. It becomes more
-            active and self-directed. In particular, the knowledge is acquired
-            for a recognizable personal purpose.</p>
-            </blockquote>
-            
-            <p>It goes without saying that a solid understanding of math is crucial
-            for any of the STEM fields, but computers and programming can also
-            encourage engagement with
-            <a href="http://blogs.kqed.org/mindshift/2013/04/combining-robotics-with-poetry-art-and-engineering-can-co-exist/">other fields as well</a>,
-            though that is not the focus of this post.</p>
-            
-            <p>Along with being a useful skill to have, programming teaches a
-            systematic way of thinking about a problem, and crucially shifts the
-            model of learning from one that embodies a “got it” and “got it wrong”
-            binary state to one that encourages the question “how do I fix
-            it?”. As Papert notes, and I can personally attest, when writing a
-            program you never get it right the first time. Becoming a good
-            programmer means becoming an expert at tracking down and fixing bugs.</p>
-            
-            <blockquote>
-              <p>If this way of looking at intellectual products were generalized to
-            how the larger culture thinks about knowledge and its acquisition,
-            we all might be less intimidated by our fears of “being wrong.”</p>
-            </blockquote>
-            
-            <p>Some strong arguments for the symbiosis of programming and learning
-            valuable thinking skills at an early age. But the benefits don’t
-            disappear at the college level, especially in a field such as
-            engineering in which learning programming for the sake of programming
-            is a valuable skill (there are several required classes on the
-            subject, so you know it must be important. Slight sarcasm, but it’s
-            true, regardless of how cynical we agree to be about the way classes
-            are structured and the curriculum is built for us). If programming can
-            help engage with learning mathematics, and as a side effect get us
-            thinking about how we think, and shift our view of learning to a more
-            constructive one, then can’t we get at least the same positive affects
-            if we apply it to more advanced concepts and ideas? It doesn’t hurt
-            that a good chunk of engineering is mathematics anyway.</p>
-            
-            <p>The wheels really started turning after the first day of
-            guest-lecturing for Signals &amp; Systems. Here’s a course that is a lot
-            of math, but critically foundational for learning how to learn about
-            how the world works. That may seem a little embellished, especially
-            for those not familiar with the field (Signals &amp; Systems crash course:
-            a system is anything that has an input signal and produces and output
-            signal, e.g. a car (input is gas/break, output is speed), a heart beat
-            (input is electrical signal transmitted along nerves, output is muscle
-            contraction or blood flow), the planet (so many systems, but treating
-            atmospheric concentrations of CO2 and other gases as an input and the
-            average global temperature would be one example of a system we would
-            be interested in studying)). Signals &amp; Systems provides a set of tools
-            for exploring the input/output relationships of… anything.</p>
-            
-            <p>So why is it taught from a set of slides?</p>
-            
-            <p>What better way to really engage with and understand the theory than
-            USE it? Now most educational budgets wouldn’t be able to cover the
-            costs if everyone wanted to learn the input/output behavior of their
-            own personal communications satellite, but the beauty of Signals &amp;
-            Systems, and the mathematical representations that it embodies, is
-            that everything can be simulated on a computer. From the velocity of a
-            car, to blood flow caused by a beating heart, to the motion of the
-            planets and beyond.</p>
-            
-            <p>I envision a Signals &amp; Systems course that is mostly
-            programming. People will argue that the programming aspect of the
-            material is just the “practical implementation”, and while that’s
-            important, the theory is critical. Yes, the theory is what helps us
-            develop a generalized insight into different ways of representing
-            different types of systems and what allows us to do a good deal of
-            design in a simulated environment with greatly reduced risks,
-            especially when say, designing new flight controls for a commercial
-            jet.</p>
-            
-            <p>But I think the theory can be taught alongside the programming for a
-            much richer experience than is obtained by following a set of
-            slides. You want to understand how the
-            <a href="http://en.wikipedia.org/wiki/Laplace_transform">Laplace transform</a>
-            works? What better way than to implement it on a computer. I guarantee
-            you, if you have to write a program that calculates the Laplace
-            transform for an arbitrary input signal, by the time you’re done with
-            the debugging, you’re going to have a pretty good understanding of
-            whats going on, not to mention a slew of other important experiences
-            (how do you solve an integral on a computer anyway?).</p>
-            
-            <p>Talking about the differences between continuous time systems and
-            discrete time systems is taken to a whole new level when you start
-            trying to simulate a continues-time system on a computer, very much a
-            discrete-time system. How do you even do that? Is it sufficient to
-            just use a really really small time step?</p>
-            
-            <p>So yes, I think the best case scenario would be one in which ECE2524:
-            Intro to Unix for Engineers is obsolete<sup id="fnref:focus"><a href="#fn:focus" class="footnote">1</a></sup>. Not because the topics we
-            cover are unimportant, quite the contrary, they are so important that
-            they should be providing a framework for learning engineering.</p>
-            
-            <h2 id="footnotes">Footnotes:</h2>
-            
-            <div class="footnotes">
-              <ol>
-                <li id="fn:focus">
-                  <p>I’ve focused primarily on the programming aspect of ECE2524
-            here, but those of you who know me and have taken the course with
-            me know that the Unix philosophy is a big part of it as
-            well. Integrating the programming aspects into other coursework
-            would of course not address that. I’m sure, with a little thought
-            we all can think up a clever way of introducing the *nix
-            philosophy and generally the whole concept of thinking about a
-            philosophy when thinking about engineering, and what that even
-            means, with every other course. Because well, it should be an
-            integral part of everything else we learn.<a href="#fnref:focus" class="reversefootnote">↩</a></p>
-                </li>
-              </ol>
-            </div>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
+            <ul>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>ToDo: Make ECE2524 Obsolete</h1>
+            <p>
+              Published on
+              <time datetime='Wed, 10 Apr 2013 03:53:47 +0000' pubdate>
+                April 9, 2013
+              </time>
+            </p>
+          </header>
+          <div class='notice'>
+            This post was imported from the old WordPress site. It is possible that some content is missing, or formatting is screwy. If you see something that doesn't look quite right, please <a href="mailto:darmacz@gmail.com">let me know</a>.
+          </div>
+          <p>Why would I want to eliminate the course that I’ve been teaching the
+          past four semesters, that I have put so many hours into to update
+          content, create new assignments, written (and re-written each
+          semester… another topic altogether) a set of scripts to facilitate
+          reviewing stacks of programming assignments and generally had a great
+          time with?</p>
+          
+          <p>Well, because I don’t think it should be a separate course to begin
+          with. As many have noted, and I have agreed, ECE2524 in many respects
+          is a kind of a “catch-all” course for all those really important
+          topics and tools (version control, anyone?) that just don’t get
+          covered anywhere else. It is also officially (but not rigorously
+          enforced in the form of a prereq) to be an introduction to more
+          advanced software engineering courses, so it has the general feel of a
+          programming course.</p>
+          
+          <!-- more -->
+          
+          <p>I think programming (and *nix OS usage and philosophy) is too
+          important to delegate off to a 2 credit course and treat separately
+          from the rest of the engineering curriculum, an idea that was
+          solidified after reading an excerpt from Mindstorms by Seymour Papert.</p>
+          
+          <blockquote>
+            <p>I began to see how children who had learned to program computers
+          could use very concrete computer models to think about thinking and
+          to learn about learning and in doing so, enhance their powers as
+          psychologists and as epistemologists.</p>
+          </blockquote>
+          
+          <p>Papert is a strong advocate to introducing computer programming to
+          children at an early age and using it as a tool to learn other
+          disciplines</p>
+          
+          <blockquote>
+            <p>The metaphor of computer as mathematics-speaking entity puts the
+          learner in a qualitatively new kind of relationship to an important
+          domain of knowledge. Even the best of educational television is
+          limited to offering quantitative improvements in the kinds of
+          learning that existed without it… By contrast, when a child learns to
+          program, the process of learning is transformed. It becomes more
+          active and self-directed. In particular, the knowledge is acquired
+          for a recognizable personal purpose.</p>
+          </blockquote>
+          
+          <p>It goes without saying that a solid understanding of math is crucial
+          for any of the STEM fields, but computers and programming can also
+          encourage engagement with
+          <a href="http://blogs.kqed.org/mindshift/2013/04/combining-robotics-with-poetry-art-and-engineering-can-co-exist/">other fields as well</a>,
+          though that is not the focus of this post.</p>
+          
+          <p>Along with being a useful skill to have, programming teaches a
+          systematic way of thinking about a problem, and crucially shifts the
+          model of learning from one that embodies a “got it” and “got it wrong”
+          binary state to one that encourages the question “how do I fix
+          it?”. As Papert notes, and I can personally attest, when writing a
+          program you never get it right the first time. Becoming a good
+          programmer means becoming an expert at tracking down and fixing bugs.</p>
+          
+          <blockquote>
+            <p>If this way of looking at intellectual products were generalized to
+          how the larger culture thinks about knowledge and its acquisition,
+          we all might be less intimidated by our fears of “being wrong.”</p>
+          </blockquote>
+          
+          <p>Some strong arguments for the symbiosis of programming and learning
+          valuable thinking skills at an early age. But the benefits don’t
+          disappear at the college level, especially in a field such as
+          engineering in which learning programming for the sake of programming
+          is a valuable skill (there are several required classes on the
+          subject, so you know it must be important. Slight sarcasm, but it’s
+          true, regardless of how cynical we agree to be about the way classes
+          are structured and the curriculum is built for us). If programming can
+          help engage with learning mathematics, and as a side effect get us
+          thinking about how we think, and shift our view of learning to a more
+          constructive one, then can’t we get at least the same positive affects
+          if we apply it to more advanced concepts and ideas? It doesn’t hurt
+          that a good chunk of engineering is mathematics anyway.</p>
+          
+          <p>The wheels really started turning after the first day of
+          guest-lecturing for Signals &amp; Systems. Here’s a course that is a lot
+          of math, but critically foundational for learning how to learn about
+          how the world works. That may seem a little embellished, especially
+          for those not familiar with the field (Signals &amp; Systems crash course:
+          a system is anything that has an input signal and produces and output
+          signal, e.g. a car (input is gas/break, output is speed), a heart beat
+          (input is electrical signal transmitted along nerves, output is muscle
+          contraction or blood flow), the planet (so many systems, but treating
+          atmospheric concentrations of CO2 and other gases as an input and the
+          average global temperature would be one example of a system we would
+          be interested in studying)). Signals &amp; Systems provides a set of tools
+          for exploring the input/output relationships of… anything.</p>
+          
+          <p>So why is it taught from a set of slides?</p>
+          
+          <p>What better way to really engage with and understand the theory than
+          USE it? Now most educational budgets wouldn’t be able to cover the
+          costs if everyone wanted to learn the input/output behavior of their
+          own personal communications satellite, but the beauty of Signals &amp;
+          Systems, and the mathematical representations that it embodies, is
+          that everything can be simulated on a computer. From the velocity of a
+          car, to blood flow caused by a beating heart, to the motion of the
+          planets and beyond.</p>
+          
+          <p>I envision a Signals &amp; Systems course that is mostly
+          programming. People will argue that the programming aspect of the
+          material is just the “practical implementation”, and while that’s
+          important, the theory is critical. Yes, the theory is what helps us
+          develop a generalized insight into different ways of representing
+          different types of systems and what allows us to do a good deal of
+          design in a simulated environment with greatly reduced risks,
+          especially when say, designing new flight controls for a commercial
+          jet.</p>
+          
+          <p>But I think the theory can be taught alongside the programming for a
+          much richer experience than is obtained by following a set of
+          slides. You want to understand how the
+          <a href="http://en.wikipedia.org/wiki/Laplace_transform">Laplace transform</a>
+          works? What better way than to implement it on a computer. I guarantee
+          you, if you have to write a program that calculates the Laplace
+          transform for an arbitrary input signal, by the time you’re done with
+          the debugging, you’re going to have a pretty good understanding of
+          whats going on, not to mention a slew of other important experiences
+          (how do you solve an integral on a computer anyway?).</p>
+          
+          <p>Talking about the differences between continuous time systems and
+          discrete time systems is taken to a whole new level when you start
+          trying to simulate a continues-time system on a computer, very much a
+          discrete-time system. How do you even do that? Is it sufficient to
+          just use a really really small time step?</p>
+          
+          <p>So yes, I think the best case scenario would be one in which ECE2524:
+          Intro to Unix for Engineers is obsolete<sup id="fnref:focus"><a href="#fn:focus" class="footnote">1</a></sup>. Not because the topics we
+          cover are unimportant, quite the contrary, they are so important that
+          they should be providing a framework for learning engineering.</p>
+          
+          <h2 id="footnotes">Footnotes:</h2>
+          
+          <div class="footnotes">
+            <ol>
+              <li id="fn:focus">
+                <p>I’ve focused primarily on the programming aspect of ECE2524
+          here, but those of you who know me and have taken the course with
+          me know that the Unix philosophy is a big part of it as
+          well. Integrating the programming aspects into other coursework
+          would of course not address that. I’m sure, with a little thought
+          we all can think up a clever way of introducing the *nix
+          philosophy and generally the whole concept of thinking about a
+          philosophy when thinking about engineering, and what that even
+          means, with every other course. Because well, it should be an
+          integral part of everything else we learn.<a href="#fnref:focus" class="reversefootnote">↩</a></p>
+              </li>
+            </ol>
+          </div>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

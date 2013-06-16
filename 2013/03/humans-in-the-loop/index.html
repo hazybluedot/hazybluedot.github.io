@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - Humans in the loop</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,90 +18,101 @@
     <meta content='http://www.hazyblue.me/2013/03/humans-in-the-loop/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>Humans in the loop</h1>
-          <aside>Posted on: March 11, 2013</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <p>Today’s hot article in the local twitterverse is a New York Times piece called <a href="http://www.nytimes.com/2013/03/11/technology/computer-algorithms-rely-increasingly-on-human-helpers.html?_r%3D0">Algorithms Get a Human Hand in Steering Web</a>. I discovered it from a tweet by <a href="https://twitter.com/GardnerCampbell">@GardnerCampell</a>, also <a href="https://twitter.com/mzphyz/status/311085754371674112">a beautiful retweet</a> by <a href="https://twitter.com/mzphyz/">@mzphyz</a>:</p>
-            
-            <blockquote>
-              <p>Above all: Algorithms are human constructs, embodiments of our thought &amp; will.</p>
-            
-              <p>Which really sums up this entire post, so for the TL;DR crowd, you can stop reading right now! <a href="http://www.nytimes.com/2013/03/11/technology/computer-algorithms-rely-increasingly-on-human-helpers.html?_r%3D0">The article</a> mentions a number of examples of human-in-the-loop algorithms currently being employed on the internet, notably in Twitter’s search results and Google’s direct information blurbs (not sure what they call them, those little in-line sub-pages that show up for certain search terms, like a(ny) specific U.S. president, for example).</p>
-            </blockquote>
-            
-            <p>What I found interesting was that the tone of the article seemed to suggest that the tasks humans were doing as part of the human-algorithm hybrid system were somehow fundamentally unique to our own abilities, something that computers just could not do. I’m not sure if this was then indented tone, but either way, I found myself disagreeing.</p>
-            
-            <blockquote>
-              <p>Although algorithms are growing ever more powerful, fast and precise, the computers themselves are literal-minded, and context and nuance often elude them.</p>
-            
-              <p>True, but I would argue that our own brains are “literal-minded” as well, there are just layers and layers of algorithms running on our network of neurons that give the impression of something else (this ties in nicely to <a href="http://blogs.lt.vt.edu/castlebravo/2013/03/08/what-is-the-far-future-of-computing/">a post</a> by <a href="http://blogs.lt.vt.edu/castlebravo/">castlebravo</a> discussing <a href="http://blogs.lt.vt.edu/castlebravo/2013/03/08/what-is-the-far-future-of-computing/">what, fundamentally, computing is</a>). I think the underlying reasons we have humans in the loop are closely linked to the next sentence:</p>
-            </blockquote>
-            
-            <blockquote>
-              <p>Capable as these machines are, they are not always up to deciphering the ambiguity of human language and the mystery of reasoning.</p>
-            
-              <p>Not only is spoken language ambiguous, but we lack a solid understanding of reasoning, or how our brains work. And we, after all, are the ones programming the algorithms.</p>
-            </blockquote>
-            
-            <p>In the case of the twitter search example, it struck me that all the human operator was doing was something like this:</p>
-            
-            <p>[code lang=”python”] if (search_term == ‘Big Bird’ and current_time is near(election_season) ): context = politics else context = ‘Sesame Street’ [/code]  which looks rather algorithmic, when written out as one. Granted, this would be after applying our uniquly qualified abilities to interpret search spikes, right?</p>
-            
-            <p>[code lang=”python”] if instantaneous_average_occurrence_of(‘Big Bird’) is significantly_greater_than(all_time_average(‘Big Bird’)): context = find_local_context(‘Big Bird’) else context = ‘Sesame Street’ [/code]  Of course the find_local_context is a bit of a black box right now, and significantly_greater_than may seem a bit fuzzy, but in both cases you could imagine defining a detailed algorithm for each of those tasks… if you have a good understanding of the thought process a human would go through to solve the problem.</p>
-            
-            <p>Ultimately, humans are only “good” at deducing context and nuance because of our years of accrued experience. We build a huge database of linked information and store it in the neural fabric of our minds. There isn’t really anything limiting us from giving current digital computers a similar ability, at least at a fundamental level, and theoretically, as our advances in hardware approach the capabilities of an “ideal computer” (one that can simulate all other machines), and our understanding of human psychology and neurology advances, we could simulate a very similar process to the one that goes on in our brains when deducing context and nuance.</p>
-            
-            <p>The current trend of adding humans into the loop to increase the user friendliness of online algorithms has more to do with our lack of understanding of human thought than with any technical limitations posed by computers.</p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
+            <ul>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>Humans in the loop</h1>
+            <p>
+              Published on
+              <time datetime='Mon, 11 Mar 2013 20:09:11 +0000' pubdate>
+                March 11, 2013
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <p>Today’s hot article in the local twitterverse is a New York Times piece called <a href="http://www.nytimes.com/2013/03/11/technology/computer-algorithms-rely-increasingly-on-human-helpers.html?_r%3D0">Algorithms Get a Human Hand in Steering Web</a>. I discovered it from a tweet by <a href="https://twitter.com/GardnerCampbell">@GardnerCampell</a>, also <a href="https://twitter.com/mzphyz/status/311085754371674112">a beautiful retweet</a> by <a href="https://twitter.com/mzphyz/">@mzphyz</a>:</p>
+          
+          <blockquote>
+            <p>Above all: Algorithms are human constructs, embodiments of our thought &amp; will.</p>
+          
+            <p>Which really sums up this entire post, so for the TL;DR crowd, you can stop reading right now! <a href="http://www.nytimes.com/2013/03/11/technology/computer-algorithms-rely-increasingly-on-human-helpers.html?_r%3D0">The article</a> mentions a number of examples of human-in-the-loop algorithms currently being employed on the internet, notably in Twitter’s search results and Google’s direct information blurbs (not sure what they call them, those little in-line sub-pages that show up for certain search terms, like a(ny) specific U.S. president, for example).</p>
+          </blockquote>
+          
+          <p>What I found interesting was that the tone of the article seemed to suggest that the tasks humans were doing as part of the human-algorithm hybrid system were somehow fundamentally unique to our own abilities, something that computers just could not do. I’m not sure if this was then indented tone, but either way, I found myself disagreeing.</p>
+          
+          <blockquote>
+            <p>Although algorithms are growing ever more powerful, fast and precise, the computers themselves are literal-minded, and context and nuance often elude them.</p>
+          
+            <p>True, but I would argue that our own brains are “literal-minded” as well, there are just layers and layers of algorithms running on our network of neurons that give the impression of something else (this ties in nicely to <a href="http://blogs.lt.vt.edu/castlebravo/2013/03/08/what-is-the-far-future-of-computing/">a post</a> by <a href="http://blogs.lt.vt.edu/castlebravo/">castlebravo</a> discussing <a href="http://blogs.lt.vt.edu/castlebravo/2013/03/08/what-is-the-far-future-of-computing/">what, fundamentally, computing is</a>). I think the underlying reasons we have humans in the loop are closely linked to the next sentence:</p>
+          </blockquote>
+          
+          <blockquote>
+            <p>Capable as these machines are, they are not always up to deciphering the ambiguity of human language and the mystery of reasoning.</p>
+          
+            <p>Not only is spoken language ambiguous, but we lack a solid understanding of reasoning, or how our brains work. And we, after all, are the ones programming the algorithms.</p>
+          </blockquote>
+          
+          <p>In the case of the twitter search example, it struck me that all the human operator was doing was something like this:</p>
+          
+          <p>[code lang=”python”] if (search_term == ‘Big Bird’ and current_time is near(election_season) ): context = politics else context = ‘Sesame Street’ [/code]  which looks rather algorithmic, when written out as one. Granted, this would be after applying our uniquly qualified abilities to interpret search spikes, right?</p>
+          
+          <p>[code lang=”python”] if instantaneous_average_occurrence_of(‘Big Bird’) is significantly_greater_than(all_time_average(‘Big Bird’)): context = find_local_context(‘Big Bird’) else context = ‘Sesame Street’ [/code]  Of course the find_local_context is a bit of a black box right now, and significantly_greater_than may seem a bit fuzzy, but in both cases you could imagine defining a detailed algorithm for each of those tasks… if you have a good understanding of the thought process a human would go through to solve the problem.</p>
+          
+          <p>Ultimately, humans are only “good” at deducing context and nuance because of our years of accrued experience. We build a huge database of linked information and store it in the neural fabric of our minds. There isn’t really anything limiting us from giving current digital computers a similar ability, at least at a fundamental level, and theoretically, as our advances in hardware approach the capabilities of an “ideal computer” (one that can simulate all other machines), and our understanding of human psychology and neurology advances, we could simulate a very similar process to the one that goes on in our brains when deducing context and nuance.</p>
+          
+          <p>The current trend of adding humans into the loop to increase the user friendliness of online algorithms has more to do with our lack of understanding of human thought than with any technical limitations posed by computers.</p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

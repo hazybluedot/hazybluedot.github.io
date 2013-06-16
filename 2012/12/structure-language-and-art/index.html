@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - Structure, Language and Art</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,60 +18,71 @@
     <meta content='http://www.hazyblue.me/2012/12/structure-language-and-art/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>Structure, Language and Art</h1>
-          <aside>Posted on: December 7, 2012</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <p>In <a href="https://blogs.lt.vt.edu/tylera5/2012/12/07/poems/">a recent post</a><a href="https://blogs.lt.vt.edu/tylera5/">tylera5</a> commented that the last time he wrote poetry was in high school, and wasn’t expecting to have to write a poem for a programming course. I got the idea for a poetry assignment from a friend of mine who teaches a biological science course. She found that the challenge of condensing a technical topic into a 17 syllable Haiku really forces one to think critically about the subject and filter through all the information to shake out the key concept. And poems about tech topics are just fun to read! I think the benefit is even increased for a programming course. As tylera5 mentioned, both poems had a structure, and he had to think a bit about how to put his thoughts into the structure dictated by the poetry form, whether it be the 5/7/5 syllable structure of a <a href="http://en.wikipedia.org/wiki/Haiku_in_English">Haiku</a>, or the AABBA rhyming scheme of a <a href="http://en.wikipedia.org/wiki/Limerick_(poetry)">limerick</a>. Poetry is the expression of ideas and thoughts through structured language (and the structure can play a larger or lesser roll depending on the poet, and type of poetry). Programming also is the expression of ideas and thoughts through structured language. The domain of ideas is often more restricted (though not necessarily, <a href="http://www.slate.com/articles/technology/books/2012/11/computer_programming_10_print_chr_205_5_rnd_1_goto_10_from_mit_press_reviewed.html">this article and book</a> could be the subject of a full post in its own right) and adherence to structure is more strict, but there is an art to both forms of expression. Are there artistic and expressive tools in other STEM topics as well?</p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
+            <ul>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>Structure, Language and Art</h1>
+            <p>
+              Published on
+              <time datetime='Fri, 07 Dec 2012 16:46:40 +0000' pubdate>
+                December 7, 2012
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <p>In <a href="https://blogs.lt.vt.edu/tylera5/2012/12/07/poems/">a recent post</a><a href="https://blogs.lt.vt.edu/tylera5/">tylera5</a> commented that the last time he wrote poetry was in high school, and wasn’t expecting to have to write a poem for a programming course. I got the idea for a poetry assignment from a friend of mine who teaches a biological science course. She found that the challenge of condensing a technical topic into a 17 syllable Haiku really forces one to think critically about the subject and filter through all the information to shake out the key concept. And poems about tech topics are just fun to read! I think the benefit is even increased for a programming course. As tylera5 mentioned, both poems had a structure, and he had to think a bit about how to put his thoughts into the structure dictated by the poetry form, whether it be the 5/7/5 syllable structure of a <a href="http://en.wikipedia.org/wiki/Haiku_in_English">Haiku</a>, or the AABBA rhyming scheme of a <a href="http://en.wikipedia.org/wiki/Limerick_(poetry)">limerick</a>. Poetry is the expression of ideas and thoughts through structured language (and the structure can play a larger or lesser roll depending on the poet, and type of poetry). Programming also is the expression of ideas and thoughts through structured language. The domain of ideas is often more restricted (though not necessarily, <a href="http://www.slate.com/articles/technology/books/2012/11/computer_programming_10_print_chr_205_5_rnd_1_goto_10_from_mit_press_reviewed.html">this article and book</a> could be the subject of a full post in its own right) and adherence to structure is more strict, but there is an art to both forms of expression. Are there artistic and expressive tools in other STEM topics as well?</p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

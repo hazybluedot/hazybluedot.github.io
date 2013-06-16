@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - Does awareness of our limitations aid in overcoming them?</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,68 +18,79 @@
     <meta content='http://www.hazyblue.me/2013/02/does-awareness-of-our-limitations-aid-in-overcoming-them/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>Does awareness of our limitations aid in overcoming them?</h1>
-          <aside>Posted on: February 6, 2013</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <p>A couple of thoughts have been bouncing around in my head while reading. First, while reading <em><a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">As We May Think</a>_by Bush, but repeatedly with other sources, I was reminded of a thought I often have when reading science ficture written in the 50s, around the same time Vannevar Bush wrote _As We May Think</em>. While on many levels the predictions of the future turned out to be quite accurate, there are notable exceptions that jump out at me while reading. A really good example that illustrates my point is Isaac Asimov’s Foundation series. The series is somewhat unique in that it covers a huge expanse of time in the fictional world, over 20,000 years if all the short stories and novels written by other authors after Asimov’s death are taken into account, and was written over several decades in standard non-fictional Earth time: the four stories that made up the first published book in the series were written between 1942 and 1944. Asimov thought he was done with the series after writing two stories in 1948 and 1949 and went on to do other things for 30 years. After much continued pressure from fans and friends he published the 6th book in the series in 1982 and the 7th in 1986. Three things struck me while reading the first part of the series, written in the 40s and 50s:</p>
-            
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
             <ul>
-              <li>It was generally assumed that nuclear power was the energy of the future. The logical extrapolation was nuclear powered wrist-watches (ok, actually, I did read a compelling article fairly recently revisiting micro-atomic generators using minuscule amounts of radioactive materials to agitate a pizo-electric element to produce electricity, so maybe this wasn’t so far off the mark)</li>
-              <li>While we would have space ships capable of faster-than-light travel (hyperspace!), the calculations to perform jumps and ensure that the trajectory didn’t travel too near the gravitational effects of a star were done by a human, by hand. Particularly long jumps took the better part of a day to calculate and verify before it was deemed safe to tell the ship to execute the maneuver which itself would only take a fraction of a second.</li>
-              <li>There were no women whatsoever in any type of leadership role. We could say the same of ethnic minorities, non-heterosexual and non-cisgendered people as well, but we will give Asimov the benefit of the doubt and acknowledge that the U.S. was (at least visibly) much less diverse than it is today. But surely he knew about the existence of women.</li>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
             </ul>
-            
-            <p>These are little things you get used to when reading science fiction of the time. I think perhaps most interesting is that while it is common to extrapolate technology into the future with reasonably accuracy, the social structures that will exist 10,000 years from now are remarkably similar to those of the current time, if science fiction authors have anything to say about it. As I mentioned, the 6th book, Foundation’s Edge was published in 1982. Within the first page or so it was revealed without fanfare that the mayor of Terminus, politically the (quasi) central planet of The Foundation (despite it being on the outskirts of the colonized worlds), is currently a woman. Also, due to much research and development the latest spaceships have a new feature: hyperjumps are calculated in a matter of seconds by on-board computers. Also the old nuclear technology has been replaced by state-of-the-art zero-point-energy extraction (if I recall correctly, it’s been a while since I read the books!) providing a nearly unexhaustable energy source to power your jaunts around the universe. The changes, while artfully worked into the narrative and coherently worked into the fictional universe that had first been described over 30 years prior, still jumped out at the casual reader. I bring this up by no means to diminish Asimov’s work, or him personally (I’m a huge fan, having read and enjoyed just about every book he’s written at this point), but rather to suggest that we has a species have some fundamental limitations in regards to predicting the future. We view the future through a lens designed by history and crafted in the present. While it is all too natural for us to extrapolate existing technology and social dynamics arbitrarily far into the future, and while that leads to some really fascinating scenarios, making significant conceptual leaps (such as the one Ada Lovelace is attributed to making) is something much more difficult and happens much less frequently. What I wonder though, is after a long history of learning from our shortsightedness in some instances (and acknowledging our forsightedness in others), can we overcome this limitation? Are we now, compared to the 1950s, better able to make conceptual leaps and imagine technology and social structures that are fundamentally different from those of the present simply because we are aware that we tend to make certain kinds of assumptions? Why would a woman even WANT to be mayor of a politically powerful planet?</p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>Does awareness of our limitations aid in overcoming them?</h1>
+            <p>
+              Published on
+              <time datetime='Thu, 07 Feb 2013 02:56:44 +0000' pubdate>
+                February 6, 2013
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <p>A couple of thoughts have been bouncing around in my head while reading. First, while reading <em><a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">As We May Think</a>_by Bush, but repeatedly with other sources, I was reminded of a thought I often have when reading science ficture written in the 50s, around the same time Vannevar Bush wrote _As We May Think</em>. While on many levels the predictions of the future turned out to be quite accurate, there are notable exceptions that jump out at me while reading. A really good example that illustrates my point is Isaac Asimov’s Foundation series. The series is somewhat unique in that it covers a huge expanse of time in the fictional world, over 20,000 years if all the short stories and novels written by other authors after Asimov’s death are taken into account, and was written over several decades in standard non-fictional Earth time: the four stories that made up the first published book in the series were written between 1942 and 1944. Asimov thought he was done with the series after writing two stories in 1948 and 1949 and went on to do other things for 30 years. After much continued pressure from fans and friends he published the 6th book in the series in 1982 and the 7th in 1986. Three things struck me while reading the first part of the series, written in the 40s and 50s:</p>
+          
+          <ul>
+            <li>It was generally assumed that nuclear power was the energy of the future. The logical extrapolation was nuclear powered wrist-watches (ok, actually, I did read a compelling article fairly recently revisiting micro-atomic generators using minuscule amounts of radioactive materials to agitate a pizo-electric element to produce electricity, so maybe this wasn’t so far off the mark)</li>
+            <li>While we would have space ships capable of faster-than-light travel (hyperspace!), the calculations to perform jumps and ensure that the trajectory didn’t travel too near the gravitational effects of a star were done by a human, by hand. Particularly long jumps took the better part of a day to calculate and verify before it was deemed safe to tell the ship to execute the maneuver which itself would only take a fraction of a second.</li>
+            <li>There were no women whatsoever in any type of leadership role. We could say the same of ethnic minorities, non-heterosexual and non-cisgendered people as well, but we will give Asimov the benefit of the doubt and acknowledge that the U.S. was (at least visibly) much less diverse than it is today. But surely he knew about the existence of women.</li>
+          </ul>
+          
+          <p>These are little things you get used to when reading science fiction of the time. I think perhaps most interesting is that while it is common to extrapolate technology into the future with reasonably accuracy, the social structures that will exist 10,000 years from now are remarkably similar to those of the current time, if science fiction authors have anything to say about it. As I mentioned, the 6th book, Foundation’s Edge was published in 1982. Within the first page or so it was revealed without fanfare that the mayor of Terminus, politically the (quasi) central planet of The Foundation (despite it being on the outskirts of the colonized worlds), is currently a woman. Also, due to much research and development the latest spaceships have a new feature: hyperjumps are calculated in a matter of seconds by on-board computers. Also the old nuclear technology has been replaced by state-of-the-art zero-point-energy extraction (if I recall correctly, it’s been a while since I read the books!) providing a nearly unexhaustable energy source to power your jaunts around the universe. The changes, while artfully worked into the narrative and coherently worked into the fictional universe that had first been described over 30 years prior, still jumped out at the casual reader. I bring this up by no means to diminish Asimov’s work, or him personally (I’m a huge fan, having read and enjoyed just about every book he’s written at this point), but rather to suggest that we has a species have some fundamental limitations in regards to predicting the future. We view the future through a lens designed by history and crafted in the present. While it is all too natural for us to extrapolate existing technology and social dynamics arbitrarily far into the future, and while that leads to some really fascinating scenarios, making significant conceptual leaps (such as the one Ada Lovelace is attributed to making) is something much more difficult and happens much less frequently. What I wonder though, is after a long history of learning from our shortsightedness in some instances (and acknowledging our forsightedness in others), can we overcome this limitation? Are we now, compared to the 1950s, better able to make conceptual leaps and imagine technology and social structures that are fundamentally different from those of the present simply because we are aware that we tend to make certain kinds of assumptions? Why would a woman even WANT to be mayor of a politically powerful planet?</p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - I am a Selfish Git: A bit on my teaching philosophy</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,68 +18,79 @@
     <meta content='http://www.hazyblue.me/2013/02/i-am-a-selfish-git-a-bit-on-my-teaching-philosophy/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
-        <div class='post'>
-          <h1>I am a Selfish Git: A bit on my teaching philosophy</h1>
-          <aside>Posted on: February 25, 2013</aside>
-          <article>
-            <div class='error'>
-              This post has not been edited since the automatic import. Errors are likely.
-            </div>
-            <p>A common observation I encounter from people who have taken my class is that there is less structure in the assignments than they are used to, and oftentimes less than they would like. A consequence of this is that participants do a lot of searching the web for tidbits on syntax and program idioms for the language <em>du jour</em>, a process that can take time with the wealth of information that is returned by a simple google search. I could track down some research that shows the benefit of this “look it up yourself” approach, and it would all be valid and it is one of the reasons I structure assignments the way I do, but there is another reason. A more selfish reason. Throughout the term I’ll assign a series of assignments. Details are tweaked each semester but the general outline is something like:</p>
-            
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
             <ul>
-              <li>read in lines of numbers, one per line, do something with them and write out a result number.</li>
-              <li>read in lines of structured data, do something with them, write out lines of structured data</li>
-              <li>spawn a child process, or two, connect them with a pipe (this year I will probably integrate the “read in lines” idiom into this assignment since I like it so much)</li>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
             </ul>
-            
-            <p>I’ve done each of these myself of course, and tweaked my own solutions from year to year and have found a structure for each that I think works well, is easy to read and is as simple as possible. Often times my solutions use fewer lines of code than some of the solutions I receive, which admittedly make my estimates of how long a particular assignment will be inaccurate. I know some of the assignments end up taking a lot longer than I anticipate for some, and this can be extremely frustrating, especially since I know everyone’s time is a precious commodity that must be partitioned across other classes and personal time too (you <em>are_making time for play, aren’t you?). I could provide more details in the write-ups. I could say “I tried algorithm X a number of ways: A, B and C, and settled on B because P, Q and R”. It would save those completing the assignments time and it would save me time, because on average the results I’d get back for grading would take up fewer lines of code and be more familiar to me. And that is why I don’t. If I wrote in the assignment and said “for part A, use method B in conjunction with idiom X and you can complete this part in 3 lines” then I can guarantee you that around 99% of the 60 assignments I received back used method B in conjunction with idiom X in only 3 lines of code. It would be much easier to evaluate: I’d be familiar with the most common errors when using method B in conjunction with idiom X and would have made spotting them quickly a reflexive response. But I wouldn’t learn a thing. Let me tell you a secret. Sure, I enjoy seeing others learn and explore new ideas and get excited when they discover they can write something in 10 lines in Python that took them 30 in C. I really do. But that’s not the only reason I teach. I teach because I learn a tremendous amount from the process myself. In fact, all that tweaking I said I’ve done to my solutions? That was done in response to reviewing a diverse (sometimes _very_diverse) set of solutions to the same problem. Often times I’ll get solutions written in a way I would never have used solving the problem myself, and my first reaction is something like “why does this even work?” And then I’ll look at it a little closer (often times using a fair amount of googling myself to find other similar examples) until I understand the implementation and form some opinion about it. There are plenty of times that I’ll get a solution handed to me that I think is cleaner, more elegant and simpler than my own, and so I’ll incorporate what I learned into my future solutions (and let’s not forget back into my own work as well, a topic for another post). And I’ll learn something new. And that makes me happy. I really like learning new things (thank goodness for that, given how long I’ve been in school!), and I have learned _so</em> much over the past couple years that I’ve been teaching. Possibly more than what I’ve learned in all the classes I’ve taken during my graduate career (different things for sure, which makes it difficult to compare amount, but still, you get the idea). To be sure, there is a balance, and part of my own learning process has been to find out that sweat spot between unstructured free-style assignments (“Write a program that does X with input B. Ready go!”) and an enumerated list of steps that will gently guide a traveler from an empty text file to a working program that meets all the specs. I think I’ve been zeroing in on the balance, and the feedback I get from blogs as well as the assignments themselves is really helpful. So keep writing, and keep a healthy does of skepticism regarding my philosophy. And ask questions!  [caption id=”” align=”aligncenter” width=”337”]<a href="http://xkcd.com/118/">50 Ways</a>[/caption]</p>
-          </article>
-        </div>
-        <div class='social'>
-          <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
           <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
           </script>
-        </div>
-      </div>
-      <div id='footer'>
+        </section>
+      </aside>
+      <section id='content'>
+        <article>
+          <header>
+            <h1>I am a Selfish Git: A bit on my teaching philosophy</h1>
+            <p>
+              Published on
+              <time datetime='Tue, 26 Feb 2013 04:00:16 +0000' pubdate>
+                February 25, 2013
+              </time>
+            </p>
+          </header>
+          <div class='error'>
+            This post has not been edited since the automatic import. Errors are likely.
+          </div>
+          <p>A common observation I encounter from people who have taken my class is that there is less structure in the assignments than they are used to, and oftentimes less than they would like. A consequence of this is that participants do a lot of searching the web for tidbits on syntax and program idioms for the language <em>du jour</em>, a process that can take time with the wealth of information that is returned by a simple google search. I could track down some research that shows the benefit of this “look it up yourself” approach, and it would all be valid and it is one of the reasons I structure assignments the way I do, but there is another reason. A more selfish reason. Throughout the term I’ll assign a series of assignments. Details are tweaked each semester but the general outline is something like:</p>
+          
+          <ul>
+            <li>read in lines of numbers, one per line, do something with them and write out a result number.</li>
+            <li>read in lines of structured data, do something with them, write out lines of structured data</li>
+            <li>spawn a child process, or two, connect them with a pipe (this year I will probably integrate the “read in lines” idiom into this assignment since I like it so much)</li>
+          </ul>
+          
+          <p>I’ve done each of these myself of course, and tweaked my own solutions from year to year and have found a structure for each that I think works well, is easy to read and is as simple as possible. Often times my solutions use fewer lines of code than some of the solutions I receive, which admittedly make my estimates of how long a particular assignment will be inaccurate. I know some of the assignments end up taking a lot longer than I anticipate for some, and this can be extremely frustrating, especially since I know everyone’s time is a precious commodity that must be partitioned across other classes and personal time too (you <em>are_making time for play, aren’t you?). I could provide more details in the write-ups. I could say “I tried algorithm X a number of ways: A, B and C, and settled on B because P, Q and R”. It would save those completing the assignments time and it would save me time, because on average the results I’d get back for grading would take up fewer lines of code and be more familiar to me. And that is why I don’t. If I wrote in the assignment and said “for part A, use method B in conjunction with idiom X and you can complete this part in 3 lines” then I can guarantee you that around 99% of the 60 assignments I received back used method B in conjunction with idiom X in only 3 lines of code. It would be much easier to evaluate: I’d be familiar with the most common errors when using method B in conjunction with idiom X and would have made spotting them quickly a reflexive response. But I wouldn’t learn a thing. Let me tell you a secret. Sure, I enjoy seeing others learn and explore new ideas and get excited when they discover they can write something in 10 lines in Python that took them 30 in C. I really do. But that’s not the only reason I teach. I teach because I learn a tremendous amount from the process myself. In fact, all that tweaking I said I’ve done to my solutions? That was done in response to reviewing a diverse (sometimes _very_diverse) set of solutions to the same problem. Often times I’ll get solutions written in a way I would never have used solving the problem myself, and my first reaction is something like “why does this even work?” And then I’ll look at it a little closer (often times using a fair amount of googling myself to find other similar examples) until I understand the implementation and form some opinion about it. There are plenty of times that I’ll get a solution handed to me that I think is cleaner, more elegant and simpler than my own, and so I’ll incorporate what I learned into my future solutions (and let’s not forget back into my own work as well, a topic for another post). And I’ll learn something new. And that makes me happy. I really like learning new things (thank goodness for that, given how long I’ve been in school!), and I have learned _so</em> much over the past couple years that I’ve been teaching. Possibly more than what I’ve learned in all the classes I’ve taken during my graduate career (different things for sure, which makes it difficult to compare amount, but still, you get the idea). To be sure, there is a balance, and part of my own learning process has been to find out that sweat spot between unstructured free-style assignments (“Write a program that does X with input B. Ready go!”) and an enumerated list of steps that will gently guide a traveler from an empty text file to a working program that meets all the specs. I think I’ve been zeroing in on the balance, and the feedback I get from blogs as well as the assignments themselves is really helpful. So keep writing, and keep a healthy does of skepticism regarding my philosophy. And ask questions!  [caption id=”” align=”aligncenter” width=”337”]<a href="http://xkcd.com/118/">50 Ways</a>[/caption]</p>
+          <footer>
+            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
+            </script>
+          </footer>
+        </article>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>

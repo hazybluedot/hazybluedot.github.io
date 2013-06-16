@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>#!/hazy/blue/. - Teaching Philosophy</title>
     <link href='/stylesheets/screen.css' media='screen,projection' rel='stylesheet' type='text/css'>
-    <link href='/stylesheets/link_icons.css' media='screen,projection' rel='stylesheet' type='text/css'>
+    <!--%link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/link_icons.css', :media => 'screen,projection'}-->
     <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/solarized.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='http://www.hazyblue.me/feed.xml' rel='alternate' title='#!/hazy/blue/. - Feed' type='application/rss+xml'>
@@ -18,40 +18,46 @@
     <meta content='http://www.hazyblue.me/teaching/' name='twitter:url'>
     <meta content='nanoc 3.6.3' name='generator'>
   </head>
-  <body class='bp two-col light'>
+  <body class='two-col light'>
     <div id='container'>
-      <div id='header'>
-        <div class='title'>
-          <a href='/'>
-            <span id='title'>#!/hazy/blue/.</span>
-            <span id='subtitle'>open to interpretation</span>
-          </a>
-        </div>
-      </div>
-      <div id='sidebar'>
-        <h2>About</h2>
-        coming soon
-        <!--= link_to('Philosophy', teach.rep(:pdf))-->
-        <h2>Recent Posts</h2>
-        <ul>
-          <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
-          <li><a href="/2013/05/making-space/">Making Space</a></li>
-          <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
-          <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
-          <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
-          <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
-          <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
-        </ul>
-        <h2>Follow</h2>
-        <a href='/feed.xml'>
-          <img src='/assets/Feed-icon.svg.png'>
+      <header>
+        <a href='/'>
+          <h1>#!/hazy/blue/.</h1>
+          <h2>open to interpretation</h2>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
-      </div>
-      <div id='content'>
+      </header>
+      <aside>
+        <section id='about'>
+          <h1>About</h1>
+          comming soon
+        </section>
+        <section id='recent'>
+          <h1>Recent Posts</h1>
+          <nav>
+            <ul>
+              <li><a href="/2013/05/new-site/">New Site, New Framework</a></li>
+              <li><a href="/2013/05/making-space/">Making Space</a></li>
+              <li><a href="/2013/05/open-source-treks-to-the-final-frontier/">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</a></li>
+              <li><a href="/2013/04/not-making-this-up-the-medium-is-the-message/">Not making this up: The Medium is the Message</a></li>
+              <li><a href="/2013/04/as-scholars-are-wont-to-do-poetry-of-the-brachristochrone-problem/">As Scholars are Wont to do: Poetry of the brachristochrone problem</a></li>
+              <li><a href="/2013/04/todo-make-ece2524-obsolete/">ToDo: Make ECE2524 Obsolete</a></li>
+              <li><a href="/2013/01/its-a-feature-not-a-bug/">It's a Feature, not a Bug</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id='follow'>
+          <h1>Follow</h1>
+          <a href='/feed.xml'>
+            <img src='/assets/Feed-icon.svg.png'>
+              <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
+            </img>
+          </a>
+          <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
+          </script>
+        </section>
+      </aside>
+      <section id='content'>
         <p>My concept of learning extends beyond memorizing equations and values.  Mastery of technical material is demonstrated by the application of the tools on a new, never-before seen problem.  More than the “plug and chug” approach that I became so used to during my undergraduate career, real mastery is the ability to see connections between different types of problems and apply tools learned in the context of one domain to another.  For instance, differential equations are common occurrences in engineering applications, it is important to see the similarities in structure between equations even when applied to different problems: the solution to a time varying system or as a tool to solve an optimization problem.  Mastery of high level engineering tools leads to mastery of the basics, not for the sake of mastering the basics as individual islands of knowledge, but as necessary building blocks to a larger whole.</p>
         
         <p>The best experience I had as a student was in a class in which the lectures felt more like story time than lectures.  The content was detailed and complete, but the instructor successfully wove in personal stories and anecdotes to explain how he came to the conclusions he was sharing.  I value this approach as it connects the instructor to the content on a personal level, which in turn makes it easier for students to connect and engage with the material. My appreciation for the topic (Greek History) was greatly increased due to the personal engagement shown by the instructor.  My goal is to convey a similar engagement to my own material. It will be challenging to do this with technical topics, but I believe it is possible, and where I can’t include my personal experiences I’d like to draw on the lives and experiences of the people who laid the groundwork for the different theories and techniques that are covered in an engineering curriculum.  This will make the subject itself more personal, increasing the likelihood that students can connect on a personal level.</p>
@@ -69,10 +75,10 @@
         <p>I believe some assessment on some tools-based skills can be helpful and so while ideally limited to necessity, so called “academic exercises” probably should not be eliminated entirely, however, I want to emphasize problem-based problem solving as it provides motivation for learning the base tools, and I find it results in greater retention of learned skills as well as improving confidence in solving original problems that don’t fit the typical academic mold of those used in most engineering text books.</p>
         
         <p>I really like [whosits] suggestion of making a point to regularly take a new out-of-field course, and I plan to take one every year, if possible.  In addition to exposing myself to a variety of teaching styles, I am sure to come across possible connections and applications to my own field of study (for example, I already had such an experience while sitting in on a Public Planning and Policy class and noticed a parallel between a specific public planning policy and an optimal control algorithm I had been studying for a robotic navigation problem).</p>
-      </div>
-      <div id='footer'>
+      </section>
+      <footer>
         a dkm production
-      </div>
+      </footer>
     </div>
   </body>
 </html>
