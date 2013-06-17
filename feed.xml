@@ -438,11 +438,11 @@ I’m finished posting final grades.&lt;/p&gt;
   </entry>
   <entry>
     <id>tag:www.hazyblue.me,2013-05-15:/2013/05/open-source-treks-to-the-final-frontier/</id>
-    <title type="html">And Now You're an Anstronaut: Open Source Treks to The Final Frontier</title>
+    <title type="html">And Now You're an Astronaut: Open Source Treks to The Final Frontier</title>
     <published>2013-05-15T17:09:32Z</published>
     <updated>2013-05-15T17:09:32Z</updated>
     <link rel="alternate" href="http://www.hazyblue.me/2013/05/open-source-treks-to-the-final-frontier/"/>
-    <content type="html">&lt;p&gt;There have &lt;a href="http://blogs.lt.vt.edu/leonp/2013/05/08/here-comes-linux/"&gt;been&lt;/a&gt; a &lt;a href="https://blogs.lt.vt.edu/hussaino/2013/05/15/linux-dominating-space/"&gt;couple&lt;/a&gt; of blog posts recently referencing the recent switch &lt;a href="http://www.nasa.gov/"&gt;NASA&lt;/a&gt; made from Windows to &lt;a href="http://www.debian.org/"&gt;Debian 6&lt;/a&gt;, a &lt;a href="http://www.gnu.org/gnu/linux-and-gnu.html"&gt;GNU/Linux&lt;/a&gt; distribution, as the OS running on the laptops abord the &lt;a href="http://www.nasa.gov/mission_pages/station/main/index.html"&gt;International Space Station&lt;/a&gt;. It’s worth noting that Linux is no stranger to the ISS, as it has been a part of ground control operations &lt;a href="http://www.linux-magazine.com/w3/issue/12/Linux_on_the_International_Space_Station.pdf%20"&gt;since the beginning&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;There have &lt;a href="http://blogs.lt.vt.edu/leonp/2013/05/08/here-comes-linux/"&gt;been&lt;/a&gt; a &lt;a href="https://blogs.lt.vt.edu/hussaino/2013/05/15/linux-dominating-space/"&gt;couple&lt;/a&gt; of blog posts recently referencing the recent switch &lt;a href="http://www.nasa.gov/"&gt;NASA&lt;/a&gt; made from Windows to &lt;a href="http://www.debian.org/"&gt;Debian 6&lt;/a&gt;, a &lt;a href="http://www.gnu.org/gnu/linux-and-gnu.html"&gt;GNU/Linux&lt;/a&gt; distribution, as the OS running on the laptops aboard the &lt;a href="http://www.nasa.gov/mission_pages/station/main/index.html"&gt;International Space Station&lt;/a&gt;. It’s worth noting that Linux is no stranger to the ISS, as it has been a part of ground control operations &lt;a href="http://www.linux-magazine.com/w3/issue/12/Linux_on_the_International_Space_Station.pdf%20"&gt;since the beginning&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The reasons for the space-side switch &lt;a href="http://www.zdnet.com/to-the-space-station-and-beyond-with-linux-7000014958/"&gt;are quoted&lt;/a&gt; as&lt;/p&gt;
 
@@ -455,7 +455,7 @@ adjust, or adapt, we could.&lt;/p&gt;
 &lt;p&gt;This is satisfying to many Open Source/Linux fans in its own right: a
 collaborative open source project has
 &lt;a href="http://en.wikipedia.org/wiki/Internet"&gt;once again&lt;/a&gt; proved itself more
-stable and reliable for the (relatively) extrodinary conditions of low
+stable and reliable for the (relatively) extraordinary conditions of low
 Earth orbit than a product produced by a major software giant. Plus
 one for open source collaboration and peer networks!&lt;/p&gt;
 
@@ -471,7 +471,7 @@ which the software is released. Linux, and the GNU tools, which
 together make up a fully functional operating system, are released
 under the
 &lt;a href="http://www.gnu.org/copyleft/gpl.html"&gt;GNU General Public License&lt;/a&gt;. Unlike
-many licenses used for commersial software, the GPL esures that
+many licenses used for commercial software, the GPL ensures that
 software licenses under its terms remains free for users to use,modify
 and redistribute. There are certainly some strong criticisms and
 &lt;a href="https://blogs.oracle.com/roumen/entry/sun_s_criticism_of_gpl"&gt;ongoing debate&lt;/a&gt;
