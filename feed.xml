@@ -2,281 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.hazyblue.me/</id>
   <title>Awesome Feed</title>
-  <updated>2013-06-08T22:38:39Z</updated>
+  <updated>2013-06-07T15:42:04Z</updated>
   <link rel="alternate" href="http://www.hazyblue.me/"/>
   <link rel="self" href="http://www.hazyblue.me/feed.xml"/>
   <author>
     <name>dkm</name>
     <uri>dkm</uri>
   </author>
-  <entry>
-    <id>tag:www.hazyblue.me,2013-06-08:/2013/06/getting-technical/</id>
-    <title type="html">Getting Technical</title>
-    <published>2013-06-08T22:38:39Z</published>
-    <updated>2013-06-08T22:38:39Z</updated>
-    <link rel="alternate" href="http://www.hazyblue.me/2013/06/getting-technical/"/>
-    <content type="html">&lt;p&gt;Some personal interests seem to wax and wane, but remain ever-present
-in my mind. Lurking. Waiting for the right moment to make my brain think.&lt;/p&gt;
-
-&lt;p&gt;I remember creating my first web page in the very early years of the
-web. Luckily it has long been removed from the internet, for it was a
-ghastly thing. But I continued to dabble in web development throughout
-high school and even briefly formed a LLC with a friend to create
-websites for people (and back in those days open source content
-management systems hadn’t been created yet, so we rolled our own in
-Perl). We created two, neither of which are still live in their
-original form (again, this is a good thing for anyone actually wanting
-to visit them). Part of my employment during my undergraduate years
-was working for &lt;a href="http://www.oit.umass.edu/"&gt;OIT at UMass&lt;/a&gt;, working on
-new content management techniques for their web site, and then my
-first job at Virginia Tech was working on the Online Graduate
-Application Processing System
-(&lt;a href="https://ogaps.stl.vt.edu/ogaps/"&gt;OGAPS&lt;/a&gt;), a web based application
-for viewing graduate applications to the department. When it came time
-to put up a website for Spoke ‘n’ Beans I was at it again, though that
-site is no longer active, and of course, my current project,
-&lt;a href="http://illichvillich.net"&gt;illichvillich.net&lt;/a&gt; is still a work in
-progress as I continue to figure out just what it is.&lt;/p&gt;
-
-&lt;p&gt;In one way or another I’ve been following the trends of web site
-development ever since there was a web to develop (though sadly, I
-still don’t really have a knack for the ‘design’ part of things).&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;One of the aspects of web development that appeals to me, and why I
-think it has been an interest for so long, is the process of
-structuring data in a way that can easily be displayed in a number of
-different formats. To make this possible, various technologies have been
-developed over the years to facilitate the separation of content,
-structure and presentation. The result can look like alphabet soup
-when you find out that what you see in your web browser is made
-possible by HTML, CSS, JavaScript, PHP, CGI, SQL, to name a few.&lt;/p&gt;
-
-&lt;h2 id="in-the-beginning-there-was-sgml"&gt;In the beginning, there was SGML&lt;/h2&gt;
-
-&lt;p&gt;Hypertext Markup Language (HTML) was developed by Tim Berners-Lee at
-CERN in 1989. The purpose was to provide a means to link bits of
-research papers together to facilitate collaboration between particle
-physicists. In a nutshell, starting with the established
-&lt;a href="http://www.w3.org/MarkUp/SGML/"&gt;SGML&lt;/a&gt; which defined things like
-headers, paragraphs and lists, Berners-Lee added the &lt;code&gt;href&lt;/code&gt; attribute to the
-anchor element&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; to allow linking between documents.&lt;/p&gt;
-
-&lt;p&gt;A simple HTML file looks like this&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="language-html"&gt;&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-  &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Hello World&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is a &lt;span class="nt"&gt;&amp;lt;em&amp;gt;&lt;/span&gt;paragraph&lt;span class="nt"&gt;&amp;lt;/em&amp;gt;&lt;/span&gt; with a link to &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;google&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-  &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;While it is fairly easy to read and figure out what’s what, it is
-structured in a way that makes it easy for a computer to
-understand. While you &lt;em&gt;could&lt;/em&gt; write HTML by hand, it is tedious to get
-right. First, just remembering all the tag names (‘&lt;code&gt;html&lt;/code&gt;, ‘&lt;code&gt;body&lt;/code&gt;’,
-‘&lt;code&gt;h1&lt;/code&gt;’, ‘&lt;code&gt;p&lt;/code&gt;’, ‘&lt;code&gt;em&lt;/code&gt;’, etc.)  can be a pain, and then you need to
-remember to properly close all tags (e.g. ‘&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;’ should always have a
-matching ‘&lt;code&gt;&amp;lt;/p&amp;gt;&lt;/code&gt;’), and when you start nesting elements you need to be
-careful about closing tags at their correct nesting level. I don’t
-want to write html by hand, and neither should you.&lt;/p&gt;
-
-&lt;h2 id="enter-markdown"&gt;Enter Markdown&lt;/h2&gt;
-
-&lt;p&gt;Inspired by the simple markup that became common in writing text
-emails, &lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;
-strives for simplicity and readability. It is both a syntax, that
-looks like this:&lt;/p&gt;
-
-&lt;pre lang="mkd"&gt;&lt;code&gt;# Hello World
-
-This is a *paragraph* with a link to [google](http://www.google.com)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And a tool to convert text written in the markdown syntax into valid
-HTML. You can get a taste for how it all works together
-&lt;a href="http://daringfireball.net/projects/markdown/dingus"&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Markdown is easier to write and easier to read, at least for
-humans. The syntax itself is not as expressive as HTML, but it solves
-this problem nicely by allowing raw HTML mixed in with the markdown.&lt;/p&gt;
-
-&lt;h2 id="make-it-work"&gt;Make it work&lt;/h2&gt;
-
-&lt;p&gt;A website, such as a blog, is composed of many different HTML
-pages. If I store the content for each as a markdown file, I don’t
-want to have to run the &lt;code&gt;markdown&lt;/code&gt; command umpteen times to create my
-site. This is where static site generators like
-&lt;a href="http://nanoc.ws"&gt;nanoc&lt;/a&gt; come in. I just modify the compile rule in
-nanoc’s &lt;code&gt;Rules&lt;/code&gt; file to look like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="language-ruby"&gt;&lt;span class="n"&gt;compile&lt;/span&gt; &lt;span class="s1"&gt;'/posts/*'&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
-  &lt;span class="n"&gt;filter&lt;/span&gt; &lt;span class="ss"&gt;:kramdown&lt;/span&gt;
-  &lt;span class="n"&gt;layout&lt;/span&gt; &lt;span class="s1"&gt;'post'&lt;/span&gt;
-&lt;span class="k"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This tells nanoc to filter all files in the &lt;code&gt;posts/&lt;/code&gt; directory through
-the &lt;a href="http://kramdown.rubyforge.org/"&gt;&lt;code&gt;kramdown&lt;/code&gt;&lt;/a&gt; filter, a Ruby
-implementation of the markdown converter. I write all my files in
-markdown, but after running&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="language-bash"&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;nanoc co&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I get a set of HTML files!&lt;/p&gt;
-
-&lt;h2 id="but-wait-theres-more"&gt;But Wait, There’s More&lt;/h2&gt;
-
-&lt;p&gt;The alert reader may have noted that as snazzy as the markdown to HTML
-conversion is, it doesn’t really cover everything needed to put
-together a website. For instance, I haven’t even addressed things like
-headers, footers and side bars.  Markdown has limited syntax support
-for structural elements, and this is a &lt;em&gt;good thing&lt;/em&gt;. Typically, we
-like to keep our content separate from our structure. This makes it
-almost trivial to generate alternative views of content, perhaps
-formatted for a small mobile screen, or converted to a PDF document.&lt;/p&gt;
-
-&lt;p&gt;A more complete HTML page might look like something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="language-html"&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;'en'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;'utf-8'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;#!/hazy/blue/. - Getting Technical&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;'/stylesheets/screen.css'&lt;/span&gt; &lt;span class="na"&gt;media=&lt;/span&gt;&lt;span class="s"&gt;'screen,projection'&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;'stylesheet'&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;'text/css'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;'/stylesheets/print.css'&lt;/span&gt; &lt;span class="na"&gt;media=&lt;/span&gt;&lt;span class="s"&gt;'print'&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;'stylesheet'&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;'text/css'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;'http://www.hazyblue.me/feed.xml'&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;'alternate'&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;'#!/hazy/blue/. - Feed'&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;'application/rss+xml'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-  &lt;span class="nt"&gt;&amp;lt;body&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;'bp two-col light'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;'container'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;'header'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;'title'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-          &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;'/'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;'title'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;#!/hazy/blue/.&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
-            &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;'subtitle'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;open to interpretation&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
-          &lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;'sidebar'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Recent Posts&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
-          &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;"/2013/06/getting-technical/"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Getting Technical&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-          &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;"/2013/05/new-site/"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;New Site, New Framework&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-          &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;"/2013/05/making-space/"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Making Space&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-          &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;"/2013/05/open-source-treks-to-the-final-frontier/"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;And Now You're an Anstronaut: Open Source Treks to The Final Frontier&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Follow&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;'/feed.xml'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-          &lt;span class="nt"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;'/assets/Feed-icon.svg.png'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"twitter-follow-button"&lt;/span&gt; &lt;span class="na"&gt;data-show-count=&lt;/span&gt;&lt;span class="s"&gt;"false"&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;"https://twitter.com/hazybluedot"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Follow @hazybluedot&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;'content'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;'post'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-          &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Getting Technical&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-          &lt;span class="nt"&gt;&amp;lt;aside&amp;gt;&lt;/span&gt;Posted on: June 8, 2013&lt;span class="nt"&gt;&amp;lt;/aside&amp;gt;&lt;/span&gt;
-          &lt;span class="nt"&gt;&amp;lt;article&amp;gt;&lt;/span&gt;
-            &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Some personal interests seem to wax and wane, but remain ever-present
-            in my mind. Lurking. Waiting for the right moment to make you look
-            back and go, ‘huh’.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-          &lt;span class="nt"&gt;&amp;lt;/article&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-  &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;There’s a LOT of extra information before we even get to the article
-content, and most of it is going to be the same on every page. Because
-software developers are strong advocates of the DRY principal, and
-computers are great at highly repetitive tasks, it is not surprising
-that there are tools to assist with this clerical work. Generally,
-what we would like to do here is referred to as templating. We would
-like to create one template of all the boiler plate HTML that should
-be included on each page, and specify place holders where actual
-content will appear. Since &lt;code&gt;nanoc&lt;/code&gt; is written in &lt;code&gt;ruby&lt;/code&gt;, the natural
-way to do this is with &lt;a href="http://ruby-doc.org/docs/ProgrammingRuby/html/web.html#S2"&gt;Embedded Ruby&lt;/a&gt;, or &lt;a href="http://ruby-doc.org/docs/ProgrammingRuby/html/web.html#S2"&gt;&lt;code&gt;erb&lt;/code&gt;&lt;/a&gt;. Let’s
-take a look at just the sidebar portion of the above HTML code and see
-what it would look like as a template written with &lt;code&gt;erb&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="language-erb"&gt;&lt;span class="x"&gt;&amp;lt;div id='sidebar'&amp;gt;&lt;/span&gt;
-&lt;span class="x"&gt;  &amp;lt;h2&amp;gt;Recent Posts&amp;lt;/h2&amp;gt;&lt;/span&gt;
-&lt;span class="x"&gt;  &amp;lt;ul&amp;gt;&lt;/span&gt;
-&lt;span class="x"&gt;    &lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;%&lt;/span&gt; &lt;span class="n"&gt;sorted_articles&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;each&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="cp"&gt;%&amp;gt;&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;span class="x"&gt;      &amp;lt;li&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;%=&lt;/span&gt; &lt;span class="n"&gt;link_to&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:title&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt; &lt;span class="cp"&gt;%&amp;gt;&lt;/span&gt;&lt;span class="x"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-&lt;span class="x"&gt;    &lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;%&lt;/span&gt; &lt;span class="k"&gt;end&lt;/span&gt; &lt;span class="cp"&gt;%&amp;gt;&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;span class="x"&gt;  &amp;lt;/ul&amp;gt;&lt;/span&gt;
-&lt;span class="x"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class="x"&gt;&amp;lt;div id='content'&amp;gt;&lt;/span&gt;
-&lt;span class="cp"&gt;&amp;lt;%=&lt;/span&gt; &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="cp"&gt;%&amp;gt;&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;span class="x"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class="x"&gt;&amp;lt;div id='footer'&amp;gt;&lt;/span&gt;
-&lt;span class="x"&gt;a dkm production&lt;/span&gt;
-&lt;span class="x"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The interesting bits are the pieces of ruby code between the &lt;code&gt;&amp;lt;%=&lt;/code&gt; and
-&lt;code&gt;%&amp;gt;&lt;/code&gt; tags. Then running these pieces of code the ruby interpreter will
-replace everything between the &lt;code&gt;&amp;lt;%&lt;/code&gt; and &lt;code&gt;%&amp;gt;&lt;/code&gt; with the result generated
-by running the code inside those brackets. Ruby is designed to be easy
-to read, so without any prior experience with the language you can
-easily tell that the first bit of code will generate a sorted list of
-articles (the type &lt;code&gt;article&lt;/code&gt; is a piece of meta data the Nanoc
-Blogging Helper associates with files that should be interpreted as
-blog posts, rather than regular pages), putting a link to each on in a
-list item (&lt;code&gt;li&lt;/code&gt;) HTML element.&lt;/p&gt;
-
-&lt;p&gt;This is pretty nice, I just specify that structure in a single file,
-and it is used on every page I create, whether it’s 1 or 100.&lt;/p&gt;
-
-&lt;p&gt;But I’m lazy and error prone, and want to protect against silly typos,
-so I decided to use &lt;a href="haml"&gt;&lt;code&gt;haml&lt;/code&gt;&lt;/a&gt; instead of &lt;a href="http://ruby-doc.org/docs/ProgrammingRuby/html/web.html#S2"&gt;&lt;code&gt;erb&lt;/code&gt;&lt;/a&gt; as my
-templating language. Haml uses indentation level to indicate blocks,
-rather than a closing tag, so the template looks a little cleaner:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="language-haml"&gt;&lt;span class="nf"&gt;#sidebar&lt;/span&gt;
-  &lt;span class="nt"&gt;%h2&lt;/span&gt; Recent Posts
-  &lt;span class="nt"&gt;%ul&lt;/span&gt;
-    &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="n"&gt;sorted_articles&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;each&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
-      &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:published&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
-        &lt;span class="nt"&gt;%li&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;link_to&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:title&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;
-&lt;span class="nf"&gt;#content&lt;/span&gt;
-  &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;find_and_preserve&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;yield&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="nf"&gt;#footer&lt;/span&gt;
-  a dkm production&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;the structure of the generated HTML is represented by the indentation
-level of each line of Haml, so it is easy by just looking at the
-template to see that &lt;code&gt;sidebar&lt;/code&gt;, &lt;code&gt;content&lt;/code&gt; and &lt;code&gt;footer&lt;/code&gt; are all the
-same structural level, and the &lt;code&gt;ul&lt;/code&gt; containing the list of sorted
-articles is contained inside the &lt;code&gt;sidebar&lt;/code&gt; section. Haml also makes a
-few assumptions based on common templating patterns and will treate
-&lt;code&gt;#sidebar&lt;/code&gt; as a &lt;code&gt;div&lt;/code&gt; element with &lt;code&gt;id&lt;/code&gt; attribute equal to &lt;code&gt;sidebar&lt;/code&gt;,
-the equivalent of &lt;code&gt;&amp;lt;div id='sidebar'&amp;gt;&lt;/code&gt; in the &lt;code&gt;erb&lt;/code&gt; example. This
-handy assumption helps clean up the template and save typing. Every
-character I &lt;em&gt;don’t&lt;/em&gt; need to type is one less I could potentially make
-a mistake on!&lt;/p&gt;
-
-&lt;h2 id="once-more-with-style"&gt;Once more, with style&lt;/h2&gt;
-
-&lt;p&gt;My content is written in markdown, and pages are structured with haml
-templates. But what about things like fonts, colors and margins?
-Continuing on the same theme, style information is stored in a
-separate file and applied to each page automatically.&lt;/p&gt;
-
-&lt;p&gt;Cascading Stylesheets (CSS) were invented in 1994&lt;sup id="fnref:css"&gt;&lt;a href="#fn:css" class="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;div class="footnotes"&gt;
-  &lt;ol&gt;
-    &lt;li id="fn:1"&gt;
-      &lt;p&gt;&lt;a href="http://www.w3.org/People/Raggett/book4/ch02.html"&gt;A history of HTML&lt;/a&gt;&lt;a href="#fnref:1" class="reversefootnote"&gt;↩&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id="fn:css"&gt;
-      &lt;p&gt;&lt;a href="http://www.w3.org/Style/LieBos2e/history/Overview.html"&gt;The CSS saga&lt;/a&gt;&lt;a href="#fnref:css" class="reversefootnote"&gt;↩&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</content>
-  </entry>
   <entry>
     <id>tag:www.hazyblue.me,2013-06-07:/2013/05/new-site/</id>
     <title type="html">New Site, New Framework</title>
@@ -782,6 +514,32 @@ collaborative and global endeavor.&lt;/p&gt;
     <updated>2013-05-13T00:22:13Z</updated>
     <link rel="alternate" href="http://www.hazyblue.me/2013/05/something-funny-about-school-part-1/"/>
     <content type="html">&lt;p&gt;In the last “adult” class of the semester the reading du jour was Scott McCloud’s “Time Frames”, a comic about comics. Specifically, how the passage of time, including motion, are depicted in the medium. The discussion that started as we talked about the gap in between frames of a comic got me thinking… [](https://blogs.lt.vt.edu/shebang/files/2013/05/panel1.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/panel2.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/panel3.png) Sometime in the not-so-distant past… [](https://blogs.lt.vt.edu/shebang/files/2013/05/heraclitus1.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/heraclitus2.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/heraclitus3.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/sea1.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/jack_and_rose.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/titanic1.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/iceburg1.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/iceburg2.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/brachristochrone1.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/brachristochrone2.png)[](http://blogs.lt.vt.edu/shebang/files/2013/05/chart1.png)[](http://blogs.lt.vt.edu/shebang/files/2013/05/chart2.png)&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:www.hazyblue.me,2013-04-29:/2013/04/not-making-this-up-the-medium-is-the-message/</id>
+    <title type="html">Not making this up: The Medium is the Message</title>
+    <published>2013-04-29T18:40:01Z</published>
+    <updated>2013-04-29T18:40:01Z</updated>
+    <link rel="alternate" href="http://www.hazyblue.me/2013/04/not-making-this-up-the-medium-is-the-message/"/>
+    <content type="html">&lt;p&gt;I’ve been meaning to post something about the interesting interactions between the unix commands &lt;a href="http://linux.die.net/man/6/fortune"&gt;fortune&lt;/a&gt; and &lt;a href="http://linux.die.net/man/1/cowsay"&gt;cowsay&lt;/a&gt;. This is not that post. Long story short, fortune prints a random tidbit to the terminal and cowsay takes an input string and draws an ASCII art cow with a speech bubble containing the text you sent to the command. In addition, there are a number of different “cows” that can be drawn and so when pairing up random fortunes and random cows can be a parataxis gold mine. Here’s the command I have in my bash login script that does just that: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-bash"&gt;fortune -s | cowsay -f &lt;span class="k"&gt;$(&lt;/span&gt; find /usr/share/cows -name &lt;span class="s1"&gt;'*.cow'&lt;/span&gt; | shuf | head -n 1 &lt;span class="k"&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;More on that in the “real” post, but for now, I couldn’t pass this up which popped up when I opened a new terminal window just now:&lt;/p&gt;
+
+&lt;pre class="text"&gt;&lt;code&gt;  _________________________________
+ / "The medium is the message." -- \
+ \ Marshall McLuhan                /
+  ---------------------------------
+        \   \_______
+  v__v   \  \   O   )
+  (oo)      ||----w |
+  (__)      ||     ||  \/\
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ponder that for a bit.&lt;/p&gt;
 </content>
   </entry>
 </feed>
