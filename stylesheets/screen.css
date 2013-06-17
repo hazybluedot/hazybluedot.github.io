@@ -123,53 +123,74 @@ a img {
 }
 
 /* light is default mode, so pair with general html definition */
-/* line 64, content/stylesheets/partials/_base.scss */
-html, .light {
+/* line 87, content/stylesheets/partials/_base.scss */
+body {
+  color: #586e75;
   backgorund-color: #eee8d5;
-  color: #657b83;
-}
-/* line 46, content/stylesheets/partials/_base.scss */
-html #container, .light #container {
-  background-color: #fdf6e3;
-}
-/* line 51, content/stylesheets/partials/_base.scss */
-html *, .light * {
-  color: #657b83;
 }
 /* line 52, content/stylesheets/partials/_base.scss */
-html h1, html h2, html h3, html h4, html h5, html h6, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
+body * {
+  color: #586e75;
+}
+/* line 55, content/stylesheets/partials/_base.scss */
+body a {
+  color: #b58900;
+}
+/* line 18, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body a:visited {
+  color: #b58900;
+}
+/* line 24, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body a:hover {
+  color: #b58900;
+}
+/* line 27, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body a:active {
+  color: #b58900;
+}
+/* line 56, content/stylesheets/partials/_base.scss */
+body blockquote {
+  color: #586e75;
+}
+/* line 58, content/stylesheets/partials/_base.scss */
+body blockquote:before {
+  color: #cb4b16;
+}
+/* line 61, content/stylesheets/partials/_base.scss */
+body blockquote cite {
+  color: #cb4b16;
+}
+/* line 71, content/stylesheets/partials/_base.scss */
+body #container {
+  background-color: #fdf6e3;
+}
+/* line 73, content/stylesheets/partials/_base.scss */
+body #container a:hover {
+  background-color: #eee8d5;
+}
+/* line 78, content/stylesheets/partials/_base.scss */
+body h1, body h2, body h3, body h4, body h5, body h6 {
   color: #073642;
   border-color: #657b83;
 }
-/* line 53, content/stylesheets/partials/_base.scss */
-html a, .light a {
-  color: #586e75;
+/* line 80, content/stylesheets/partials/_base.scss */
+body h1 a, body h2 a, body h3 a, body h4 a, body h5 a, body h6 a {
+  color: #073642;
+}
+/* line 18, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body h1 a:visited, body h2 a:visited, body h3 a:visited, body h4 a:visited, body h5 a:visited, body h6 a:visited {
+  color: #073642;
+}
+/* line 24, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body h1 a:hover, body h2 a:hover, body h3 a:hover, body h4 a:hover, body h5 a:hover, body h6 a:hover {
+  color: #073642;
+}
+/* line 27, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body h1 a:active, body h2 a:active, body h3 a:active, body h4 a:active, body h5 a:active, body h6 a:active {
+  color: #073642;
 }
 
-/* line 65, content/stylesheets/partials/_base.scss */
-.dark {
-  backgorund-color: #073642;
-  color: #839496;
-}
-/* line 46, content/stylesheets/partials/_base.scss */
-.dark #container {
-  background-color: #002b36;
-}
-/* line 51, content/stylesheets/partials/_base.scss */
-.dark * {
-  color: #839496;
-}
-/* line 52, content/stylesheets/partials/_base.scss */
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-  color: #eee8d5;
-  border-color: #839496;
-}
-/* line 53, content/stylesheets/partials/_base.scss */
-.dark a {
-  color: #93a1a1;
-}
-
-/* line 67, content/stylesheets/partials/_base.scss */
+/* line 90, content/stylesheets/partials/_base.scss */
 html * {
   color-profile: sRGB;
   rendering-intent: auto;
@@ -266,7 +287,7 @@ p .right {
 /* line 62, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 a {
   text-decoration: underline;
-  color: #0066cc;
+  color: #b58900;
 }
 /* line 18, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:visited {
@@ -540,7 +561,7 @@ p .right {
 /* line 62, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 a {
   text-decoration: underline;
-  color: #0066cc;
+  color: #b58900;
 }
 /* line 18, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:visited {
@@ -1651,19 +1672,11 @@ textarea {
   height: 250px;
 }
 
-/* line 32, content/stylesheets/screen.scss */
-body a {
-  color: #268bd2;
-}
-/* line 35, content/stylesheets/screen.scss */
+/* line 33, content/stylesheets/screen.scss */
 body a {
   text-decoration: none;
 }
-/* line 4, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
-body a:hover {
-  text-decoration: underline;
-}
-/* line 39, content/stylesheets/screen.scss */
+/* line 37, content/stylesheets/screen.scss */
 body #container {
   *zoom: 1;
   max-width: 59em;
@@ -1675,14 +1688,14 @@ body #container {
   overflow: hidden;
   *zoom: 1;
   /*
-      nav#about {
-          @include full;
-          ul {
-              @include horizontal-list;
-          }
-          @include accentize($orange);
-      }
-      */
+    nav#about {
+    @include full;
+    ul {
+    @include horizontal-list;
+    }
+    @include accentize($orange);
+    }
+    */
 }
 /* line 38, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 body #container:after {
@@ -1690,7 +1703,7 @@ body #container:after {
   display: table;
   clear: both;
 }
-/* line 44, content/stylesheets/screen.scss */
+/* line 42, content/stylesheets/screen.scss */
 body #container > header, body #container > footer {
   position: relative;
   background: #002b36;
@@ -1720,27 +1733,27 @@ body #container > header:before, body #container > footer:before {
 body #container > header:after, body #container > footer:after {
   left: 100%;
 }
-/* line 51, content/stylesheets/screen.scss */
+/* line 49, content/stylesheets/screen.scss */
 body #container > header a:hover, body #container > footer a:hover {
   text-decoration: none;
 }
-/* line 53, content/stylesheets/screen.scss */
+/* line 51, content/stylesheets/screen.scss */
 body #container > header h1, body #container > header h2, body #container > footer h1, body #container > footer h2 {
   color: #93a1a1;
   padding-right: 10px;
 }
-/* line 57, content/stylesheets/screen.scss */
+/* line 55, content/stylesheets/screen.scss */
 body #container > header h1, body #container > footer h1 {
   font-size: 1.5em;
   line-height: 0.95238em;
 }
-/* line 60, content/stylesheets/screen.scss */
+/* line 58, content/stylesheets/screen.scss */
 body #container > header h2, body #container > footer h2 {
   font-size: 1em;
   line-height: 1.42857em;
   font-style: italic;
 }
-/* line 66, content/stylesheets/screen.scss */
+/* line 64, content/stylesheets/screen.scss */
 body #container nav {
   margin-top: 1.42857em;
   width: 32.20339%;
@@ -1748,67 +1761,77 @@ body #container nav {
   margin-right: 1.69492%;
   display: inline;
 }
-/* line 68, content/stylesheets/screen.scss */
+/* line 66, content/stylesheets/screen.scss */
 body #container nav h1 {
   font-size: 1.5em;
   line-height: 0.95238em;
 }
-/* line 57, content/stylesheets/partials/_base.scss */
+/* line 44, content/stylesheets/partials/_base.scss */
 body #container nav code.url {
   color: #cb4b16;
 }
-/* line 59, content/stylesheets/partials/_base.scss */
+/* line 46, content/stylesheets/partials/_base.scss */
 body #container nav a {
   color: #cb4b16;
 }
-/* line 60, content/stylesheets/partials/_base.scss */
+/* line 18, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body #container nav a:visited {
+  color: #cb4b16;
+}
+/* line 24, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body #container nav a:hover {
+  color: #cb4b16;
+}
+/* line 27, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body #container nav a:active {
+  color: #cb4b16;
+}
+/* line 47, content/stylesheets/partials/_base.scss */
 body #container nav h1, body #container nav h2, body #container nav h3, body #container nav h4, body #container nav h5, body #container nav h6 {
   color: #cb4b16;
 }
-/* line 91, content/stylesheets/screen.scss */
-body Section#content {
+
+/* line 90, content/stylesheets/screen.scss */
+section#content {
   width: 66.10169%;
   float: right;
   margin-right: 0;
   *margin-left: -1em;
   display: inline;
 }
-/* line 97, content/stylesheets/screen.scss */
-body Section#content a {
-  text-decoration: none;
-}
 /* line 6, content/stylesheets/partials/_typography.scss */
-body Section#content h1 {
+section#content h1 {
   font-size: 3em;
   line-height: 0.95238em;
 }
 /* line 6, content/stylesheets/partials/_typography.scss */
-body Section#content h2 {
+section#content h2 {
   font-size: 2.5em;
   line-height: 1.04762em;
 }
 /* line 6, content/stylesheets/partials/_typography.scss */
-body Section#content h3 {
+section#content h3 {
   font-size: 2em;
   line-height: 1.19048em;
 }
 /* line 6, content/stylesheets/partials/_typography.scss */
-body Section#content h4 {
+section#content h4 {
   font-size: 1.5em;
   line-height: 1.42857em;
 }
 /* line 6, content/stylesheets/partials/_typography.scss */
-body Section#content h5 {
+section#content h5 {
   font-size: 1em;
   line-height: 1.90476em;
 }
 /* line 6, content/stylesheets/partials/_typography.scss */
-body Section#content h6 {
+section#content h6 {
   font-size: 0.5em;
   line-height: 3.33333em;
 }
-/* line 104, content/stylesheets/screen.scss */
-body .notice, body .error, body .alert {
+
+/* line 99, content/stylesheets/screen.scss */
+.notice, .error, .alert {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1823,11 +1846,10 @@ blockquote {
   font-style: italic;
   margin: 1.5em 10px;
   padding: .5em 10px;
-  quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: "\201C" "\201D";
 }
-/* line 6, content/stylesheets/partials/_article.scss */
+/* line 7, content/stylesheets/partials/_article.scss */
 blockquote:before {
-  color: #ccc;
   content: open-quote;
   font-size: 4em;
   line-height: .1em;
@@ -1840,35 +1862,79 @@ blockquote p {
 }
 /* line 19, content/stylesheets/partials/_article.scss */
 blockquote cite {
-  color: #999999;
   font-size: em(14px);
   display: block;
   margin-top: em(5px);
 }
-/* line 24, content/stylesheets/partials/_article.scss */
+/* line 23, content/stylesheets/partials/_article.scss */
 blockquote cite:before {
   content: "\2014 \2009";
 }
 
-/* line 31, content/stylesheets/partials/_article.scss */
+/* line 30, content/stylesheets/partials/_article.scss */
 section#content article, section#content section {
   padding-top: 20px;
 }
-/* line 34, content/stylesheets/partials/_article.scss */
+/* line 33, content/stylesheets/partials/_article.scss */
 section#content article header, section#content section header {
-  color: #586e75;
   padding-bottom: 8px;
   border-bottom: 1px solid #839496;
   margin-bottom: 8px;
   margin-bottom: 1.42857em;
 }
-/* line 43, content/stylesheets/partials/_article.scss */
+/* line 41, content/stylesheets/partials/_article.scss */
 section#content article p, section#content section p {
   margin-bottom: 1.42857em;
 }
-/* line 44, content/stylesheets/partials/_article.scss */
+/* line 42, content/stylesheets/partials/_article.scss */
 section#content article p:first-child, section#content section p:first-child {
   margin-top: 1.42857em;
+}
+
+/* line 6, content/stylesheets/partials/_typography.scss */
+section#content section.archive h1 {
+  font-size: 1.5em;
+  line-height: 0.71429em;
+}
+/* line 6, content/stylesheets/partials/_typography.scss */
+section#content section.archive h2 {
+  font-size: 1em;
+  line-height: 0.83333em;
+}
+/* line 6, content/stylesheets/partials/_typography.scss */
+section#content section.archive h3 {
+  font-size: 0.5em;
+  line-height: 1.19048em;
+}
+/* line 6, content/stylesheets/partials/_typography.scss */
+section#content section.archive h4 {
+  font-size: 0em;
+  line-height: Infinityem;
+}
+/* line 6, content/stylesheets/partials/_typography.scss */
+section#content section.archive h5 {
+  font-size: -0.5em;
+  line-height: -0.2381em;
+}
+/* line 6, content/stylesheets/partials/_typography.scss */
+section#content section.archive h6 {
+  font-size: -1em;
+  line-height: 0.11905em;
+}
+/* line 52, content/stylesheets/partials/_article.scss */
+section#content section.archive ul {
+  list-style: none;
+}
+/* line 11, /home/dmaczka/.gem/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+section#content section.archive ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 55, content/stylesheets/partials/_article.scss */
+section#content section.archive time {
+  padding-left: 15px;
+  padding-left: 1.07143rem;
 }
 
 /*
@@ -1876,7 +1942,7 @@ section#content article p:first-child, section#content section p:first-child {
   display: inline-block;
   }
   */
-/* line 58, content/stylesheets/partials/_article.scss */
+/* line 67, content/stylesheets/partials/_article.scss */
 pre {
   font-size: em(13px);
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -1885,7 +1951,7 @@ pre {
   clear: both;
 }
 
-/* line 71, content/stylesheets/partials/_article.scss */
+/* line 80, content/stylesheets/partials/_article.scss */
 pre:not([class]) {
   font-size: em(16px);
   padding: 0.75em 1em;
@@ -1893,10 +1959,9 @@ pre:not([class]) {
   border: solid 1px #e1e1e1;
 }
 
-/* line 78, content/stylesheets/partials/_article.scss */
+/* line 87, content/stylesheets/partials/_article.scss */
 code pre:not([class]) {
   line-height: 1.2em;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   display: inline;
-  /* background: #002b36; */
 }
