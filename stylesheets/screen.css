@@ -1841,6 +1841,11 @@ section#content h6 {
   margin-top: 1.42857em;
 }
 
+/* line 116, content/stylesheets/screen.scss */
+.twitter_image_text img {
+  vertical-align: middle;
+}
+
 /* line 1, content/stylesheets/partials/_article.scss */
 blockquote {
   font-style: italic;

@@ -45,10 +45,13 @@
           <pre><code> On success, the function returns the converted floating point number as a double value. If no valid conversion could be performed, the function returns zero (0.0). There is no standard specification on what happens when the converted value would be out of the range of representable values by a double. See [strtod](http://www.cplusplus.com/strtod) for a more robust cross-platform alternative when this is a possibility.&#x000A;</code></pre>
           <p>This is less than ideal. If we wanted to check if an input even contained a valid numeric string (which we usually would) we’d have to work harder. The strtod alternative provides a means to do that, but we’d still have to do an explicit check after calling the function.  Other C-style functions use a return code to indicate success or failure.  It is also extremely easy to forget to check return codes, in which case the problem may only manifest itself in a crash later on, or worse, not at all, but instead just produce bad output.  These types of problems are very hard to track down and debug.  Using exceptions the program crashes precisely where the problem occurred unless the programmer handles that particular exception. So to summarize: Each of your functions should have a well-defined job.  They should do only one job and do it well.  If they can’t do their job because of improper input, then they should raise an appropriate exception.  I think following that idiom results in cleaner, easier to debug code.  You could certainly still return complex data types where appropriate, but trying to incorporate success/failure information in a return type will often lead to difficult to debug errors when the programmer forgets to check the return status!</p>
           <footer>
-            <a class="twitter-share-button" data-via="hazybluedot" href="https://twitter.com/share">Tweet</a>
-            <script>
-              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'twitter-wjs');
-            </script>
+            <div class='twitter_image_text'>
+              <a href='https://twitter.com/intent/tweet?original_referer=http://www.hazyblue.me/2012/10/response-to-advanced-python-exercises/&amp;text=Response to "Advanced Python exercises"&amp;url=http://www.hazyblue.me/2012/10/response-to-advanced-python-exercises/&amp;via=hazybluedot' target='_blank'>
+                <img src='/assets/twitter-bird-light-bgs.png' width='32'>
+                  Tweet This
+                </img>
+              </a>
+            </div>
           </footer>
         </article>
       </section>
@@ -59,10 +62,13 @@
         <a href='/feed.xml'>
           <img src='/assets/Feed-icon.svg.png'>
         </a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/hazybluedot">Follow @hazybluedot</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-        </script>
+        <div class='twitter_image_text'>
+          <a href='https://twitter.com/hazybluedot'>
+            <img src='/assets/twitter-bird-light-bgs.png' width='32'>
+              @hazybluedot
+            </img>
+          </a>
+        </div>
       </nav>
       <footer>
         a dkm production
