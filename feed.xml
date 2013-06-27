@@ -2,13 +2,519 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.hazyblue.me/</id>
   <title>Awesome Feed</title>
-  <updated>2013-06-07T15:42:04Z</updated>
+  <updated>2013-06-26T20:40:05Z</updated>
   <link rel="alternate" href="http://www.hazyblue.me/"/>
   <link rel="self" href="http://www.hazyblue.me/feed.xml"/>
   <author>
     <name>dkm</name>
     <uri>dkm</uri>
   </author>
+  <entry>
+    <id>tag:www.hazyblue.me,2013-06-26:/2013/06/whitehead-on-the-holodeck/</id>
+    <title type="html">LEGOs, Whitehead, and the Holodeck</title>
+    <published>2013-06-26T20:40:05Z</published>
+    <updated>2013-06-26T20:40:05Z</updated>
+    <link rel="alternate" href="http://www.hazyblue.me/2013/06/whitehead-on-the-holodeck/"/>
+    <content type="html">&lt;p&gt;There are many reasons LEGOs
+&lt;a href="http://www.dailyfinance.com/2011/08/24/why-are-legos-so-expensive/"&gt;cost as much as they do&lt;/a&gt;,
+one is the precise manufacturing that allows the bricks to be
+assembled and disassembled with ease:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Simonsen explained why the level of LEGO production quality has to
+be so high, mentioning in particular what the company calls “clutch
+power,” i.e., the ability of its bricks to snap together tightly
+while also being easy to separate, thereby readily allowing for de-
+and reconstruction. Speaking of the machines that make the bricks,
+Simonsen said, “It takes a very low tolerance for all our bricks to
+have that clutch power.” This precision has apparently paid off:
+“All the bricks that have been produced since 1958 can be put
+together
+still. &lt;cite&gt;&lt;a href="http://www.dailyfinance.com/2011/08/24/why-are-legos-so-expensive/"&gt;Why are LEGOs So Expensive?&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In a similar way, rules dictating the form and structure of folk tales
+enabled bards to tell and pass down stories through
+generations. Though each telling is different, and can be
+tailored to the individual temperaments of the audience and bard, the
+essence remains intact.&lt;/p&gt;
+
+&lt;p&gt;Bards and their bag of tricks is one area explored in &lt;em&gt;Hamlet on The Holodeck&lt;/em&gt;, Janet
+Murray’s expedition through the future landscape of narratives in
+cyberspace.&lt;/p&gt;
+
+&lt;p&gt;Siting that digital environments are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;procedural&lt;/li&gt;
+  &lt;li&gt;participatory&lt;/li&gt;
+  &lt;li&gt;spatial&lt;/li&gt;
+  &lt;li&gt;encyclopedic&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Murray states that these four properties “separately and collectively
+make [the computer] a powerful vehicle for literary creation.” The
+medium is esspecially suited for &lt;em&gt;interactive&lt;/em&gt; narratives: stories in
+which the reader is an active participant. Think
+&lt;a href="http://en.wikipedia.org/wiki/Choose_Your_Own_Adventure"&gt;Choose Your Own Adventure&lt;/a&gt;
+without the limitations of the physical pages and structure of a book.&lt;/p&gt;
+
+&lt;p&gt;As I was reading about the future of interactive narrative, and
+reminiscing about my own experiences with Choose Your Own Adventure, I
+realized that an interactive narrative is a really great framework for
+thinking about an educational curriculum. There may be a high level
+“plot” or sequence of plot elements that should remain consistent, but
+specific details and crucially, the path taken from start to end
+should be left to the participant.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;On the bardic traditions used to preserve stories before written
+language Murray writes (emphasis my own),:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The stories are composed anew for each recitation and are therefore
+multiform, with no single canonical version. Every performance of a
+story varies from all others, reflecting the &lt;em&gt;interest of the
+audience&lt;/em&gt; and the &lt;em&gt;dramatic interpretation of the
+storyteller&lt;/em&gt;. &lt;cite&gt;Janet Murray&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The bardic system, she says, serves to preserve the underlying
+patterns associated with a story through tellers and generations, but
+not a particular arrangement of words. This is made possible by
+employing a relatively small set of formula “starting at the level of
+the phrase and moving through the organization of the story as a
+whole.”&lt;sup id="fnref:murray"&gt;&lt;a href="#fn:murray" class="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;So formulaic in fact that Vladimir Propp, a Russian formalist, was
+able to reduce 450 Russian fairy tales into variants of a single story
+by utilizing 25 basic plot events, which Murray refers to as “Propp’s
+essential morphemes”, some of which are &lt;sup id="fnref:propp"&gt;&lt;a href="#fn:propp" class="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;(A)&lt;/dt&gt;
+  &lt;dd&gt;The villain causes harm or injury to a member of the family.&lt;/dd&gt;
+  &lt;dt&gt;(a)&lt;/dt&gt;
+  &lt;dd&gt;One member of the family either lacks something or desires something&lt;/dd&gt;
+  &lt;dt&gt;(up arrow)&lt;/dt&gt;
+  &lt;dd&gt;The hero leaves home&lt;/dd&gt;
+  &lt;dt&gt;(D)&lt;/dt&gt;
+  &lt;dd&gt;The hero is tested (ten variants ranging from request for help to challenges to fight)&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;an onward. Most of the elements will be familiar to anyone from any
+culture, as many of the themes are common to all story
+traditions. Propp goes on to show that more than just an encyclopedic
+store of the essential morphemes are needed and in fact there are a
+set of rules that dictate how they are combined, when a substitution
+is allowed, and the order in which subplots may occur.&lt;/p&gt;
+
+&lt;p&gt;Rather than restrict the storyteller,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Propp’s analysis makes clear that the formulaic underpinning makes
+folktales more intricate; it allows storytellers to weave together
+multiple different story sequences without becoming
+confused. &lt;cite&gt;Janet Murray&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This idea really clicked for me. At first glance it seems like a
+paradox: restriction of action provides freedom. But often the paradox
+is just an illusion: the rigorously enforced dimensions of LEGO bricks
+enable, rather then hinder, the creative freedom of the builder.  And it is interesting to note that rule creative narrative has played in the success of the iconic interconnecting bricks:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sales of these products have been huge for Lego. More important, the
+experience has taught the company that what kids wanted to do with
+the blocks was tell stories. Lego makes or licenses the stories they
+want to tell. &lt;cite&gt;&lt;a href="http://www.npr.org/blogs/money/2012/12/13/167055503/why-legos-are-so-expensive-and-so-popular"&gt;Why Legos Are So Expensive — And So Popular&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So pieces that are designed to fit together can be used to tell
+stories. Through my (albeit limited) experience exploring these ideas,
+the stories talked about, both in &lt;em&gt;Hamlet on the Holodeck&lt;/em&gt; and those
+licensed by LEGO, have been fictional. It goes without saying that
+creating a great fictional narrative which explores the human
+condition takes a great deal of creativity and genius. But what about
+creating a story that tells of the interconnections between branches
+and mathematics and sciences, stories that are written to help readers
+gain an understanding of a particular field of study. Could the
+techniques and ideas previously discussed be applied to the stories
+told in academic institutions. Can we devise a set of algorithms and
+story elements that will bestow individual instructors and students
+the creative freedom to tailor stories to their own particular
+strengths and interests, as well current events in a dynamic world,
+while maintaining some level of consistency across instructors and
+institutions so that while the words may not be the same, the story is
+the same.&lt;/p&gt;
+
+&lt;p&gt;To some extent, existing educational curricula already define
+something like an algorithm for a larger narrative, or structured
+blocks that can be assembled in a variety of different ways. The
+curriculum defines which modules/topics must be part of the larger
+degree, and defines a sequence to followed. How the content is
+presented in each course is largely up to the individual instructor,
+the bard. However, because the larger story, that of the degree, is
+not told by a single bard the resulting experience for the audience is
+all too often one of disjointed “scraps of information”, the very
+thing Alfred Whitehead says has nothing to do with education:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Culture is activity of thought, and receptiveness to beauty and
+human feeling. Scraps of information have nothing to do with it. A
+merely well-informed man is the most useless bore on God’s
+earth. &lt;cite&gt;A.N. Whitehead&lt;sup id="fnref:aims_of_education1"&gt;&lt;a href="#fn:aims_of_education1" class="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Whitehead dicusses three stages of mental growth:&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;The Stage of Romance&lt;/dt&gt;
+  &lt;dd&gt;“the subject-matter has the vividness of novelty; it holds within
+itself unexplored connexions with possibilities half-disclosed by
+glimpses and half-concealed by the wealth of material”&lt;/dd&gt;
+  &lt;dt&gt;The Stage of Precision&lt;/dt&gt;
+  &lt;dd&gt;“In this stage, width of relationship is subordinated to exactness of formulation. It is the stage of grammar, the grammar of language and the grammar of science.”&lt;/dd&gt;
+  &lt;dt&gt;The Stage of Generalization &lt;/dt&gt;
+  &lt;dd&gt;“The final stage of generalisation is &lt;a href="http://en.wikipedia.org/wiki/Thesis,_antithesis,_synthesis"&gt;Hegel’s synthesis&lt;/a&gt;. It is a return to romanticism with added advantage of classified ideas and relevant technique.”&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;and suggests that these stages occur in a natural cycle when allowed
+to, such as in the development of language. He also suggests that
+these stages provide the framework for general education:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Education should consist in a continual repetition of such
+cycles. Each lesson in its minor way should form an eddy cycle
+issuing in its own subordinate process. Longer periods should issue
+in definite attainments, which then form the starting-grounds for
+fresh cycles. &lt;cite&gt;A.F. Whitehead&lt;sup id="fnref:aims_of_education2"&gt;&lt;a href="#fn:aims_of_education2" class="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Propp reverse engineered a set of rules that dictate how predefined
+story elements may be combined to form a customizable, coherent fairy
+tale, which in the oral tradition, is tailored to the particular
+personalities of audience and performer. Could we do something similar
+for university courses using Whitehead’s three stage cycle as a
+blueprint?&lt;/p&gt;
+
+&lt;p&gt;Starting from the third in the cycle, the stage of generalization
+specifically addresses the question of interconnections. It is in this
+stage in which the work down in the stage of precision is generalized
+to other topics and fields. Would it be reasonable to say that all
+topics/courses/degree programs should conclude with a stage of
+generalization so that the story can continue in any of a number of
+future directions, beginning with a new stage of romance? It would
+then follow that all topics/courses/degrees would start with a stage
+of romance that would provide a seamless transition from any number of
+prior generalizations that different students may enter with.&lt;/p&gt;
+
+&lt;p&gt;Whitehead is careful to point out that his three stages shouldn’t be
+taken as absolute, rigorously defined partitions, and that elements of
+all three stages of thinking should be present throughout a learning
+experience. But by consciously emphasizing certain stages at key parts
+in the educational cycle, might we create educational “bricks” that
+can be assembled in highly personalized configurations for each
+student? I’m not quite sure what this would look like on a large
+scale, but have some ideas of how I would implement it in my own
+course which I will cover in a future post. I’d be interested to hear
+the views of others, particularly those who have more experience in
+less technical areas.  Does the idea of trying to apply a structure
+and a set of rules to create curriculum building blocks sound
+ridiculous in less rigorous and technical fields than electrical
+engineering and software design?&lt;/p&gt;
+
+&lt;p&gt;Since I still don’t have a commenting system implemented yet, please
+share your thoughts in your own blog with a link back here, or email
+them to me directly and I’ll publish them as comments once I get a
+system working.&lt;/p&gt;
+&lt;div class="footnotes"&gt;
+  &lt;ol&gt;
+    &lt;li id="fn:murray"&gt;
+      &lt;p&gt;Janet Murray, &lt;em&gt;Hamlet on the Holodeck&lt;/em&gt;, 1997&lt;a href="#fnref:murray" class="reversefootnote"&gt;↩&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id="fn:propp"&gt;
+      &lt;p&gt;Propp, Morphology of the Folk Tale&lt;a href="#fnref:propp" class="reversefootnote"&gt;↩&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id="fn:aims_of_education1"&gt;
+      &lt;p&gt;A.F. Whitehead, The Aims of Education, p. 1&lt;a href="#fnref:aims_of_education1" class="reversefootnote"&gt;↩&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id="fn:aims_of_education2"&gt;
+      &lt;p&gt;A.F. Whitehead, The Aims of Education, p. 19&lt;a href="#fnref:aims_of_education2" class="reversefootnote"&gt;↩&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:www.hazyblue.me,2013-06-08:/2013/06/getting-technical/</id>
+    <title type="html">Getting Technical</title>
+    <published>2013-06-08T22:38:39Z</published>
+    <updated>2013-06-08T22:38:39Z</updated>
+    <link rel="alternate" href="http://www.hazyblue.me/2013/06/getting-technical/"/>
+    <content type="html">&lt;p&gt;Some personal interests seem to wax and wane, but remain ever-present
+in my mind. Lurking. Waiting for the right moment to make my brain think.&lt;/p&gt;
+
+&lt;p&gt;I remember creating my first web page in the very early years of the
+web. Luckily it has long been removed from the internet, for it was a
+ghastly thing. But I continued to dabble in web development throughout
+high school and even briefly formed a LLC with a friend to create
+websites for people (and back in those days open source content
+management systems hadn’t been created yet, so we rolled our own in
+Perl). We created two, neither of which are still live in their
+original form (again, this is a good thing for anyone actually wanting
+to visit them). Part of my employment during my undergraduate years
+was working for &lt;a href="http://www.oit.umass.edu/"&gt;OIT at UMass&lt;/a&gt;, working on
+new content management techniques for their web site, and then my
+first job at Virginia Tech was working on the Online Graduate
+Application Processing System
+(&lt;a href="https://ogaps.stl.vt.edu/ogaps/"&gt;OGAPS&lt;/a&gt;), a web based application
+for viewing graduate applications to the department. When it came time
+to put up a website for Spoke ‘n’ Beans I was at it again, though that
+site is no longer active, and of course, my current project,
+&lt;a href="http://illichvillich.net"&gt;illichvillich.net&lt;/a&gt; is still a work in
+progress as I continue to figure out just what it is.&lt;/p&gt;
+
+&lt;p&gt;In one way or another I’ve been following the trends of web site
+development ever since there was a web to develop (though sadly, I
+still don’t really have a knack for the ‘design’ part of things).&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;One of the aspects of web development that appeals to me, and why I
+think it has been an interest for so long, is the process of
+structuring data in a way that can easily be displayed in a number of
+different formats. To make this possible, various technologies have been
+developed over the years to facilitate the separation of content,
+structure and presentation. The result can look like alphabet soup
+when you find out that what you see in your web browser is made
+possible by HTML, CSS, JavaScript, PHP, CGI, SQL, to name a few.&lt;/p&gt;
+
+&lt;h2 id="in-the-beginning-there-was-sgml"&gt;In the beginning, there was SGML&lt;/h2&gt;
+
+&lt;p&gt;Hypertext Markup Language (HTML) was developed by Tim Berners-Lee at
+CERN in 1989. The purpose was to provide a means to link bits of
+research papers together to facilitate collaboration between particle
+physicists. In a nutshell, starting with the established
+&lt;a href="http://www.w3.org/MarkUp/SGML/"&gt;SGML&lt;/a&gt; which defined things like
+headers, paragraphs and lists, Berners-Lee added the &lt;code&gt;href&lt;/code&gt; attribute to the
+anchor element&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; to allow linking between documents.&lt;/p&gt;
+
+&lt;p&gt;A simple HTML file looks like this&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-html"&gt;&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Hello World&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is a &lt;span class="nt"&gt;&amp;lt;em&amp;gt;&lt;/span&gt;paragraph&lt;span class="nt"&gt;&amp;lt;/em&amp;gt;&lt;/span&gt; with a link to &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;google&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;While it is fairly easy to read and figure out what’s what, it is
+structured in a way that makes it easy for a computer to
+understand. While you &lt;em&gt;could&lt;/em&gt; write HTML by hand, it is tedious to get
+right. First, just remembering all the tag names (‘&lt;code&gt;html&lt;/code&gt;, ‘&lt;code&gt;body&lt;/code&gt;’,
+‘&lt;code&gt;h1&lt;/code&gt;’, ‘&lt;code&gt;p&lt;/code&gt;’, ‘&lt;code&gt;em&lt;/code&gt;’, etc.)  can be a pain, and then you need to
+remember to properly close all tags (e.g. ‘&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;’ should always have a
+matching ‘&lt;code&gt;&amp;lt;/p&amp;gt;&lt;/code&gt;’), and when you start nesting elements you need to be
+careful about closing tags at their correct nesting level. I don’t
+want to write html by hand, and neither should you.&lt;/p&gt;
+
+&lt;h2 id="enter-markdown"&gt;Enter Markdown&lt;/h2&gt;
+
+&lt;p&gt;Inspired by the simple markup that became common in writing text
+emails, &lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;
+strives for simplicity and readability. It is both a syntax, that
+looks like this:&lt;/p&gt;
+
+&lt;pre lang="mkd"&gt;&lt;code&gt;# Hello World
+
+This is a *paragraph* with a link to [google](http://www.google.com)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And a tool to convert text written in the markdown syntax into valid
+HTML. You can get a taste for how it all works together
+&lt;a href="http://daringfireball.net/projects/markdown/dingus"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Markdown is easier to write and easier to read, at least for
+humans. The syntax itself is not as expressive as HTML, but it solves
+this problem nicely by allowing raw HTML mixed in with the markdown.&lt;/p&gt;
+
+&lt;h2 id="make-it-work"&gt;Make it work&lt;/h2&gt;
+
+&lt;p&gt;A website, such as a blog, is composed of many different HTML
+pages. If I store the content for each as a markdown file, I don’t
+want to have to run the &lt;code&gt;markdown&lt;/code&gt; command umpteen times to create my
+site. This is where static site generators like
+&lt;a href="http://nanoc.ws"&gt;nanoc&lt;/a&gt; come in. I just modify the compile rule in
+nanoc’s &lt;code&gt;Rules&lt;/code&gt; file to look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-ruby"&gt;&lt;span class="n"&gt;compile&lt;/span&gt; &lt;span class="s1"&gt;'/posts/*'&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;filter&lt;/span&gt; &lt;span class="ss"&gt;:kramdown&lt;/span&gt;
+  &lt;span class="n"&gt;layout&lt;/span&gt; &lt;span class="s1"&gt;'post'&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This tells nanoc to filter all files in the &lt;code&gt;posts/&lt;/code&gt; directory through
+the &lt;a href="http://kramdown.rubyforge.org/"&gt;&lt;code&gt;kramdown&lt;/code&gt;&lt;/a&gt; filter, a Ruby
+implementation of the markdown converter. I write all my files in
+markdown, but after running&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-bash"&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;nanoc co&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I get a set of HTML files!&lt;/p&gt;
+
+&lt;h2 id="but-wait-theres-more"&gt;But Wait, There’s More&lt;/h2&gt;
+
+&lt;p&gt;The alert reader may have noted that as snazzy as the markdown to HTML
+conversion is, it doesn’t really cover everything needed to put
+together a website. For instance, I haven’t even addressed things like
+headers, footers and side bars.  Markdown has limited syntax support
+for structural elements, and this is a &lt;em&gt;good thing&lt;/em&gt;. Typically, we
+like to keep our content separate from our structure. This makes it
+almost trivial to generate alternative views of content, perhaps
+formatted for a small mobile screen, or converted to a PDF document.&lt;/p&gt;
+
+&lt;p&gt;A more complete HTML page might look like something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-html"&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;'en'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;'utf-8'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;#!/hazy/blue/. - Getting Technical&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;'/stylesheets/screen.css'&lt;/span&gt; &lt;span class="na"&gt;media=&lt;/span&gt;&lt;span class="s"&gt;'screen,projection'&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;'stylesheet'&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;'text/css'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;'/stylesheets/print.css'&lt;/span&gt; &lt;span class="na"&gt;media=&lt;/span&gt;&lt;span class="s"&gt;'print'&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;'stylesheet'&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;'text/css'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;'http://www.hazyblue.me/feed.xml'&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;'alternate'&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;'#!/hazy/blue/. - Feed'&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;'application/rss+xml'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;body&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;'bp two-col light'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;'container'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;'header'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;'title'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;'/'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;'title'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;#!/hazy/blue/.&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;'subtitle'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;open to interpretation&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;'sidebar'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Recent Posts&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;"/2013/06/getting-technical/"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Getting Technical&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;"/2013/05/new-site/"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;New Site, New Framework&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;"/2013/05/making-space/"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Making Space&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;"/2013/05/open-source-treks-to-the-final-frontier/"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;And Now You're an Anstronaut: Open Source Treks to The Final Frontier&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Follow&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;'/feed.xml'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;'/assets/Feed-icon.svg.png'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"twitter-follow-button"&lt;/span&gt; &lt;span class="na"&gt;data-show-count=&lt;/span&gt;&lt;span class="s"&gt;"false"&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;"https://twitter.com/hazybluedot"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Follow @hazybluedot&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;'content'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;'post'&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Getting Technical&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;aside&amp;gt;&lt;/span&gt;Posted on: June 8, 2013&lt;span class="nt"&gt;&amp;lt;/aside&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;article&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Some personal interests seem to wax and wane, but remain ever-present
+            in my mind. Lurking. Waiting for the right moment to make you look
+            back and go, ‘huh’.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;/article&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There’s a LOT of extra information before we even get to the article
+content, and most of it is going to be the same on every page. Because
+software developers are strong advocates of the DRY principal, and
+computers are great at highly repetitive tasks, it is not surprising
+that there are tools to assist with this clerical work. Generally,
+what we would like to do here is referred to as templating. We would
+like to create one template of all the boiler plate HTML that should
+be included on each page, and specify place holders where actual
+content will appear. Since &lt;code&gt;nanoc&lt;/code&gt; is written in &lt;code&gt;ruby&lt;/code&gt;, the natural
+way to do this is with &lt;a href="http://ruby-doc.org/docs/ProgrammingRuby/html/web.html#S2"&gt;Embedded Ruby&lt;/a&gt;, or &lt;a href="http://ruby-doc.org/docs/ProgrammingRuby/html/web.html#S2"&gt;&lt;code&gt;erb&lt;/code&gt;&lt;/a&gt;. Let’s
+take a look at just the sidebar portion of the above HTML code and see
+what it would look like as a template written with &lt;code&gt;erb&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-erb"&gt;&lt;span class="x"&gt;&amp;lt;div id='sidebar'&amp;gt;&lt;/span&gt;
+&lt;span class="x"&gt;  &amp;lt;h2&amp;gt;Recent Posts&amp;lt;/h2&amp;gt;&lt;/span&gt;
+&lt;span class="x"&gt;  &amp;lt;ul&amp;gt;&lt;/span&gt;
+&lt;span class="x"&gt;    &lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;%&lt;/span&gt; &lt;span class="n"&gt;sorted_articles&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;each&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="cp"&gt;%&amp;gt;&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="x"&gt;      &amp;lt;li&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;%=&lt;/span&gt; &lt;span class="n"&gt;link_to&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:title&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt; &lt;span class="cp"&gt;%&amp;gt;&lt;/span&gt;&lt;span class="x"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="x"&gt;    &lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;%&lt;/span&gt; &lt;span class="k"&gt;end&lt;/span&gt; &lt;span class="cp"&gt;%&amp;gt;&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="x"&gt;  &amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;span class="x"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="x"&gt;&amp;lt;div id='content'&amp;gt;&lt;/span&gt;
+&lt;span class="cp"&gt;&amp;lt;%=&lt;/span&gt; &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="cp"&gt;%&amp;gt;&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="x"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="x"&gt;&amp;lt;div id='footer'&amp;gt;&lt;/span&gt;
+&lt;span class="x"&gt;a dkm production&lt;/span&gt;
+&lt;span class="x"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The interesting bits are the pieces of ruby code between the &lt;code&gt;&amp;lt;%=&lt;/code&gt; and
+&lt;code&gt;%&amp;gt;&lt;/code&gt; tags. Then running these pieces of code the ruby interpreter will
+replace everything between the &lt;code&gt;&amp;lt;%&lt;/code&gt; and &lt;code&gt;%&amp;gt;&lt;/code&gt; with the result generated
+by running the code inside those brackets. Ruby is designed to be easy
+to read, so without any prior experience with the language you can
+easily tell that the first bit of code will generate a sorted list of
+articles (the type &lt;code&gt;article&lt;/code&gt; is a piece of meta data the Nanoc
+Blogging Helper associates with files that should be interpreted as
+blog posts, rather than regular pages), putting a link to each on in a
+list item (&lt;code&gt;li&lt;/code&gt;) HTML element.&lt;/p&gt;
+
+&lt;p&gt;This is pretty nice, I just specify that structure in a single file,
+and it is used on every page I create, whether it’s 1 or 100.&lt;/p&gt;
+
+&lt;p&gt;But I’m lazy and error prone, and want to protect against silly typos,
+so I decided to use &lt;a href="haml"&gt;&lt;code&gt;haml&lt;/code&gt;&lt;/a&gt; instead of &lt;a href="http://ruby-doc.org/docs/ProgrammingRuby/html/web.html#S2"&gt;&lt;code&gt;erb&lt;/code&gt;&lt;/a&gt; as my
+templating language. Haml uses indentation level to indicate blocks,
+rather than a closing tag, so the template looks a little cleaner:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-haml"&gt;&lt;span class="nf"&gt;#sidebar&lt;/span&gt;
+  &lt;span class="nt"&gt;%h2&lt;/span&gt; Recent Posts
+  &lt;span class="nt"&gt;%ul&lt;/span&gt;
+    &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="n"&gt;sorted_articles&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;each&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+      &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:published&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+        &lt;span class="nt"&gt;%li&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;link_to&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:title&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;
+&lt;span class="nf"&gt;#content&lt;/span&gt;
+  &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;find_and_preserve&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;yield&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nf"&gt;#footer&lt;/span&gt;
+  a dkm production&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the structure of the generated HTML is represented by the indentation
+level of each line of Haml, so it is easy by just looking at the
+template to see that &lt;code&gt;sidebar&lt;/code&gt;, &lt;code&gt;content&lt;/code&gt; and &lt;code&gt;footer&lt;/code&gt; are all the
+same structural level, and the &lt;code&gt;ul&lt;/code&gt; containing the list of sorted
+articles is contained inside the &lt;code&gt;sidebar&lt;/code&gt; section. Haml also makes a
+few assumptions based on common templating patterns and will treate
+&lt;code&gt;#sidebar&lt;/code&gt; as a &lt;code&gt;div&lt;/code&gt; element with &lt;code&gt;id&lt;/code&gt; attribute equal to &lt;code&gt;sidebar&lt;/code&gt;,
+the equivalent of &lt;code&gt;&amp;lt;div id='sidebar'&amp;gt;&lt;/code&gt; in the &lt;code&gt;erb&lt;/code&gt; example. This
+handy assumption helps clean up the template and save typing. Every
+character I &lt;em&gt;don’t&lt;/em&gt; need to type is one less I could potentially make
+a mistake on!&lt;/p&gt;
+
+&lt;h2 id="once-more-with-style"&gt;Once more, with style&lt;/h2&gt;
+
+&lt;p&gt;My content is written in markdown, and pages are structured with haml
+templates. But what about things like fonts, colors and margins?
+Continuing on the same theme, style information is stored in a
+separate file and applied to each page automatically.&lt;/p&gt;
+
+&lt;p&gt;Cascading Stylesheets (CSS) were invented in 1994&lt;sup id="fnref:css"&gt;&lt;a href="#fn:css" class="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class="footnotes"&gt;
+  &lt;ol&gt;
+    &lt;li id="fn:1"&gt;
+      &lt;p&gt;&lt;a href="http://www.w3.org/People/Raggett/book4/ch02.html"&gt;A history of HTML&lt;/a&gt;&lt;a href="#fnref:1" class="reversefootnote"&gt;↩&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id="fn:css"&gt;
+      &lt;p&gt;&lt;a href="http://www.w3.org/Style/LieBos2e/history/Overview.html"&gt;The CSS saga&lt;/a&gt;&lt;a href="#fnref:css" class="reversefootnote"&gt;↩&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:www.hazyblue.me,2013-06-07:/2013/05/new-site/</id>
     <title type="html">New Site, New Framework</title>
@@ -505,41 +1011,6 @@ support for all GNU/Linux users in the future!&lt;/p&gt;
 redistribute may make their way back to the ISS, transforming
 humanity’s thirst for exploring “the final frontier” into a truly
 collaborative and global endeavor.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.hazyblue.me,2013-05-12:/2013/05/something-funny-about-school-part-1/</id>
-    <title type="html">Something Funny about School (Part 1)</title>
-    <published>2013-05-13T00:22:13Z</published>
-    <updated>2013-05-13T00:22:13Z</updated>
-    <link rel="alternate" href="http://www.hazyblue.me/2013/05/something-funny-about-school-part-1/"/>
-    <content type="html">&lt;p&gt;In the last “adult” class of the semester the reading du jour was Scott McCloud’s “Time Frames”, a comic about comics. Specifically, how the passage of time, including motion, are depicted in the medium. The discussion that started as we talked about the gap in between frames of a comic got me thinking… [](https://blogs.lt.vt.edu/shebang/files/2013/05/panel1.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/panel2.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/panel3.png) Sometime in the not-so-distant past… [](https://blogs.lt.vt.edu/shebang/files/2013/05/heraclitus1.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/heraclitus2.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/heraclitus3.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/sea1.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/jack_and_rose.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/titanic1.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/iceburg1.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/iceburg2.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/brachristochrone1.png)[](https://blogs.lt.vt.edu/shebang/files/2013/05/brachristochrone2.png)[](http://blogs.lt.vt.edu/shebang/files/2013/05/chart1.png)[](http://blogs.lt.vt.edu/shebang/files/2013/05/chart2.png)&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:www.hazyblue.me,2013-04-29:/2013/04/not-making-this-up-the-medium-is-the-message/</id>
-    <title type="html">Not making this up: The Medium is the Message</title>
-    <published>2013-04-29T18:40:01Z</published>
-    <updated>2013-04-29T18:40:01Z</updated>
-    <link rel="alternate" href="http://www.hazyblue.me/2013/04/not-making-this-up-the-medium-is-the-message/"/>
-    <content type="html">&lt;p&gt;I’ve been meaning to post something about the interesting interactions between the unix commands &lt;a href="http://linux.die.net/man/6/fortune"&gt;fortune&lt;/a&gt; and &lt;a href="http://linux.die.net/man/1/cowsay"&gt;cowsay&lt;/a&gt;. This is not that post. Long story short, fortune prints a random tidbit to the terminal and cowsay takes an input string and draws an ASCII art cow with a speech bubble containing the text you sent to the command. In addition, there are a number of different “cows” that can be drawn and so when pairing up random fortunes and random cows can be a parataxis gold mine. Here’s the command I have in my bash login script that does just that: &lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="language-bash"&gt;fortune -s | cowsay -f &lt;span class="k"&gt;$(&lt;/span&gt; find /usr/share/cows -name &lt;span class="s1"&gt;'*.cow'&lt;/span&gt; | shuf | head -n 1 &lt;span class="k"&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;More on that in the “real” post, but for now, I couldn’t pass this up which popped up when I opened a new terminal window just now:&lt;/p&gt;
-
-&lt;pre class="text"&gt;&lt;code&gt;  _________________________________
- / "The medium is the message." -- \
- \ Marshall McLuhan                /
-  ---------------------------------
-        \   \_______
-  v__v   \  \   O   )
-  (oo)      ||----w |
-  (__)      ||     ||  \/\
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ponder that for a bit.&lt;/p&gt;
 </content>
   </entry>
 </feed>

@@ -467,6 +467,11 @@ sub {
   bottom: -0.25em;
 }
 
+/* line 48, content/stylesheets/partials/_typography.scss */
+em {
+  text-style: italic;
+}
+
 /* line 25, content/stylesheets/screen.scss */
 .grid {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(1.23457%, rgba(0, 0, 0, 0)), color-stop(1.23457%, rgba(100, 100, 225, 0.25)), color-stop(6.17284%, rgba(100, 100, 225, 0.25)), color-stop(6.17284%, rgba(0, 0, 0, 0)), color-stop(7.40741%, rgba(0, 0, 0, 0)), color-stop(7.40741%, rgba(100, 100, 225, 0.25)), color-stop(12.34568%, rgba(100, 100, 225, 0.25)), color-stop(12.34568%, rgba(0, 0, 0, 0)), color-stop(13.58025%, rgba(0, 0, 0, 0)), color-stop(13.58025%, rgba(100, 100, 225, 0.25)), color-stop(18.51852%, rgba(100, 100, 225, 0.25)), color-stop(18.51852%, rgba(0, 0, 0, 0)), color-stop(19.75309%, rgba(0, 0, 0, 0)), color-stop(19.75309%, rgba(100, 100, 225, 0.25)), color-stop(24.69136%, rgba(100, 100, 225, 0.25)), color-stop(24.69136%, rgba(0, 0, 0, 0)), color-stop(25.92593%, rgba(0, 0, 0, 0)), color-stop(25.92593%, rgba(100, 100, 225, 0.25)), color-stop(30.8642%, rgba(100, 100, 225, 0.25)), color-stop(30.8642%, rgba(0, 0, 0, 0)), color-stop(32.09877%, rgba(0, 0, 0, 0)), color-stop(32.09877%, rgba(100, 100, 225, 0.25)), color-stop(37.03704%, rgba(100, 100, 225, 0.25)), color-stop(37.03704%, rgba(0, 0, 0, 0)), color-stop(38.2716%, rgba(0, 0, 0, 0)), color-stop(38.2716%, rgba(100, 100, 225, 0.25)), color-stop(43.20988%, rgba(100, 100, 225, 0.25)), color-stop(43.20988%, rgba(0, 0, 0, 0)), color-stop(44.44444%, rgba(0, 0, 0, 0)), color-stop(44.44444%, rgba(100, 100, 225, 0.25)), color-stop(49.38272%, rgba(100, 100, 225, 0.25)), color-stop(49.38272%, rgba(0, 0, 0, 0)), color-stop(50.61728%, rgba(0, 0, 0, 0)), color-stop(50.61728%, rgba(100, 100, 225, 0.25)), color-stop(55.55556%, rgba(100, 100, 225, 0.25)), color-stop(55.55556%, rgba(0, 0, 0, 0)), color-stop(56.79012%, rgba(0, 0, 0, 0)), color-stop(56.79012%, rgba(100, 100, 225, 0.25)), color-stop(61.7284%, rgba(100, 100, 225, 0.25)), color-stop(61.7284%, rgba(0, 0, 0, 0)), color-stop(62.96296%, rgba(0, 0, 0, 0)), color-stop(62.96296%, rgba(100, 100, 225, 0.25)), color-stop(67.90123%, rgba(100, 100, 225, 0.25)), color-stop(67.90123%, rgba(0, 0, 0, 0)), color-stop(69.1358%, rgba(0, 0, 0, 0)), color-stop(69.1358%, rgba(100, 100, 225, 0.25)), color-stop(74.07407%, rgba(100, 100, 225, 0.25)), color-stop(74.07407%, rgba(0, 0, 0, 0)), color-stop(75.30864%, rgba(0, 0, 0, 0)), color-stop(75.30864%, rgba(100, 100, 225, 0.25)), color-stop(80.24691%, rgba(100, 100, 225, 0.25)), color-stop(80.24691%, rgba(0, 0, 0, 0)), color-stop(81.48148%, rgba(0, 0, 0, 0)), color-stop(81.48148%, rgba(100, 100, 225, 0.25)), color-stop(86.41975%, rgba(100, 100, 225, 0.25)), color-stop(86.41975%, rgba(0, 0, 0, 0)), color-stop(87.65432%, rgba(0, 0, 0, 0)), color-stop(87.65432%, rgba(100, 100, 225, 0.25)), color-stop(92.59259%, rgba(100, 100, 225, 0.25)), color-stop(92.59259%, rgba(0, 0, 0, 0)), color-stop(93.82716%, rgba(0, 0, 0, 0)), color-stop(93.82716%, rgba(100, 100, 225, 0.25)), color-stop(98.76543%, rgba(100, 100, 225, 0.25)), color-stop(98.76543%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
@@ -1846,54 +1851,72 @@ section#content h6 {
   vertical-align: middle;
 }
 
-/* line 1, content/stylesheets/partials/_article.scss */
-blockquote {
+/* line 2, content/stylesheets/partials/_article.scss */
+article blockquote {
   font-style: italic;
   margin: 1.5em 10px;
   padding: .5em 10px;
   quotes: "\201C" "\201D";
 }
-/* line 7, content/stylesheets/partials/_article.scss */
-blockquote:before {
+/* line 8, content/stylesheets/partials/_article.scss */
+article blockquote:before {
   content: open-quote;
   font-size: 4em;
   line-height: .1em;
   margin-right: .25em;
   vertical-align: -.4em;
 }
-/* line 15, content/stylesheets/partials/_article.scss */
-blockquote p {
+/* line 16, content/stylesheets/partials/_article.scss */
+article blockquote p {
   display: inline;
 }
-/* line 19, content/stylesheets/partials/_article.scss */
-blockquote cite {
+/* line 20, content/stylesheets/partials/_article.scss */
+article blockquote em {
+  font-style: normal;
+  font-weight: bold;
+}
+/* line 25, content/stylesheets/partials/_article.scss */
+article blockquote cite {
   font-size: em(14px);
   display: block;
   margin-top: em(5px);
 }
-/* line 23, content/stylesheets/partials/_article.scss */
-blockquote cite:before {
+/* line 29, content/stylesheets/partials/_article.scss */
+article blockquote cite:before {
   content: "\2014 \2009";
 }
 
-/* line 30, content/stylesheets/partials/_article.scss */
+/* line 38, content/stylesheets/partials/_article.scss */
 section#content article, section#content section {
   padding-top: 20px;
 }
-/* line 33, content/stylesheets/partials/_article.scss */
+/* line 41, content/stylesheets/partials/_article.scss */
 section#content article header, section#content section header {
   padding-bottom: 8px;
   border-bottom: 1px solid #839496;
   margin-bottom: 8px;
   margin-bottom: 1.42857em;
 }
-/* line 41, content/stylesheets/partials/_article.scss */
+/* line 49, content/stylesheets/partials/_article.scss */
 section#content article p, section#content section p {
   margin-bottom: 1.42857em;
 }
-/* line 42, content/stylesheets/partials/_article.scss */
+/* line 50, content/stylesheets/partials/_article.scss */
 section#content article p:first-child, section#content section p:first-child {
   margin-top: 1.42857em;
+}
+/* line 55, content/stylesheets/partials/_article.scss */
+section#content article dd, section#content section dd {
+  margin-bottom: 1.42857em;
+}
+/* line 58, content/stylesheets/partials/_article.scss */
+section#content article ul, section#content section ul {
+  list-style-type: circle;
+  margin-bottom: 1.42857em;
+}
+/* line 62, content/stylesheets/partials/_article.scss */
+section#content article em, section#content section em {
+  text-style: italic;
 }
 
 /* line 6, content/stylesheets/partials/_typography.scss */
@@ -1926,7 +1949,7 @@ section#content section.archive h6 {
   font-size: -1em;
   line-height: 0.11905em;
 }
-/* line 52, content/stylesheets/partials/_article.scss */
+/* line 71, content/stylesheets/partials/_article.scss */
 section#content section.archive ul {
   list-style: none;
 }
@@ -1936,7 +1959,7 @@ section#content section.archive ul li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 55, content/stylesheets/partials/_article.scss */
+/* line 74, content/stylesheets/partials/_article.scss */
 section#content section.archive time {
   padding-left: 15px;
   padding-left: 1.07143rem;
@@ -1947,7 +1970,7 @@ section#content section.archive time {
   display: inline-block;
   }
   */
-/* line 67, content/stylesheets/partials/_article.scss */
+/* line 86, content/stylesheets/partials/_article.scss */
 pre {
   font-size: em(13px);
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -1956,7 +1979,7 @@ pre {
   clear: both;
 }
 
-/* line 80, content/stylesheets/partials/_article.scss */
+/* line 99, content/stylesheets/partials/_article.scss */
 pre:not([class]) {
   font-size: em(16px);
   padding: 0.75em 1em;
@@ -1964,7 +1987,7 @@ pre:not([class]) {
   border: solid 1px #e1e1e1;
 }
 
-/* line 87, content/stylesheets/partials/_article.scss */
+/* line 106, content/stylesheets/partials/_article.scss */
 code pre:not([class]) {
   line-height: 1.2em;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
