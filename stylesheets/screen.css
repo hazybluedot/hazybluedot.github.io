@@ -1912,9 +1912,10 @@ section#content article dd, section#content section dd {
 /* line 58, content/stylesheets/partials/_article.scss */
 section#content article ul, section#content section ul {
   list-style-type: circle;
+  padding-left: 1em;
   margin-bottom: 1.42857em;
 }
-/* line 62, content/stylesheets/partials/_article.scss */
+/* line 63, content/stylesheets/partials/_article.scss */
 section#content article em, section#content section em {
   text-style: italic;
 }
@@ -1949,7 +1950,7 @@ section#content section.archive h6 {
   font-size: -1em;
   line-height: 0.11905em;
 }
-/* line 71, content/stylesheets/partials/_article.scss */
+/* line 72, content/stylesheets/partials/_article.scss */
 section#content section.archive ul {
   list-style: none;
 }
@@ -1959,7 +1960,7 @@ section#content section.archive ul li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 74, content/stylesheets/partials/_article.scss */
+/* line 75, content/stylesheets/partials/_article.scss */
 section#content section.archive time {
   padding-left: 15px;
   padding-left: 1.07143rem;
@@ -1970,7 +1971,7 @@ section#content section.archive time {
   display: inline-block;
   }
   */
-/* line 86, content/stylesheets/partials/_article.scss */
+/* line 87, content/stylesheets/partials/_article.scss */
 pre {
   font-size: em(13px);
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -1979,7 +1980,7 @@ pre {
   clear: both;
 }
 
-/* line 99, content/stylesheets/partials/_article.scss */
+/* line 100, content/stylesheets/partials/_article.scss */
 pre:not([class]) {
   font-size: em(16px);
   padding: 0.75em 1em;
@@ -1987,7 +1988,7 @@ pre:not([class]) {
   border: solid 1px #e1e1e1;
 }
 
-/* line 106, content/stylesheets/partials/_article.scss */
+/* line 107, content/stylesheets/partials/_article.scss */
 code pre:not([class]) {
   line-height: 1.2em;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
